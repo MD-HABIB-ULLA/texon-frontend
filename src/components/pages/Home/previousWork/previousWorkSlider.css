@@ -1,0 +1,33 @@
+.swiper-slide {
+  width: 37rem;
+  height: 30rem;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .swiper-wrapper {
+    transform: translate3d(-3px, 0px, 0px) !important;
+  }
+
+  .swiper-slide {
+    width: 28rem !important;
+    height: 42rem !important;
+  }
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #1789fb;
+}
