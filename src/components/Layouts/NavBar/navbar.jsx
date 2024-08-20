@@ -209,7 +209,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 bg-primry text-white rounded-lg">
+        <ul className="menu menu-horizontal px-1 bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
           {navLinks}
         </ul>
       </div>
