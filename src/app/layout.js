@@ -28,13 +28,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable}`}
       >
-        <div className="">
-          <Navbar />
-          <Bannar />
-        </div>
-        <div className="bg-[#F5F8FF]">
-          {children}
-          <Footer />
+        <div>
+          <div className="bg-[#F5F8FF]">
+            <div className="heroBg">
+              <Navbar />
+              <Bannar />
+            </div>
+            {children}
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

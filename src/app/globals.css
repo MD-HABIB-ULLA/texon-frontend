@@ -9,3 +9,11 @@
 .inter {
   font-family: var(--inter);
 }
+
+.heroBg {
+  background-image: url(../../public/images/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
