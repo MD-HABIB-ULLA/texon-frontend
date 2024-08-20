@@ -15,7 +15,7 @@ export default function OurPreviousWork() {
             </button>
           </div>
         </div>
-        <div className="mt-20">
+        <div className="mt-20 hidden lg:block">
           <OurPreviousWorkSlider />
         </div>
       </div>
