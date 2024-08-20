@@ -1,4 +1,5 @@
 import Footer from "@/components/Layouts/Footer/Footer";
+import Bannar from "@/components/pages/Home/bannar/bannar";
 import { Inter, Raleway, Space_Grotesk } from "next/font/google";
 import Navbar from "../components/Layouts/NavBar/navbar";
 import "./globals.css";
@@ -25,11 +26,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable} bg-[#F5F8FF]`}
+        className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable}`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="">
+          <Navbar />
+          <Bannar />
+        </div>
+        <div className="bg-[#F5F8FF]">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

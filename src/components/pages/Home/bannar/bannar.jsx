@@ -24,7 +24,7 @@ export default function Bannar() {
             View Portfolio
           </button>
         </div>
-        <div className="flex items-center justify-center md:justify-start lg:justify-start pt-5 lg:mt-0 md:mt-0">
+        <div className="flex items-center justify-center md:justify-start lg:justify-start pt-5 lg:mt-0 md:mt-0 pb-5 md:pb-10 lg:pb-20">
           <div>
             <Image src={google} alt="google"></Image>
             <div className="flex items-center">

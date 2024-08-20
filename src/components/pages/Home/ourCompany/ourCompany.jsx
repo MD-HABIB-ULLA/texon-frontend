@@ -8,7 +8,7 @@ import company3 from "../../../../../public/company/Logo-Quest_Trade-DARK 1.svg"
 
 export default function OurCompany() {
   return (
-    <div className="py-10 lg:py-20">
+    <div className="pb-5 md:pb-10 lg:pb-20">
       <div className="bg-[#A8D0FE]">
         <div className="mx-auto max-w-screen-xl py-5">
           <Marquee play pauseOnHover speed={100}>

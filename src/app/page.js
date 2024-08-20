@@ -1,7 +1,6 @@
 import Clients from "@/components/pages/Home/clients/clients";
 import CoreServices from "@/components/pages/Home/coreServices/coreServices";
 import AboutTexon from "../components/pages/Home/aboutTexon/aboutTexon";
-import Bannar from "../components/pages/Home/bannar/bannar";
 import DevelopmentServices from "../components/pages/Home/developmentServices/developmentServices";
 import DiscussDetails from "../components/pages/Home/discussDetails/discussDetails";
 import DynamicWebsite from "../components/pages/Home/dynamicWebsite/dynamicWebsite";
@@ -16,7 +15,6 @@ import TechKnowledge from "../components/pages/Home/techKnowledge/techKnowledge"
 export default function Home() {
   return (
     <main>
-      <Bannar />
       <OurCompany />
       <NextLevel />
       <PreviousWork />
