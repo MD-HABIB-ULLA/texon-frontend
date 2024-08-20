@@ -1,6 +1,6 @@
-import PreviousWorkSide from "./previousWorkSlider";
+import OurPreviousWorkSlider from "./ourPreviousWorkSlider";
 
-export default function PreviousWork() {
+export default function OurPreviousWork() {
   return (
     <div className="max-w-screen-xl mx-auto py-10">
       <div className="px-2">
@@ -16,7 +16,7 @@ export default function PreviousWork() {
           </div>
         </div>
         <div className="mt-20">
-          <PreviousWorkSide />
+          <OurPreviousWorkSlider />
         </div>
       </div>
     </div>
