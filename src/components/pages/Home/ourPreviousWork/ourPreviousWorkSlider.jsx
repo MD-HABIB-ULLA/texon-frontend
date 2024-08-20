@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 import iPadMockup from "../../../../../public/work/iPadMockup.webp";
 
-import "./styles.css";
+import "./ourPreviousWorkSlider.css";
 
 // import required modules
 import Image from "next/image";
@@ -86,7 +86,6 @@ export const OurPreviousWorkSlider = () => {
             </div>
           </div>
         </SwiperSlide>
-        
       </Swiper>
     </div>
   );
