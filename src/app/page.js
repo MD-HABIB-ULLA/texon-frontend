@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <main>
       <OurCompany />
-      <OurPreviousWork />
       <NextLevel />
       <CoreServices />
+      <OurPreviousWork />
       <SoftwareProducts />
       <DevelopmentServices />
       <AboutTexon />
