@@ -4,7 +4,7 @@
 }
 
 .swiper-slide {
-  background: url(../../../../../public/images/slide-list.png);
+  background: url(../../../../../public/images/carousel.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;

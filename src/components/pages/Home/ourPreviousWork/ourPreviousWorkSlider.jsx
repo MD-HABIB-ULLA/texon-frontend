@@ -26,7 +26,7 @@ export const OurPreviousWorkSlider = () => {
                   <h3>UI /UX Product</h3>
                 </div>
                 <h1 className="text-4xl font-semibold mb-7">oppzo.io</h1>
-                <p className="text-sm mb-6">
+                <p className="text-sm mb-8">
                   Opzo specializes in developing comprehensive business
                   management software solutions, spanning CRM, e-commerce,
                   billing, accounting, manufacturing, warehouse, and project
@@ -34,7 +34,7 @@ export const OurPreviousWorkSlider = () => {
                   integrated tools for streamlined operations
                 </p>
               </div>
-              <div className="w-[350px]">
+              <div className="w-[290px] mr-5">
                 <Image src={iPadMockup} alt="iPadMockup" />
               </div>
             </div>
@@ -44,20 +44,20 @@ export const OurPreviousWorkSlider = () => {
           <div>
             <div className="flex  items-center justify-center">
               <div className="w-1/3 py-20">
-                <div className="flex justify-between items-center text-xl border-b pb-2 mb-7">
+                <div className="flex justify-between items-center text-xl border-b pb-2 mb-6 mr-5">
                   <h1>2024</h1>
                   <h3>UI /UX Product</h3>
                 </div>
                 <h1 className="text-4xl font-semibold mb-7">oppzo.io</h1>
-                <p className="">
-                  Sed sollicitudin, sem id imperdiet semper, enim ante tempor
-                  sapien, a commodo nisl dolor at elit. Aliquam suscipit egestas
-                  velit at elementum. Nulla sit amet ligula at dolor rhoncus
-                  rhoncus. Aenean molestie est tortor. Mauris dictum magna sit
-                  amet velit ornare.
+                <p className="text-sm mb-6">
+                  Opzo specializes in developing comprehensive business
+                  management software solutions, spanning CRM, e-commerce,
+                  billing, accounting, manufacturing, warehouse, and project
+                  management, empowering businesses with efficient and
+                  integrated tools for streamlined operations
                 </p>
               </div>
-              <div className="w-[350px]">
+              <div className="w-[280px]">
                 <Image src={iPadMockup} alt="iPadMockup" />
               </div>
             </div>
