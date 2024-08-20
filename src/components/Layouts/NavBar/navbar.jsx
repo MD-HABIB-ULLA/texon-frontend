@@ -39,8 +39,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={stock} className="w-10" alt="stock"></Image>
-                <div className="ms-2">
+                <Image src={stock} alt="stock"></Image>
+                <div className="ms-5">
                   <h2 className="font-semibold">QuickStock</h2>
                   <p className="hidden md:block lg:block">
                     Inventory Management Software
@@ -52,8 +52,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={texonmart} className="w-10" alt="stock"></Image>
-                <div className="ms-2">
+                <Image src={texonmart} alt="stock"></Image>
+                <div className="ms-6">
                   <h2 className="font-semibold">TexonMart</h2>
                   <p className="hidden lg:block">
                     Multivendor ecommerce website
@@ -65,8 +65,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={erp} className="w-10" alt="stock"></Image>
-                <div className="ms-2">
+                <Image src={erp} alt="stock"></Image>
+                <div className="ms-7">
                   <h2 className="font-semibold">ERP Software</h2>
                 </div>
               </div>
@@ -75,8 +75,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={pos} className="w-4 ms-2" alt="stock"></Image>
-                <div className="ms-6">
+                <Image src={pos} className="ms-2" alt="stock"></Image>
+                <div className="ms-9">
                   <h2 className="font-semibold">POS Software</h2>
                 </div>
               </div>
@@ -85,8 +85,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={edu} className="ms-2 w-6" alt="stock"></Image>
-                <div className="ms-4">
+                <Image src={edu} className="ms-1" alt="stock"></Image>
+                <div className="ms-8">
                   <h2 className="font-bold">EduTech & Accounting</h2>
                   <p className="hidden lg:block">
                     Education & accounting Software
@@ -107,8 +107,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={stock} className="w-10" alt="stock"></Image>
-                <div className="ms-2">
+                <Image src={stock} alt="stock"></Image>
+                <div className="ms-5">
                   <h2 className="font-semibold">QuickStock</h2>
                   <p className="hidden md:block lg:block">
                     Inventory Management Software
@@ -120,8 +120,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={texonmart} className="w-10" alt="stock"></Image>
-                <div className="ms-2">
+                <Image src={texonmart} alt="stock"></Image>
+                <div className="ms-6">
                   <h2 className="font-semibold">TexonMart</h2>
                   <p className="hidden lg:block">
                     Multivendor ecommerce website
@@ -133,8 +133,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={erp} className="w-10" alt="stock"></Image>
-                <div className="ms-2">
+                <Image src={erp} alt="stock"></Image>
+                <div className="ms-7">
                   <h2 className="font-semibold">ERP Software</h2>
                 </div>
               </div>
@@ -143,8 +143,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={pos} className="w-4 ms-2" alt="stock"></Image>
-                <div className="ms-6">
+                <Image src={pos} className="ms-2" alt="stock"></Image>
+                <div className="ms-9">
                   <h2 className="font-semibold">POS Software</h2>
                 </div>
               </div>
@@ -153,8 +153,8 @@ export default function Navbar() {
           <li className="p-2">
             <Link href={"/products/software"}>
               <div className="flex items-center">
-                <Image src={edu} className="ms-2 w-6" alt="stock"></Image>
-                <div className="ms-4">
+                <Image src={edu} className="ms-1" alt="stock"></Image>
+                <div className="ms-8">
                   <h2 className="font-bold">EduTech & Accounting</h2>
                   <p className="hidden lg:block">
                     Education & accounting Software
