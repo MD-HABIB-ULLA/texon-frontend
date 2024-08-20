@@ -17,15 +17,65 @@ export default function Navbar() {
           <MdKeyboardArrowDown className="ml-1 group-hover:hidden" />
           <MdKeyboardArrowUp className="ml-1 hidden group-hover:inline-block" />
         </Link>
-        <ul className="absolute hidden group-hover:block text-white mt-9 w-48 bg-primry rounded-lg lg:group-hover:block md:group-hover:block sm:hidden z-10">
+        <ul className="absolute hidden group-hover:block text-white mt-9 bg-primry rounded-lg lg:group-hover:block md:group-hover:block sm:hidden z-10 lg:w-96 md:w-96  w-60">
           <li className="p-2">
-            <Link href={"/services/web-development"}>Web Development</Link>
+            <Link href={"/products/software"}>
+              <div className="flex items-center">
+                <Image src={stock} alt="stock"></Image>
+                <div className="ms-5">
+                  <h2 className="font-semibold">Web Development</h2>
+                  <p className="hidden md:block lg:block">
+                    Inventory Management Software
+                  </p>
+                </div>
+              </div>
+            </Link>
           </li>
           <li className="p-2">
-            <Link href={"/services/mobile-apps"}>Mobile App Develop</Link>
+            <Link href={"/products/software"}>
+              <div className="flex items-center">
+                <Image src={texonmart} alt="stock"></Image>
+                <div className="ms-6">
+                  <h2 className="font-semibold">Mobile App Develop</h2>
+                  <p className="hidden lg:block">
+                    Multivendor ecommerce website
+                  </p>
+                </div>
+              </div>
+            </Link>
           </li>
           <li className="p-2">
-            <Link href={"/services/seo"}>Management Software</Link>
+            <Link href={"/products/software"}>
+              <div className="flex items-center">
+                <Image src={erp} alt="stock"></Image>
+                <div className="ms-7">
+                  <h2 className="font-semibold">AI & Automation</h2>
+                </div>
+              </div>
+            </Link>
+          </li>
+          <li className="p-2">
+            <Link href={"/products/software"}>
+              <div className="flex items-center">
+                <Image src={pos} className="ms-2" alt="stock"></Image>
+                <div className="ms-9">
+                  <h2 className="font-semibold">AWS Services</h2>
+                </div>
+              </div>
+            </Link>
+          </li>
+          <li className="p-2">
+            <Link href={"/products/software"}>
+              <div className="flex items-center">
+                <Image src={edu} className="ms-1" alt="stock"></Image>
+                <div className="ms-8">
+                  <h2 className="font-bold">IT Infrastructure</h2>
+                  <p className="hidden lg:block">
+                    Education & accounting Software
+                  </p>
+                </div>
+              </div>
+            </Link>
           </li>
         </ul>
       </li>
