@@ -21,7 +21,7 @@ export const OurPreviousWorkSlider = () => {
           <div>
             <div className="flex  items-center justify-center">
               <div className="w-1/3 py-20">
-                <div className="flex justify-between items-center text-xl border-b pb-2 mb-7">
+                <div className="flex justify-between items-center text-xl border-b pb-2 mb-7 mr-5">
                   <h1>2024</h1>
                   <h3>UI /UX Product</h3>
                 </div>
