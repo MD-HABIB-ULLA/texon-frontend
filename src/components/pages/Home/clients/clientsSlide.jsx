@@ -33,10 +33,17 @@ export default function ClientsSlide() {
       >
         <SwiperSlide>
           <div className="slide-content bg-white p-5 rounded">
-            <Image src={Sulayman} className="rounded-full" alt="mehedi" />
+            <div className="w-20 h-20 mx-auto">
+              <Image
+                src={Sulayman}
+                className="rounded-full"
+                alt="mehedi"
+                layout="responsive"
+              />
+            </div>
             <h2 className="slide-title">Sulayman Mohammad</h2>
             <h3>Managing Director, Birajman Foundation.</h3>
-            <ImQuotesLeft className="text-primry my-2" />
+            <ImQuotesLeft className="text-primary my-2" />
             <p className="slide-paragraph">
               Texon Limited has many clients across the country and they are
               already working globally. I must say that Texon limited has a
@@ -48,10 +55,17 @@ export default function ClientsSlide() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-content bg-white p-5 rounded">
-            <Image src={mehedi} className="rounded-full" alt="mehedi" />
+            <div className="w-20 h-20 mx-auto">
+              <Image
+                src={mehedi}
+                className="rounded-full"
+                alt="mehedi"
+                layout="responsive"
+              />
+            </div>
             <h2 className="slide-title">Mehedi Shamim</h2>
             <h3>Head of Brand, Marketing, and Strategy at Apex Property</h3>
-            <ImQuotesLeft className="text-primry my-2" />
+            <ImQuotesLeft className="text-primary my-2" />
             <p className="slide-paragraph">
               The Texon Limited team did an excellent job delivering a custom
               software solution that fit our specific needs. Their technical
@@ -63,10 +77,17 @@ export default function ClientsSlide() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="slide-content bg-white p-5 rounded">
-            <Image src={Young} className="rounded-full" alt="mehedi" />
+            <div className="w-20 h-20 mx-auto">
+              <Image
+                src={Young}
+                className="rounded-full"
+                alt="mehedi"
+                layout="responsive"
+              />
+            </div>
             <h2 className="slide-title">Mr. Young Hun</h2>
             <h3>CTO at Sicunet(Korea)</h3>
-            <ImQuotesLeft className="text-primry my-2" />
+            <ImQuotesLeft className="text-primary my-2" />
             <p className="slide-paragraph">
               The software developed by Texon has transformed the way our
               business operates. The team was extremely professional and
@@ -75,13 +96,20 @@ export default function ClientsSlide() {
               talented software development partner.
             </p>
           </div>
-        </SwiperSlide>{" "}
+        </SwiperSlide>
         <SwiperSlide>
           <div className="slide-content bg-white p-5 rounded">
-            <Image src={Sulayman} className="rounded-full" alt="mehedi" />
+            <div className="w-20 h-20 mx-auto">
+              <Image
+                src={Sulayman}
+                className="rounded-full"
+                alt="mehedi"
+                layout="responsive"
+              />
+            </div>
             <h2 className="slide-title">Sulayman Mohammad</h2>
             <h3>Managing Director, Birajman Foundation.</h3>
-            <ImQuotesLeft className="text-primry my-2" />
+            <ImQuotesLeft className="text-primary my-2" />
             <p className="slide-paragraph">
               Texon Limited has many clients across the country and they are
               already working globally. I must say that Texon limited has a
