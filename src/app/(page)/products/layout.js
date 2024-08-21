@@ -1,8 +1,4 @@
-import Footer from "@/components/Layouts/Footer/Footer";
-import Bannar from "@/components/pages/Home/bannar/bannar";
 import { Inter, Raleway, Space_Grotesk } from "next/font/google";
-import Navbar from "../components/Layouts/NavBar/navbar";
-import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +14,7 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  title: "Home | Texon Limited",
+  title: "Product List | Texon Limited",
 };
 
 export default function RootLayout({ children }) {
@@ -27,16 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable}`}
       >
-        <div>
-          <div className="bg-[#F5F8FF]">
-            <div className="heroBg">
-              <Navbar />
-              <Bannar />
-            </div>
-            {children}
-            <Footer />
-          </div>
-        </div>
+        <div className="bg-[#F5F8FF]">{children}</div>
       </body>
     </html>
   );
