@@ -1,8 +1,11 @@
+import Image from "next/image";
+import selling from "../../../../../public/products/selling.svg";
+
 export default function Support() {
   return (
     <div className="bg-primry">
       <div className="max-w-screen-xl mx-auto px-2 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-5 px-10">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-5 lg:px-10">
           <div className="md:col-span-3 bg-white p-4 rounded-md space-y-5">
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               1
@@ -12,9 +15,12 @@ export default function Support() {
               No coding, hosting or maintenance required:
             </h1>
             <p>
-              We take care of everything for you. Just enter <br /> your store details
-              and start selling.
+              We take care of everything for you. Just enter <br /> your store
+              details and start selling.
             </p>
+            <div className="flex lg:justify-end md:justify-end justify-start">
+              <Image src={selling} width={170} alt="selling" />
+            </div>
           </div>
           <div className="md:col-span-2 bg-white p-4 rounded-md space-y-5">
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
