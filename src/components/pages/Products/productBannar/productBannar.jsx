@@ -2,7 +2,7 @@
 
 export default function ProductBanner() {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-36 flex flex-col lg:flex-row lg:space-x-12">
+    <div className="max-w-screen-xl mx-auto px-4 py-10 md:py-20 lg:py-36 flex flex-col lg:flex-row lg:space-x-12">
       {/* Text Section */}
       <div className="space-y-7 lg:w-2/3">
         <h1 className="font-medium text-xl">Texon Products</h1>
@@ -21,7 +21,7 @@ export default function ProductBanner() {
       {/* Form Section */}
       <div className="w-full lg:w-1/3">
         <form className="space-y-4">
-          <h2 className="font-semibold text-xl mb-4">
+          <h2 className="font-semibold text-xl my-4">
             Get Started with Your Free Demo
           </h2>
           <div>
@@ -49,14 +49,14 @@ export default function ProductBanner() {
             />
           </div>
           <div className="flex items-center space-x-2">
-            <input type="checkbox" defaultChecked className="checkbox" />
-            <label className="text-gray-700">
+            <input type="checkbox" defaultChecked className="checkbox rounded-none" />
+            <label className="text-base-700 ps-2">
               I agree to the{" "}
-              <a href="#" className="text-blue-600 hover:underline">
+              <a href="#" className="text-primry hover:underline">
                 Terms of Service
               </a>{" "}
               and{" "}
-              <a href="#" className="text-blue-600 hover:underline">
+              <a href="#" className="text-primry hover:underline">
                 Privacy Policy
               </a>
               .
