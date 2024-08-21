@@ -44,7 +44,7 @@ export default function ClientsSlide() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slide-content bg-white p-5 rounded w-full">
+          <div className="slide-content bg-white p-5 rounded w-full mb-8">
             <div className="w-20 h-20 mx-auto">
               <Image
                 src={Sulayman}
@@ -57,7 +57,7 @@ export default function ClientsSlide() {
             <h3>Managing Director, Birajman Foundation.</h3>
             <ImQuotesLeft className="text-primary my-2" />
             <p className="slide-paragraph">
-              Texon Limited has many clients across the country and they are
+              Texon Limited has many clients <br /> across the country and they are
               already working globally. I must say that Texon limited has a
               strong management and qualified resource. They developed a desktop
               POS software for our fashion brand bworldy fashion. We are still
@@ -66,7 +66,7 @@ export default function ClientsSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-content bg-white p-5 rounded w-full">
+          <div className="slide-content bg-white p-5 rounded w-full mb-8">
             <div className="w-20 h-20 mx-auto">
               <Image
                 src={mehedi}
@@ -88,7 +88,7 @@ export default function ClientsSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-content bg-white p-5 rounded w-full">
+          <div className="slide-content bg-white p-5 rounded w-full mb-8">
             <div className="w-20 h-20 mx-auto">
               <Image
                 src={Young}
@@ -110,7 +110,7 @@ export default function ClientsSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-content bg-white p-5 rounded w-full">
+          <div className="slide-content bg-white p-5 rounded w-full mb-8">
             <div className="w-20 h-20 mx-auto">
               <Image
                 src={Sulayman}
@@ -123,7 +123,7 @@ export default function ClientsSlide() {
             <h3>Managing Director, Birajman Foundation.</h3>
             <ImQuotesLeft className="text-primary my-2" />
             <p className="slide-paragraph">
-              Texon Limited has many clients across the country and they are
+              Texon Limited has many clients <br /> across the country and they are
               already working globally. I must say that Texon limited has a
               strong management and qualified resource. They developed a desktop
               POS software for our fashion brand bworldy fashion. We are still
