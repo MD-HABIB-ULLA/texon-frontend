@@ -32,7 +32,7 @@ export default function ClientsSlide() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slide-content bg-white p-5 rounded">
+          <div className="slide-content bg-white p-5 rounded w-full">
             <div className="w-20 h-20 mx-auto">
               <Image
                 src={Sulayman}
@@ -54,7 +54,7 @@ export default function ClientsSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-content bg-white p-5 rounded">
+          <div className="slide-content bg-white p-5 rounded w-full">
             <div className="w-20 h-20 mx-auto">
               <Image
                 src={mehedi}
@@ -76,7 +76,7 @@ export default function ClientsSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-content bg-white p-5 rounded">
+          <div className="slide-content bg-white p-5 rounded w-full">
             <div className="w-20 h-20 mx-auto">
               <Image
                 src={Young}
@@ -98,7 +98,7 @@ export default function ClientsSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="slide-content bg-white p-5 rounded">
+          <div className="slide-content bg-white p-5 rounded w-full">
             <div className="w-20 h-20 mx-auto">
               <Image
                 src={Sulayman}
