@@ -22,11 +22,23 @@ export default function ClientsSlide() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
         spaceBetween={30}
         freeMode={true}
         pagination={{
           clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+          },
+
+          768: {
+            slidesPerView: 2,
+          },
+
+          1024: {
+            slidesPerView: 3,
+          },
         }}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
@@ -37,7 +49,7 @@ export default function ClientsSlide() {
               <Image
                 src={Sulayman}
                 className="rounded-full"
-                alt="mehedi"
+                alt="Sulayman"
                 layout="responsive"
               />
             </div>
@@ -59,7 +71,7 @@ export default function ClientsSlide() {
               <Image
                 src={mehedi}
                 className="rounded-full"
-                alt="mehedi"
+                alt="Mehedi"
                 layout="responsive"
               />
             </div>
@@ -81,7 +93,7 @@ export default function ClientsSlide() {
               <Image
                 src={Young}
                 className="rounded-full"
-                alt="mehedi"
+                alt="Young Hun"
                 layout="responsive"
               />
             </div>
@@ -103,7 +115,7 @@ export default function ClientsSlide() {
               <Image
                 src={Sulayman}
                 className="rounded-full"
-                alt="mehedi"
+                alt="Sulayman"
                 layout="responsive"
               />
             </div>
