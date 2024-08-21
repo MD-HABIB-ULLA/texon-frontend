@@ -1,3 +1,6 @@
+import Footer from "@/components/Layouts/Footer/Footer";
+import Navbar from "@/components/Layouts/NavBar/navbar";
+import ProductBannar from "@/components/pages/Products/productBannar/productBannar";
 import { Inter, Raleway, Space_Grotesk } from "next/font/google";
 
 const inter = Inter({
@@ -23,7 +26,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable}`}
       >
-        <div className="bg-[#F5F8FF]">{children}</div>
+        <div className="bg-[#F5F8FF]">
+          <div className="heroBg">
+            <Navbar />
+            <ProductBannar />
+          </div>
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
