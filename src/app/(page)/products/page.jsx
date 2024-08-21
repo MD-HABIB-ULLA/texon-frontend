@@ -1,7 +1,9 @@
+import OurSolution from "@/components/pages/Products/ourSolution/ourSolution";
+
 export default function Products() {
   return (
     <div>
-      <h1 className="text-center py-10">Products Page Comming Soon...</h1>
+      <OurSolution />
     </div>
   );
 }
