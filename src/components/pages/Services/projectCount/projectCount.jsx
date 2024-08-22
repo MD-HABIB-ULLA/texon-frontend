@@ -1,6 +1,6 @@
 export default function ProjectCount() {
   return (
-    <div className="bg-[#252432] py-8">
+    <div className="bg-[#252432] py-8 mb-20">
       <div className="max-w-screen-lg mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
           <div className="lg:border-r md:border-r border-white last:border-r-0 pr-8 ">
