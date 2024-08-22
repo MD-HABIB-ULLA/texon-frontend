@@ -93,7 +93,7 @@ export default function DiscussForm() {
               I agree to the Terms of Service and Privacy Policy.
             </p>
           </div>
-          <div className="form-control">
+          <div className="form-control lg:mb-0 md:mb-5 mb-5">
             <button className="btn bg-black text-white w-full md:w-auto border-none hover:bg-yellow">
               Send Inquiry
             </button>
