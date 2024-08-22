@@ -1,5 +1,5 @@
 import HeadingTitle from "@/components/common/title/headingTitle";
-
+import "./servicesInclude.css";
 export default function ServicesInclude() {
   return (
     <div className="max-w-screen-xl mx-auto">
@@ -67,6 +67,18 @@ export default function ServicesInclude() {
               API Integrations & Web consultancy
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center py-20">
+        <div className="texonBg">
+          <HeadingTitle
+            subHeading={
+              <div className="text-white md:text-2xl lg:text-2xl font-semibold">
+                Everybody wants to be Texon. <br /> But no one can’t be!{" "}
+              </div>
+            }
+          ></HeadingTitle>
         </div>
       </div>
     </div>
