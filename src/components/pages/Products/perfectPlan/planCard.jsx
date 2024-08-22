@@ -54,24 +54,26 @@ const plans = [
 
 export default function PlanCard() {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="max-w-screen-xl mx-auto px-4 p-5 md:py-10 lg:py-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="border p-4 rounded-lg bg-gray-200 flex flex-col"
+            className="p-4 rounded-lg bg-[#F2F2F3] flex flex-col"
           >
-            <h1 className="text-xl font-bold mb-2 text-primry">{plan.title}</h1>
+            <h1 className="text-xl font-bold mb-4 text-primry">
+              {plan.title}
+            </h1>
             <p className="mb-4">{plan.description}</p>
             <ul className="mb-4 flex-grow">
               {plan.features.map((feature, i) => (
                 <li key={i} className="mb-2 flex items-center">
-                  <GoDotFill className="text-sm flex-shrink-0" />
+                  <GoDotFill className="text-xs flex-shrink-0" />
                   <span className="ml-3">{feature}</span>
                 </li>
               ))}
             </ul>
-            <button className="bg-primry mt-auto w-full text-white py-2 px-4 rounded">
+            <button className="bg-primry hover:bg-blue mt-auto w-full text-white py-2 px-4 rounded">
               {plan.buttonText}
             </button>
           </div>
