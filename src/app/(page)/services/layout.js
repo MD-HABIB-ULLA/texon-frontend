@@ -1,7 +1,7 @@
 import Footer from "@/components/Layouts/Footer/Footer";
 import Navbar from "@/components/Layouts/NavBar/navbar";
+import ServicesBanner from "@/components/pages/Services/servicesBanner/servicesBanner";
 import { Inter, Raleway, Space_Grotesk } from "next/font/google";
-import ServicesBanner from "./servicesBanner";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--inter",

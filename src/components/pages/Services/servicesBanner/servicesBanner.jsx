@@ -1,5 +1,5 @@
 import Image from "next/image";
-import servicesBanner from "../../../../public/services/services-bannar.svg";
+import servicesBanner from "../../../../../public/services/services-bannar.svg";
 
 export default function ServicesBanner() {
   return (
