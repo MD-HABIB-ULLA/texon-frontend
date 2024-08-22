@@ -47,7 +47,7 @@ export default function PlanCard() {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="p-4 rounded-lg bg-[#F2F2F3] flex flex-col"
+            className="w-full p-4 rounded-lg bg-[#F2F2F3] flex flex-col"
           >
             <h1 className="text-xl font-bold mb-4 text-primry">{plan.title}</h1>
             <p className="mb-4">{plan.description}</p>
@@ -64,8 +64,11 @@ export default function PlanCard() {
             </button>
           </div>
         ))}
+      </div>
 
-        <SubscriptionPlan/>
+      {/*  */}
+      <div className="mt-5 w-[400px] mx-auto">
+        <SubscriptionPlan />
       </div>
     </div>
   );
