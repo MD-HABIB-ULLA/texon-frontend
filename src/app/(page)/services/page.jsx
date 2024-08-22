@@ -2,6 +2,7 @@ import CustomDevelopment from "@/components/pages/Services/customDevelopment/cus
 import ProjectCount from "@/components/pages/Services/projectCount/projectCount";
 import ServicesInclude from "@/components/pages/Services/servicesInclude/servicesInclude";
 import WebDevelopmentService from "@/components/pages/Services/webDevelopmentService/webDevelopmentService";
+import WebServices from "@/components/pages/Services/webServices/webServices";
 
 export default function Services() {
   return (
@@ -10,6 +11,7 @@ export default function Services() {
       <WebDevelopmentService />
       <ServicesInclude />
       <CustomDevelopment />
+      <WebServices />
     </>
   );
 }
