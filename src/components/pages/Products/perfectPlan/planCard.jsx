@@ -61,14 +61,12 @@ export default function PlanCard() {
             key={index}
             className="border p-4 rounded-lg bg-gray-200 flex flex-col"
           >
-            <h1 className="text-xl font-bold mb-2 text-primry">
-              {plan.title}
-            </h1>
+            <h1 className="text-xl font-bold mb-2 text-primry">{plan.title}</h1>
             <p className="mb-4">{plan.description}</p>
             <ul className="mb-4 flex-grow">
               {plan.features.map((feature, i) => (
                 <li key={i} className="mb-2 flex items-center">
-                  <GoDotFill className="text-primry" />
+                  <GoDotFill className="text-sm flex-shrink-0" />
                   <span className="ml-3">{feature}</span>
                 </li>
               ))}
