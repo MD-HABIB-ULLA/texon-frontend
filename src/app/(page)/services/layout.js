@@ -16,7 +16,7 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  title: "Home | Texon Limited",
+  title: "Services | Texon Limited",
 };
 
 export default function RootLayout({ children }) {
