@@ -1,92 +1,102 @@
 import Image from "next/image";
 import discussImage from "../../../../../public/images/product development.svg";
-export default function DiscussFrom() {
+
+export default function DiscussForm() {
   return (
     <div className="max-w-screen-xl mx-auto bg-primry my-20 rounded-md">
-      <div className="px-2 flex">
-        {/* text  */}
-        <div className="text-white p-5">
-          <p>Got a project in mind?</p>
-          <h1 className="text-4xl">Let’s Discuss in Details</h1>
-          <Image src={discussImage} alt="discussImage" />
+      <div className="px-4 md:px-8 flex flex-col md:flex-row">
+        {/* Text */}
+        <div className="text-white p-5 md:w-1/2">
+          <p className="text-lg mb-2 font-medium">Got a project in mind?</p>
+          <h1 className="text-3xl md:text-4xl mb-4 font-semibold">Let’s Discuss in Detail</h1>
+          <Image
+            src={discussImage}
+            alt="Discuss project image"
+            className="w-full"
+          />
         </div>
 
-        {/* from  */}
-        <form className="card-body">
-          <div className="form-control">
+        {/* Form */}
+        <form className="card-body md:w-1/2 p-4">
+          <div className="form-control mb-4">
             <label className="label">
               <span className="label-text text-white">Full Name</span>
             </label>
             <input
               type="text"
               placeholder="Your Name Here"
-              className="input input-bordered"
+              className="input input-bordered w-full"
               required
             />
           </div>
-          <div className="flex justify-between">
-            <div className="form-control">
+          <div className="flex flex-col md:flex-row gap-4 mb-4">
+            <div className="form-control flex-1">
               <label className="label">
-                <span className="label-text">Company Name</span>
+                <span className="label-text text-white">Company Name</span>
               </label>
               <input
                 type="text"
-                placeholder="Ex. Texon ltd"
-                className="input input-bordered"
+                placeholder="Ex. Texon Ltd"
+                className="input input-bordered w-full"
                 required
               />
             </div>
-            <div className="form-control">
+            <div className="form-control flex-1">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text text-white">Email</span>
               </label>
               <input
                 type="email"
                 placeholder="you@example.com"
-                className="input input-bordered"
+                className="input input-bordered w-full"
                 required
               />
             </div>
           </div>
-          <div className="flex justify-between">
-            <div className="form-control">
+          <div className="flex flex-col md:flex-row gap-4 mb-4">
+            <div className="form-control flex-1">
               <label className="label">
-                <span className="label-text">Service required*</span>
-              </label>
-              <input
-                type="password"
-                placeholder="password"
-                className="input input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Project budget*</span>
+                <span className="label-text text-white">Service Required*</span>
               </label>
               <input
                 type="text"
                 placeholder="Select Your Service"
-                className="input input-bordered"
+                className="input input-bordered w-full"
+                required
+              />
+            </div>
+            <div className="form-control flex-1">
+              <label className="label">
+                <span className="label-text text-white">Project Budget*</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter Your Budget"
+                className="input input-bordered w-full"
                 required
               />
             </div>
           </div>
-          <div>
+          <div className="form-control mb-4">
             <label className="label">
-              <span className="label-text">Project details*</span>
+              <span className="label-text text-white">Project Details*</span>
             </label>
             <textarea
               className="textarea textarea-bordered w-full"
               placeholder="Tell us more about your idea"
+              required
             ></textarea>
           </div>
-          <div className="flex">
-            <input type="checkbox" defaultChecked className="checkbox" />
-            <p>I agree to the terms of Service and Privacy Policy.</p>
+          <div className="flex items-center mb-4">
+            <input type="checkbox" defaultChecked className="checkbox mr-2 rounded-none text-white bg-white" />
+            <p className="text-white">
+              I agree to the Terms of Service and Privacy Policy.
+            </p>
           </div>
-          <div className="form-control mt-6">
-            <button className="btn bg-black text-white">Send inquiry</button>
+          <div className="form-control">
+            <button className="btn bg-black text-white w-full md:w-auto border-none hover:bg-yellow">
+              Send Inquiry
+            </button>
           </div>
         </form>
       </div>
