@@ -1,4 +1,5 @@
 import CustomDevelopment from "@/components/pages/Services/customDevelopment/customDevelopment";
+import DiscussFrom from "@/components/pages/Services/discussFrom/discussFrom";
 import ProjectCount from "@/components/pages/Services/projectCount/projectCount";
 import ServicesInclude from "@/components/pages/Services/servicesInclude/servicesInclude";
 import WebDevelopmentService from "@/components/pages/Services/webDevelopmentService/webDevelopmentService";
@@ -12,6 +13,7 @@ export default function Services() {
       <ServicesInclude />
       <CustomDevelopment />
       <WebServices />
+      <DiscussFrom />
     </>
   );
 }
