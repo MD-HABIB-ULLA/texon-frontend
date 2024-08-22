@@ -67,7 +67,7 @@ export default function PlanCard() {
       </div>
 
       {/*  */}
-      <div className="mt-5 w-[400px] mx-auto">
+      <div className="mt-5 w-full max-w-[400px] sm:w-[80%] md:w-[70%] lg:w-[50%] xl:w-[400px] mx-auto">
         <SubscriptionPlan />
       </div>
     </div>
