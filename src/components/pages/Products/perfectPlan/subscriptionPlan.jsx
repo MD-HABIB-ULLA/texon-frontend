@@ -2,7 +2,7 @@ import { GoDotFill } from "react-icons/go";
 
 const subscriptionplans = [
   {
-    title: "Subscription",
+    title: "Subscription:",
     description:
       "You can use our solution with full features and unlimited products. You pay a monthly subscription fee and get access to all the updates and new features.",
     features: [
@@ -19,8 +19,8 @@ export default function SubscriptionPlan() {
   return (
     <div>
       {subscriptionplans.map((subscriptionplan, index) => (
-        <div key={index} className="p-4 rounded-lg bg-[#F2F2F3] flex flex-col">
-          <h1 className="text-xl font-bold mb-4 text-primry">
+        <div key={index} className="p-4 rounded-lg bg-primry text-white flex flex-col">
+          <h1 className="text-xl font-bold mb-4">
             {subscriptionplan.title}
           </h1>
           <p className="mb-4">{subscriptionplan.description}</p>
@@ -32,7 +32,7 @@ export default function SubscriptionPlan() {
               </li>
             ))}
           </ul>
-          <button className="bg-primry hover:bg-blue mt-auto w-full text-white py-2 px-4 rounded">
+          <button className="hover:bg-blue hover:text-white font-medium mt-auto w-full bg-white text-blue py-2 px-4 rounded">
             {subscriptionplan.buttonText}
           </button>
         </div>

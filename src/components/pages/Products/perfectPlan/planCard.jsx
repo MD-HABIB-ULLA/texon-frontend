@@ -3,7 +3,7 @@ import SubscriptionPlan from "./subscriptionPlan";
 
 const plans = [
   {
-    title: "Freemium",
+    title: "Freemium:",
     description:
       "This is the ideal option for you if you want to test our solution for free with limited features and products. You can also switch to premium anytime if you need more features and products.",
     features: [
@@ -15,7 +15,7 @@ const plans = [
     buttonText: "Start Your Project",
   },
   {
-    title: "Premium",
+    title: "Premium:",
     description:
       "This is the best option for you if you want to use our solution with full features and unlimited products. You pay a monthly fee based on your sales volume, which is lower than other platforms.",
     features: [
@@ -27,7 +27,7 @@ const plans = [
     buttonText: "Start Your Project",
   },
   {
-    title: "One-time Buy",
+    title: "One-time Buy:",
     description:
       "This is the ideal option for you if you want to own our solution with full features and unlimited products. You pay a one-time fee and have the solution forever. You don’t have to worry about monthly payments or transaction fees.",
     features: [
@@ -59,7 +59,7 @@ export default function PlanCard() {
                 </li>
               ))}
             </ul>
-            <button className="bg-primry hover:bg-blue mt-auto w-full text-white py-2 px-4 rounded">
+            <button className="bg-primry hover:bg-blue mt-auto w-full font-medium text-white py-2 px-4 rounded">
               {plan.buttonText}
             </button>
           </div>
@@ -67,7 +67,7 @@ export default function PlanCard() {
       </div>
 
       {/*  */}
-      <div className="mt-5 w-full max-w-[400px] sm:w-[80%] md:w-[70%] lg:w-[50%] xl:w-[400px] mx-auto">
+      <div className="mt-5 w-full max-w-[400px] sm:w-[80%] md:w-[70%] lg:w-[50%] xl:w-[400px] lg:mx-auto">
         <SubscriptionPlan />
       </div>
     </div>
