@@ -1,7 +1,9 @@
+import ProjectCount from "@/components/pages/Services/projectCount/projectCount";
+
 export default function Services() {
   return (
-    <div>
-      <h1>This is services</h1>
-    </div>
+    <>
+      <ProjectCount />
+    </>
   );
 }
