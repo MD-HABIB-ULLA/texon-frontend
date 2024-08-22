@@ -8,7 +8,9 @@ export default function DiscussForm() {
         {/* Text */}
         <div className="text-white p-5 md:w-1/2">
           <p className="text-lg mb-2 font-medium">Got a project in mind?</p>
-          <h1 className="text-3xl md:text-4xl mb-4 font-semibold">Let’s Discuss in Detail</h1>
+          <h1 className="text-3xl md:text-4xl mb-4 font-semibold">
+            Let’s Discuss in Detail
+          </h1>
           <Image
             src={discussImage}
             alt="Discuss project image"
@@ -17,7 +19,7 @@ export default function DiscussForm() {
         </div>
 
         {/* Form */}
-        <form className="card-body md:w-1/2 p-4">
+        <form className="card-body md:w-1/2 p-4 lg:mt-10">
           <div className="form-control mb-4">
             <label className="label">
               <span className="label-text text-white">Full Name</span>
@@ -58,23 +60,29 @@ export default function DiscussForm() {
               <label className="label">
                 <span className="label-text text-white">Service Required*</span>
               </label>
-              <input
-                type="text"
-                placeholder="Select Your Service"
-                className="input input-bordered w-full"
-                required
-              />
+              <select className="select select-bordered w-full">
+                <option disabled value="">
+                  Select Your Service
+                </option>
+                <option value="employee">Employee</option>
+                <option value="hr">HR</option>
+                <option value="client">Client</option>
+                <option value="admin">Admin</option>
+              </select>
             </div>
             <div className="form-control flex-1">
               <label className="label">
                 <span className="label-text text-white">Project Budget*</span>
               </label>
-              <input
-                type="text"
-                placeholder="Enter Your Budget"
-                className="input input-bordered w-full"
-                required
-              />
+              <select className="select select-bordered w-full">
+                <option disabled value="">
+                  Select Your Range
+                </option>
+                <option value="50000">50,000</option>
+                <option value="70000">70,000</option>
+                <option value="80000">80,000</option>
+                <option value="90000">90,000</option>
+              </select>
             </div>
           </div>
           <div className="form-control mb-4">
@@ -88,7 +96,11 @@ export default function DiscussForm() {
             ></textarea>
           </div>
           <div className="flex items-center mb-4">
-            <input type="checkbox" defaultChecked className="checkbox mr-2 rounded-none text-white bg-white" />
+            <input
+              type="checkbox"
+              defaultChecked
+              className="checkbox mr-2 rounded-none text-white bg-white"
+            />
             <p className="text-white">
               I agree to the Terms of Service and Privacy Policy.
             </p>
