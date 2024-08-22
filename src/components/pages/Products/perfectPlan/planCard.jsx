@@ -1,4 +1,5 @@
 import { GoDotFill } from "react-icons/go";
+import SubscriptionPlan from "./subscriptionPlan";
 
 const plans = [
   {
@@ -37,33 +38,18 @@ const plans = [
     ],
     buttonText: "Start Your Project",
   },
-  {
-    title: "Subscription",
-    description:
-      "You can use our solution with full features and unlimited products. You pay a monthly subscription fee and get access to all the updates and new features.",
-    features: [
-      "Free installation or 3 months free trial",
-      "Unlimited products",
-      "Customizable design and features",
-      "No transaction fee",
-      "Pay a low monthly subscription fee",
-    ],
-    buttonText: "Start Your Project",
-  },
 ];
 
 export default function PlanCard() {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 p-5 md:py-10 lg:py-20">
+    <div className="max-w-screen-xl mx-auto px-2 md:py-10 lg:py-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {plans.map((plan, index) => (
           <div
             key={index}
             className="p-4 rounded-lg bg-[#F2F2F3] flex flex-col"
           >
-            <h1 className="text-xl font-bold mb-4 text-primry">
-              {plan.title}
-            </h1>
+            <h1 className="text-xl font-bold mb-4 text-primry">{plan.title}</h1>
             <p className="mb-4">{plan.description}</p>
             <ul className="mb-4 flex-grow">
               {plan.features.map((feature, i) => (
@@ -78,6 +64,8 @@ export default function PlanCard() {
             </button>
           </div>
         ))}
+
+        <SubscriptionPlan/>
       </div>
     </div>
   );
