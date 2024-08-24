@@ -1,8 +1,8 @@
 import HeadingTitle from "@/components/common/title/headingTitle";
 import Image from "next/image";
 import development_team_1 from "../../../../../public/about/development_team_1.svg";
-import  development_team_2 from "../../../../../public/about/development_team_2.svg";
-import  development_team_3 from "../../../../../public/about/development_team_3.svg";
+import development_team_2 from "../../../../../public/about/development_team_2.svg";
+import development_team_3 from "../../../../../public/about/development_team_3.svg";
 
 export default function DevelopmentTeam() {
   return (
@@ -15,115 +15,132 @@ export default function DevelopmentTeam() {
           }
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 my-10">
+          {/* Team Member 1 */}
           <div className="flex justify-center">
             <div>
               <Image src={development_team_1} alt="Development Team Member 1" />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
                   Fabien Pinckaers
                 </h1>
                 <p>Product Designer</p>
               </div>
             </div>
           </div>
+
+          {/* Team Member 2 */}
           <div className="flex justify-center">
             <div>
               <Image
-                className="mt-10"
+                className="md:mt-10"
                 src={development_team_2}
-                alt="Development Team Member 1"
+                alt="Development Team Member 2"
               />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
-                  Fabien Pinckaers
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+                  John Doe
                 </h1>
-                <p>Product Designer</p>
+                <p>Frontend Developer</p>
               </div>
             </div>
           </div>
+
+          {/* Team Member 3 */}
           <div className="flex justify-center">
             <div>
-              <Image src={development_team_3} alt="Development Team Member 1" />
+              <Image src={development_team_3} alt="Development Team Member 3" />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
-                  Fabien Pinckaers
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+                  Jane Smith
                 </h1>
-                <p>Product Designer</p>
+                <p>Backend Developer</p>
               </div>
             </div>
           </div>
+
+          {/* Team Member 4 */}
           <div className="flex justify-center">
             <div>
-              <Image src={development_team_1} alt="Development Team Member 1" />
+              <Image src={development_team_1} alt="Development Team Member 4" />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
-                  Fabien Pinckaers
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+                  Michael Johnson
                 </h1>
-                <p>Product Designer</p>
+                <p>UI/UX Designer</p>
               </div>
             </div>
           </div>
+
+          {/* Team Member 5 */}
           <div className="flex justify-center">
             <div>
               <Image
-                className="mt-10"
+                className="md:mt-10"
                 src={development_team_2}
-                alt="Development Team Member 1"
+                alt="Development Team Member 5"
               />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
-                  Fabien Pinckaers
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+                  Emily Davis
                 </h1>
-                <p>Product Designer</p>
+                <p>Project Manager</p>
               </div>
             </div>
           </div>
+
+          {/* Team Member 6 */}
           <div className="flex justify-center">
             <div>
-              <Image src={development_team_3} alt="Development Team Member 1" />
+              <Image src={development_team_3} alt="Development Team Member 6" />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
-                  Fabien Pinckaers
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+                  Daniel Brown
                 </h1>
-                <p>Product Designer</p>
+                <p>DevOps Engineer</p>
               </div>
             </div>
           </div>
+
+          {/* Team Member 7 */}
           <div className="flex justify-center">
             <div>
-              <Image src={development_team_1} alt="Development Team Member 1" />
+              <Image src={development_team_1} alt="Development Team Member 7" />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
-                  Fabien Pinckaers
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+                  Jessica Wilson
                 </h1>
-                <p>Product Designer</p>
+                <p>QA Engineer</p>
               </div>
             </div>
           </div>
+
+          {/* Team Member 8 */}
           <div className="flex justify-center">
             <div>
               <Image
-                className="mt-10"
+                className="md:mt-10"
                 src={development_team_2}
-                alt="Development Team Member 1"
+                alt="Development Team Member 8"
               />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
-                  Fabien Pinckaers
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+                  Christopher Lee
                 </h1>
-                <p>Product Designer</p>
+                <p>Full Stack Developer</p>
               </div>
             </div>
           </div>
+
+          {/* Team Member 9 */}
           <div className="flex justify-center">
             <div>
-              <Image src={development_team_3} alt="Development Team Member 1" />
+              <Image src={development_team_3} alt="Development Team Member 9" />
               <div className="mt-4">
-                <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
-                  Fabien Pinckaers
+                <h1 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+                  Olivia Harris
                 </h1>
-                <p>Product Designer</p>
+                <p>Data Scientist</p>
               </div>
             </div>
           </div>
