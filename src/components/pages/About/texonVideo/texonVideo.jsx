@@ -17,25 +17,25 @@ export default function TexonVideo() {
         <div className="flex justify-center">
           {isPlaying ? (
             <iframe
-              width="100%" // Set width to 100% for responsiveness
-              height="500" // Set the height to match the image
+              width="100%"
+              height="500"
               src="https://www.youtube.com/embed/m050iy5_2ng?si=Ddwss6WfSmIcZA1i&autoplay=1"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="max-w-screen-xl" // Add a max-width to match the container
+              className="max-w-screen-xl"
             ></iframe>
           ) : (
             <div
-              className="relative cursor-pointer max-w-screen-xl h-[500px]"
+              className="relative cursor-pointer max-w-screen-xl h-[500px] flex items-center justify-center"
               onClick={handleThumbnailClick}
             >
               <Image
                 src={texon_logo}
                 alt="Texon Logo"
-                className="w-full h-auto"
+                className="w-full h-auto object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <FaPlayCircle className="w-24 h-24 text-white" />
