@@ -8,7 +8,7 @@ export default function AboutAgency() {
   return (
     <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:py-20">
       <div className="px-4">
-        <div className="flex flex-col lg:flex-row items-center lg:space-x-8">
+        <div className="flex flex-col lg:flex-row lg:space-x-8">
           <div className="space-y-7 lg:w-1/2">
             <h1 className="font-medium text-xl border-b-2 w-fit">About Us</h1>
             <h3 className="text-4xl md:text-5xl font-semibold">
