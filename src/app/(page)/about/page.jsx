@@ -1,5 +1,6 @@
 import AboutAgency from "@/components/pages/About/aboutAgency/aboutAgency";
 import AboutService from "@/components/pages/About/aboutService/aboutService";
+import DevelopmentTeam from "@/components/pages/About/developmentTeam/developmentTeam";
 import ExecutiveTeam from "@/components/pages/About/executiveTeam/executiveTeam";
 import Mission from "@/components/pages/About/Mission/Mission";
 import OurMember from "@/components/pages/About/ourMember/ourMember";
@@ -15,6 +16,7 @@ export default function About() {
       <ProjectCount />
       <TexonVideo />
       <ExecutiveTeam />
+      <DevelopmentTeam />
       <OurMember />
     </div>
   );
