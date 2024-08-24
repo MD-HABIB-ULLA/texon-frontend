@@ -17,8 +17,8 @@ export default function Home() {
     <main>
       <OurCompany />
       <NextLevel />
-      <CoreServices />
       <OurPreviousWork />
+      <CoreServices />
       <SoftwareProducts />
       <DevelopmentServices />
       <AboutTexon />
