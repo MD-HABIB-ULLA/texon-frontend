@@ -1,7 +1,9 @@
+import AboutService from "@/components/pages/About/aboutService/aboutService";
+
 export default function About() {
   return (
     <div>
-      <h1>This is About</h1>
+      <AboutService />
     </div>
   );
 }
