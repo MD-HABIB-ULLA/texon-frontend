@@ -1,10 +1,8 @@
 import HeadingTitle from "@/components/common/title/headingTitle";
 import Image from "next/image";
 import development_team_1 from "../../../../../public/about/development_team_1.svg";
-import {
-  default as development_team_2,
-  default as development_team_3,
-} from "../../../../../public/about/development_team_3.svg";
+import  development_team_2 from "../../../../../public/about/development_team_2.svg";
+import  development_team_3 from "../../../../../public/about/development_team_3.svg";
 
 export default function DevelopmentTeam() {
   return (
