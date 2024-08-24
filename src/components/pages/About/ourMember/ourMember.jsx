@@ -13,7 +13,7 @@ const teamMembers = [
 
 export default function OurMember() {
   return (
-    <div className="bg-[#252432] py-20">
+    <div className="bg-[#252432] py-20 mb-20">
       <div className="max-w-screen-2xl mx-auto">
         <div className="md:flex md:justify-between lg:flex lg:justify-between items-center gap-5">
           {teamMembers.map((member, index) => (
