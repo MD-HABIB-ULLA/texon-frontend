@@ -7,12 +7,13 @@ export default function AboutBannar() {
       <div className="px-2">
         <div className="flex flex-col lg:flex-row">
           <div className="space-y-7 lg:w-1/2 lg:pr-8">
-            <h1 className="font-medium text-xl">About US</h1>
+            <h1 className="font-medium text-xl">About Us</h1>
             <h3 className="text-4xl md:text-5xl lg:text-5xl font-semibold">
-              Helping <br /> Enterprises to <br /> bring their <br /> Businesses into <br /> next level
+              Helping <br /> Enterprises to bring  <br /> their Businesses
+              into the Next Level
             </h3>
           </div>
-          <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+          <div className="w-full lg:w-2/5 mt-8 lg:mt-0">
             <Image src={about_bg} alt="about_bg" layout="responsive" />
           </div>
         </div>
