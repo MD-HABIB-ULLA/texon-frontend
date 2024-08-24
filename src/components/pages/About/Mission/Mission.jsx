@@ -5,7 +5,7 @@ import commonsense from "../../../../../public/about/zohoaboutus-commonsense 1.s
 
 export default function Mission() {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-10">
+    <div className="max-w-screen-xl mx-auto px-4 py-10 md:pb-10 lg:pb-20">
       <div className="bg-primry text-white p-2 md:p-5 lg:p-10 rounded-lg shadow-lg space-y-16">
         <div className="flex flex-col md:flex-row md:space-x-8">
           <div className="md:w-1/2 space-y-4">
