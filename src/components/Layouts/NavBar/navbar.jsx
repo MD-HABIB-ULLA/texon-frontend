@@ -1,237 +1,23 @@
-import Image from "next/image";
-import Link from "next/link";
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
-import erp from "../../../../public/icon/erp.svg";
-import stock from "../../../../public/icon/quick-stock.svg";
-import edu from "../../../../public/icon/tech.svg";
-import texonmart from "../../../../public/icon/texon-mart.svg";
-import pos from "../../../../public/icon/vector.svg";
-import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
+"use client";
+import { useState } from "react";
 
-export default function Navbar() {
-  const navLinks = (
-    <>
-      <li className="group relative">
-        <Link href={"/services"} className="flex items-center">
-          Services
-          <MdKeyboardArrowDown className="ml-1 group-hover:hidden" />
-          <MdKeyboardArrowUp className="ml-1 hidden group-hover:inline-block" />
-        </Link>
-        <ul className="absolute hidden group-hover:block text-white mt-9 bg-primry rounded-lg lg:group-hover:block md:group-hover:block sm:hidden z-10 lg:w-96 md:w-96  w-60">
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={stock} alt="stock"></Image>
-                <div className="ms-5">
-                  <h2 className="font-semibold">Web Development</h2>
-                  <p className="hidden md:block lg:block">
-                    Inventory Management Software
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={texonmart} alt="stock"></Image>
-                <div className="ms-6">
-                  <h2 className="font-semibold">Mobile App Develop</h2>
-                  <p className="hidden lg:block">
-                    Multivendor ecommerce website
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={erp} alt="stock"></Image>
-                <div className="ms-7">
-                  <h2 className="font-semibold">AI & Automation</h2>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={pos} className="ms-2" alt="stock"></Image>
-                <div className="ms-9">
-                  <h2 className="font-semibold">AWS Services</h2>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={edu} className="ms-1" alt="stock"></Image>
-                <div className="ms-8">
-                  <h2 className="font-bold">IT Infrastructure</h2>
-                  <p className="hidden lg:block">
-                    Education & accounting Software
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-        </ul>
-      </li>
-      <li className="group relative">
-        <Link href={"/products"} className="flex items-center">
-          Products
-          <MdKeyboardArrowDown className="ml-1 group-hover:hidden" />
-          <MdKeyboardArrowUp className="ml-1 hidden group-hover:inline-block" />
-        </Link>
-        <ul className="absolute hidden group-hover:block text-white mt-9 bg-primry rounded-lg lg:group-hover:block md:group-hover:block sm:hidden z-10 lg:w-96 md:w-96  w-60">
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={stock} alt="stock"></Image>
-                <div className="ms-5">
-                  <h2 className="font-semibold">QuickStock</h2>
-                  <p className="hidden md:block lg:block">
-                    Inventory Management Software
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={texonmart} alt="stock"></Image>
-                <div className="ms-6">
-                  <h2 className="font-semibold">TexonMart</h2>
-                  <p className="hidden lg:block">
-                    Multivendor ecommerce website
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={erp} alt="stock"></Image>
-                <div className="ms-7">
-                  <h2 className="font-semibold">ERP Software</h2>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={pos} className="ms-2" alt="stock"></Image>
-                <div className="ms-9">
-                  <h2 className="font-semibold">POS Software</h2>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={edu} className="ms-1" alt="stock"></Image>
-                <div className="ms-8">
-                  <h2 className="font-bold">EduTech & Accounting</h2>
-                  <p className="hidden lg:block">
-                    Education & accounting Software
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-        </ul>
-      </li>
-      <li className="group relative">
-        <Link href={"/casestudies"} className="flex items-center">
-          Case Studies
-          <MdKeyboardArrowDown className="ml-1 group-hover:hidden" />
-          <MdKeyboardArrowUp className="ml-1 hidden group-hover:inline-block" />
-        </Link>
-        <ul className="absolute hidden group-hover:block text-white mt-9 bg-primry rounded-lg lg:group-hover:block md:group-hover:block sm:hidden z-10 lg:w-96 md:w-96  w-60">
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={stock} alt="stock"></Image>
-                <div className="ms-5">
-                  <h2 className="font-semibold">QuickStock</h2>
-                  <p className="hidden md:block lg:block">
-                    Inventory Management Software
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={texonmart} alt="stock"></Image>
-                <div className="ms-6">
-                  <h2 className="font-semibold">TexonMart</h2>
-                  <p className="hidden lg:block">
-                    Multivendor ecommerce website
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={erp} alt="stock"></Image>
-                <div className="ms-7">
-                  <h2 className="font-semibold">ERP Software</h2>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={pos} className="ms-2" alt="stock"></Image>
-                <div className="ms-9">
-                  <h2 className="font-semibold">POS Software</h2>
-                </div>
-              </div>
-            </Link>
-          </li>
-          <li className="p-2">
-            <Link href={"/products/software"}>
-              <div className="flex items-center">
-                <Image src={edu} className="ms-1" alt="stock"></Image>
-                <div className="ms-8">
-                  <h2 className="font-bold">EduTech & Accounting</h2>
-                  <p className="hidden lg:block">
-                    Education & accounting Software
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <Link href={"/about"}>About</Link>
-      </li>
-      <li>
-        <Link href={"/contact"}>Contact</Link>
-      </li>
-    </>
-  );
+const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isItem1SubmenuOpen, setIsItem1SubmenuOpen] = useState(false);
+
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+  const toggleItem1Submenu = () => setIsItem1SubmenuOpen(!isItem1SubmenuOpen);
 
   return (
-    <div
-      className="navbar max-w-screen-xl mx-auto
-    "
-    >
-      <div className="navbar-start lg:flex lg:items-center">
-        <div className="dropdown lg:hidden">
-          <div tabIndex={0} role="button">
+    <div className="navbar bg-base-100">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost lg:hidden"
+            onClick={toggleDropdown}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -247,32 +33,99 @@ export default function Navbar() {
               />
             </svg>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-primry text-white rounded-box z-[1] mt-3 w-52 p-2"
-          >
-            {navLinks}
-          </ul>
+          {isDropdownOpen && (
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li
+                onMouseEnter={() => setIsItem1SubmenuOpen(true)}
+                onMouseLeave={() => setIsItem1SubmenuOpen(false)}
+              >
+                <div className="flex justify-between items-center">
+                  <a>Item 1</a>
+                  <button onClick={toggleItem1Submenu}>
+                    {isItem1SubmenuOpen ? (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    )}
+                  </button>
+                </div>
+                {isItem1SubmenuOpen && (
+                  <ul className="p-2">
+                    <li>
+                      <a>Submenu 1</a>
+                    </li>
+                    <li>
+                      <a>Submenu 2</a>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li>
+                <a>Item 2</a>
+              </li>
+              <li>
+                <a>Item 3</a>
+              </li>
+            </ul>
+          )}
         </div>
-        <Link href={"/"} className="hidden lg:block">
-          <Image className="w-32 sm:w-40 lg:w-52" src={logo} alt="logo" />
-        </Link>
+        <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
+
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
-          {navLinks}
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <a>Item 1</a>
+          </li>
+          <li>
+            <details>
+              <summary>Parent</summary>
+              <ul className="p-2">
+                <li>
+                  <a>Submenu 1</a>
+                </li>
+                <li>
+                  <a>Submenu 2</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a>Item 3</a>
+          </li>
         </ul>
       </div>
+
       <div className="navbar-end">
-        <a className="hidden lg:block font-semibold py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer">
-          Free Consultancy
-        </a>
-        <div className="navbar-end lg:hidden">
-          <Link href={"/"}>
-            <Image className="w-32 sm:w-40 lg:w-52" src={logo} alt="logo" />
-          </Link>
-        </div>
+        <a className="btn">Button</a>
       </div>
     </div>
   );
-}
+};
+
+export default Navbar;
