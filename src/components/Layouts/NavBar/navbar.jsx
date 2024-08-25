@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleItem1Submenu = () => setIsItem1SubmenuOpen(!isItem1SubmenuOpen);
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -36,7 +36,7 @@ const Navbar = () => {
           {isDropdownOpen && (
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-white z-[1] mt-3 w-screen p-2 shadow"
             >
               <li
                 onMouseEnter={() => setIsItem1SubmenuOpen(true)}
