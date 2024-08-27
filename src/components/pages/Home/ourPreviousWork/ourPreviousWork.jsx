@@ -17,7 +17,7 @@ export default function OurPreviousWork() {
 
         {/* slider section  */}
         <div>
-          <h1>logo</h1>
+          <h1>upcommig</h1>
         </div>
       </div>
     </div>
