@@ -19,7 +19,7 @@ export default function Bannar() {
           learning, with 100% project delivery success.
         </p>
         <div>
-          <button className="py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
+          <button className="py-2 px-2 md:px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
             Get a Quotation
           </button>
           <button className="py-2 px-5 rounded-lg raleway bg-[#252432] hover:bg-blue text-white cursor-pointer ms-5 font-medium">
