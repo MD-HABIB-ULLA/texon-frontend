@@ -11,14 +11,14 @@ import shukhimart from "../../../../../public/company/shukhimart.svg";
 export default function FeaturedClients() {
   return (
     <div className="bg-back">
-      <div className="max-w-screen-xl mx-auto px-4 py-20">
+      <div className="max-w-screen-xl mx-auto px-4 pb-10 md:pb-20 pt-10 mt-10">
         <HeadingTitle
           heading={"Featured Clients"}
           subHeading={
             "Our reputation branches across different industries and far beyond the borders"
           }
         />
-        <div className="mt-10">
+        <div className="mt-5 md:mt-10">
           <Marquee pauseOnHover speed={60} gradient={false}>
             <div className="flex items-center px-3">
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
