@@ -12,7 +12,7 @@ export default function CoreServices() {
     <div className="max-w-screen-xl mx-auto py-10">
       <div className="px-2">
         <h1 className="text-center text-xl pb-5">What We do</h1>
-        <div className="pb-28">
+        <div className="md:pb-10 lg:pb-5">
           <HeadingTitle
             heading={<>Core Services and Competencies</>}
             subHeading={
@@ -27,7 +27,7 @@ export default function CoreServices() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* 1 Card */}
-          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group">
+          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-10 lg:mt-20 md:mt-0 ">
             <div className="flex flex-col items-center p-5">
               <Image
                 src={web}
@@ -55,7 +55,7 @@ export default function CoreServices() {
             </div>
           </div>
           {/* 2 Card */}
-          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-20 md:mt-0 lg:mt-0">
+          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-10 lg:mt-20 md:mt-0 ">
             <div className="flex flex-col items-center p-5">
               <Image
                 src={mobile}
@@ -83,7 +83,7 @@ export default function CoreServices() {
             </div>
           </div>
           {/* 3 Card */}
-          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-20 md:mt-0 lg:mt-0">
+          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-10 lg:mt-20 md:mt-0">
             <div className="flex flex-col items-center p-5">
               <Image
                 src={business}
@@ -111,7 +111,7 @@ export default function CoreServices() {
             </div>
           </div>
           {/* 4 Card */}
-          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-10">
+          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group  lg:mt-10">
             <div className="flex flex-col items-center p-5">
               <Image
                 src={automation}
@@ -139,7 +139,7 @@ export default function CoreServices() {
             </div>
           </div>
           {/* 5 Card */}
-          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-10">
+          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-5 lg:mt-10">
             <div className="flex flex-col items-center p-5">
               <Image
                 src={aws}
@@ -167,7 +167,7 @@ export default function CoreServices() {
             </div>
           </div>
           {/* 6 Card */}
-          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-10">
+          <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-5 lg:mt-10">
             <div className="flex flex-col items-center p-5">
               <Image
                 src={itinfrastructure}
