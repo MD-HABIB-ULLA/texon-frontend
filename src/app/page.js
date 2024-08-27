@@ -30,9 +30,9 @@ export default function Home() {
       <DynamicWebsite />
       <MobileApps />
       <Clients />
+      <DiscussDetails />
       <TechKnowledge />
       <Questions />
-      <DiscussDetails />
     </main>
   );
 }
