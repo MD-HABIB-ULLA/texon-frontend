@@ -2,6 +2,7 @@ import Clients from "@/components/pages/Home/clients/clients";
 import CoreServices from "@/components/pages/Home/coreServices/coreServices";
 import FeaturedClients from "@/components/pages/Home/featuredClients/featuredClients";
 import OurPreviousWork from "@/components/pages/Home/ourPreviousWork/ourPreviousWork";
+import Technology from "@/components/pages/Home/Technology/Technology";
 import TexonGlance from "@/components/pages/Home/texonGlance/texonGlance";
 import AboutTexon from "../components/pages/Home/aboutTexon/aboutTexon";
 import DevelopmentServices from "../components/pages/Home/developmentServices/developmentServices";
@@ -24,6 +25,7 @@ export default function Home() {
       <FeaturedClients />
       <SoftwareProducts />
       <DevelopmentServices />
+      <Technology />
       <AboutTexon />
       <DynamicWebsite />
       <MobileApps />

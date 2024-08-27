@@ -46,7 +46,7 @@ export default function FeaturedClients() {
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
                 <Image
                   src={alpha}
-                  alt="relax_bazar"
+                  alt="alpha"
                   layout="intrinsic"
                   width={70}
                   height={60}
@@ -57,7 +57,7 @@ export default function FeaturedClients() {
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
                 <Image
                   src={mawts}
-                  alt="relax_bazar"
+                  alt="mawts"
                   layout="intrinsic"
                   width={70}
                   height={60}
@@ -79,7 +79,7 @@ export default function FeaturedClients() {
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
                 <Image
                   src={hb_aviation}
-                  alt="relax_bazar"
+                  alt="hb_aviation"
                   layout="intrinsic"
                   width={100}
                   height={60}
@@ -90,7 +90,7 @@ export default function FeaturedClients() {
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
                 <Image
                   src={alpha}
-                  alt="relax_bazar"
+                  alt="alpha"
                   layout="intrinsic"
                   width={70}
                   height={60}
@@ -127,7 +127,7 @@ export default function FeaturedClients() {
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
                 <Image
                   src={alpha}
-                  alt="relax_bazar"
+                  alt="alpha"
                   layout="intrinsic"
                   width={70}
                   height={60}
@@ -138,7 +138,7 @@ export default function FeaturedClients() {
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
                 <Image
                   src={mawts}
-                  alt="relax_bazar"
+                  alt="mawts"
                   layout="intrinsic"
                   width={70}
                   height={60}
@@ -160,7 +160,7 @@ export default function FeaturedClients() {
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
                 <Image
                   src={hb_aviation}
-                  alt="relax_bazar"
+                  alt="hb_aviation"
                   layout="intrinsic"
                   width={100}
                   height={60}
@@ -171,7 +171,7 @@ export default function FeaturedClients() {
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
                 <Image
                   src={alpha}
-                  alt="relax_bazar"
+                  alt="alpha"
                   layout="intrinsic"
                   width={70}
                   height={60}
