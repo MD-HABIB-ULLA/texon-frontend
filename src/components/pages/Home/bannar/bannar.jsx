@@ -9,7 +9,7 @@ import trustpilot from "../../../../../public/company/trustpilot 1.svg";
 export default function Bannar() {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <div className="text-center mt-1 md:10 lg:mt-20 space-y-5 px-2">
+      <div className="text-center mt-5 md:mt-10 lg:mt-20 space-y-7 px-2">
         <h1 className="text-4xl md:text-5xl lg:text-5xl font-semibold text-black">
           Empowering <br /> Entrepreneurs <br /> Through Technology
         </h1>
@@ -26,10 +26,8 @@ export default function Bannar() {
             View Portfolio
           </button>
         </div>
-
-        {/*  */}
-        <div className="flex flex-col md:flex-row justify-between">
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-5 md:space-y-0 md:space-x-10 pt-5 md:pt-0 pb-5 md:pb-10 lg:pb-10">
+        <div className="flex flex-col md:flex-row justify-between pb-10">
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-5 md:space-y-0 md:space-x-10">
             <div className="text-center md:text-left pt-1">
               <Image src={google} alt="google" className="mx-auto md:mx-0" />
               <div className="flex items-center justify-center md:justify-start mt-2">
@@ -57,7 +55,11 @@ export default function Bannar() {
               </div>
             </div>
             <div className="text-center md:text-left">
-              <Image src={trustpilot} alt="trustpilot" className="mx-auto md:mx-0" />
+              <Image
+                src={trustpilot}
+                alt="trustpilot"
+                className="mx-auto md:mx-0"
+              />
               <div className="flex items-center justify-center md:justify-start mt-2">
                 <p className="font-bold text-xl">4.8</p>
                 <span className="text-yellow flex items-center ml-2">
@@ -69,11 +71,13 @@ export default function Bannar() {
                 </span>
               </div>
             </div>
-           
-            
           </div>
           <div className="mt-5 md:mt-0">
-            <Image src={whatsapp} alt="whatsapp" className="mx-auto md:mx-0 w-14" />
+            <Image
+              src={whatsapp}
+              alt="whatsapp"
+              className="mx-auto md:mx-0 w-14"
+            />
           </div>
         </div>
       </div>
