@@ -4,6 +4,7 @@ import FeaturedClients from "@/components/pages/Home/featuredClients/featuredCli
 import OurPreviousWork from "@/components/pages/Home/ourPreviousWork/ourPreviousWork";
 import Technology from "@/components/pages/Home/Technology/Technology";
 import TexonGlance from "@/components/pages/Home/texonGlance/texonGlance";
+import UsPartner from "@/components/pages/Home/usPartner/usPartner";
 import AboutTexon from "../components/pages/Home/aboutTexon/aboutTexon";
 import DevelopmentServices from "../components/pages/Home/developmentServices/developmentServices";
 import DiscussDetails from "../components/pages/Home/discussDetails/discussDetails";
@@ -33,6 +34,7 @@ export default function Home() {
       <DiscussDetails />
       <TechKnowledge />
       <Questions />
+      <UsPartner />
     </main>
   );
 }
