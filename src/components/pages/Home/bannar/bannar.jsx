@@ -3,12 +3,13 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import clutch from "../../../../../public/company/clutch-logo-2D745B01F0-seeklogo.com 1.svg";
 import google from "../../../../../public/company/Current-Google-logo-2015-2023-600x203 1.svg";
+import whatsapp from "../../../../../public/company/logos_whatsapp-icon.svg";
 import trustpilot from "../../../../../public/company/trustpilot 1.svg";
 
 export default function Bannar() {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <div className="text-center mt-5 md:10 lg:mt-16 space-y-5 px-2">
+      <div className="text-center mt-1 md:10 lg:mt-20 space-y-5 px-2">
         <h1 className="text-4xl md:text-5xl lg:text-5xl font-semibold text-black">
           Empowering <br /> Entrepreneurs <br /> Through Technology
         </h1>
@@ -25,42 +26,54 @@ export default function Bannar() {
             View Portfolio
           </button>
         </div>
-        <div className="flex items-center justify-center md:justify-start lg:justify-start pt-5 lg:mt-0 md:mt-0 pb-5 md:pb-10 lg:pb-20">
-          <div>
-            <Image src={google} alt="google"></Image>
-            <div className="flex items-center">
-              <p className="font-bold text-xl">4.8</p>
-              <span className="text-yellow flex items-center ms-2">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-              </span>
+
+        {/*  */}
+        <div className="flex flex-col md:flex-row justify-between">
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-5 md:space-y-0 md:space-x-10 pt-5 md:pt-0 pb-5 md:pb-10 lg:pb-10">
+            <div className="text-center md:text-left pt-1">
+              <Image src={google} alt="google" className="mx-auto md:mx-0" />
+              <div className="flex items-center justify-center md:justify-start mt-2">
+                <p className="font-bold text-xl">4.8</p>
+                <span className="text-yellow flex items-center ml-2">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                </span>
+              </div>
             </div>
+            <div className="text-center md:text-left pt-2">
+              <Image src={clutch} alt="clutch" className="mx-auto md:mx-0" />
+              <div className="flex items-center justify-center md:justify-start pt-3">
+                <p className="font-bold text-xl">4.8</p>
+                <span className="text-yellow flex items-center ml-2">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                </span>
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <Image src={trustpilot} alt="trustpilot" className="mx-auto md:mx-0" />
+              <div className="flex items-center justify-center md:justify-start mt-2">
+                <p className="font-bold text-xl">4.8</p>
+                <span className="text-yellow flex items-center ml-2">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                </span>
+              </div>
+            </div>
+           
+            
           </div>
-          <div className="ms-10">
-            <Image className="" src={clutch} alt="clutch"></Image>
-            <div className="flex items-center">
-              <p className="font-bold text-xl">4.8</p>
-              <span className="text-yellow flex items-center ms-2">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-              </span>
-            </div>
-          </div>
-          <div className="ms-10">
-            <Image src={trustpilot} alt="trustpilot"></Image>
-            <div className="flex items-center">
-              <p className="font-bold text-xl">4.8</p>
-              <span className="text-yellow flex items-center ms-2">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-              </span>
-            </div>
+          <div className="mt-5 md:mt-0">
+            <Image src={whatsapp} alt="whatsapp" className="mx-auto md:mx-0 w-14" />
           </div>
         </div>
       </div>
