@@ -7,7 +7,6 @@ import DevelopmentServices from "../components/pages/Home/developmentServices/de
 import DiscussDetails from "../components/pages/Home/discussDetails/discussDetails";
 import DynamicWebsite from "../components/pages/Home/dynamicWebsite/dynamicWebsite";
 import MobileApps from "../components/pages/Home/mobileApps/mobileApps";
-import NextLevel from "../components/pages/Home/nextLevel/nextLevel";
 import OurCompany from "../components/pages/Home/ourCompany/ourCompany";
 import Questions from "../components/pages/Home/questions/questions";
 import SoftwareProducts from "../components/pages/Home/softwareProducts/softwareProducts";
@@ -18,7 +17,7 @@ export default function Home() {
     <main>
       <OurCompany />
       <TexonGlance />
-      <NextLevel />
+      {/* <NextLevel /> */}
       <OurPreviousWork />
       <CoreServices />
       <SoftwareProducts />

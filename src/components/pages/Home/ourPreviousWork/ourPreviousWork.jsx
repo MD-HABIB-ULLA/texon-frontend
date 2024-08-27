@@ -1,9 +1,8 @@
-import OurPreviousWorkSlider from "./ourPreviousWorkSlider";
-
 export default function OurPreviousWork() {
   return (
-    <div className="max-w-screen-xl mx-auto py-10">
-      <div className="px-2">
+    <div className="bg-[#A8D0FE]">
+      <div className="max-w-screen-xl mx-auto py-20 my-20 px-2">
+        {/* text section  */}
         <div className="text-center">
           <p className="text-xl">Case Studies</p>
           <h1 className="text-3xl lg:text-4xl font-semibold lg:font-bold pt-3 pb-5">
@@ -15,8 +14,10 @@ export default function OurPreviousWork() {
             </button>
           </div>
         </div>
-        <div className="mt-20 hidden lg:block">
-          <OurPreviousWorkSlider />
+
+        {/* slider section  */}
+        <div>
+          <h1>logo</h1>
         </div>
       </div>
     </div>
