@@ -1,6 +1,7 @@
 import Clients from "@/components/pages/Home/clients/clients";
 import CoreServices from "@/components/pages/Home/coreServices/coreServices";
 import OurPreviousWork from "@/components/pages/Home/ourPreviousWork/ourPreviousWork";
+import TexonGlance from "@/components/pages/Home/texonGlance/texonGlance";
 import AboutTexon from "../components/pages/Home/aboutTexon/aboutTexon";
 import DevelopmentServices from "../components/pages/Home/developmentServices/developmentServices";
 import DiscussDetails from "../components/pages/Home/discussDetails/discussDetails";
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main>
       <OurCompany />
+      <TexonGlance />
       <NextLevel />
       <OurPreviousWork />
       <CoreServices />
