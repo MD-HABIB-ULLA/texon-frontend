@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineLocalPhone, MdOutlineMailOutline } from "react-icons/md";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Footer = () => {
@@ -130,20 +132,27 @@ const Footer = () => {
 
           <div className="text-balance">
             <h3 className="text-primry font-semibold mb-4">Contact</h3>
-            <address className="not-italic">
-              Begum Rokeya Sarani, <br /> East Shewrapara, Mirpur, <br /> Dhaka
-              1216
+            <address className="not-italic flex items-center">
+              <IoLocationOutline className="text-primry text-xl" />
+              <span className="ms-2">
+                Begum Rokeya Sarani, <br /> East Shewrapara, Mirpur, <br />{" "}
+                Dhaka 1216
+              </span>
             </address>
-            <p className="mt-4">
-              <a className="block hover:underline hover:cursor-pointer hover:underline-offset-4 hover:decoration-blue">
-                +88 01409 003646
-              </a>
-              <a className="block hover:underline hover:cursor-pointer hover:underline-offset-4 hover:decoration-blue">
-                +88 01751 763310
-              </a>
+            <p className="mt-4 flex items-center">
+              <MdOutlineLocalPhone className="text-xl text-blue" />
+              <span className="ms-2">
+                <a className="block hover:underline hover:cursor-pointer hover:underline-offset-4 hover:decoration-blue">
+                  +88 01409 003646
+                </a>
+                <a className="block hover:underline hover:cursor-pointer hover:underline-offset-4 hover:decoration-blue">
+                  +88 01751 763310
+                </a>
+              </span>
             </p>
-            <p className="mt-4 hover:underline hover:cursor-pointer hover:underline-offset-4 hover:decoration-blue">
-              <a>texonltd@gmail.com</a>
+            <p className="flex items-center mt-4 hover:underline hover:cursor-pointer hover:underline-offset-4 hover:decoration-blue">
+              <MdOutlineMailOutline className=" text-xl text-primry" />
+              <a className="ms-2">texonltd@gmail.com</a>
             </p>
           </div>
         </div>
