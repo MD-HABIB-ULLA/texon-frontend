@@ -6,7 +6,7 @@ import it_image_4 from "../../../../../public/about/it_image_4.svg";
 
 export default function AboutTexon() {
   return (
-    <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:py-20">
+    <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:pt-20">
       <div className="px-4">
         <div className="flex justify-between lg:space-x-8">
           <div className="space-y-7 lg:w-1/2 text-center lg:text-start">
