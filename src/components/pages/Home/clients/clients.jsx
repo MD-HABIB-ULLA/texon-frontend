@@ -1,4 +1,6 @@
+"use client";
 import HeadingTitle from "@/components/common/title/headingTitle";
+import ClientsSlide from "./clientsSlide";
 
 export default function Clients() {
   return (
@@ -10,7 +12,9 @@ export default function Clients() {
           </>
         }
       />
-      <h1>upcomig</h1>
+      <div>
+        <ClientsSlide />
+      </div>
     </div>
   );
 }
