@@ -108,17 +108,17 @@ const Navbar = () => {
             <details>
               <summary>Services</summary>
               <div
-                className="absolute left-1/2 transform -translate-x-1/2 bg-white mt-1 shadow-lg"
-                style={{ width: "1158px" }}
+                className="absolute left-0 bg-white mt-3 rounded"
+                style={{ width: "870px" }}
               >
-                <ul className="p-4">
+                <div className="p-4">
                   <li>
                     <a>Submenu 1</a>
                   </li>
                   <li>
                     <a>Submenu 2</a>
                   </li>
-                </ul>
+                </div>
               </div>
             </details>
           </li>
@@ -126,17 +126,17 @@ const Navbar = () => {
             <details>
               <summary>Products</summary>
               <div
-                className="absolute left-1/2 transform -translate-x-1/2 bg-white mt-1 shadow-lg"
-                style={{ width: "1158px" }}
+                className="absolute left-0 bg-white mt-3 rounded"
+                style={{ width: "870px" }}
               >
-                <ul className="p-4">
+                <div className="p-4">
                   <li>
                     <a>Submenu 1</a>
                   </li>
                   <li>
                     <a>Submenu 2</a>
                   </li>
-                </ul>
+                </div>
               </div>
             </details>
           </li>
@@ -147,8 +147,8 @@ const Navbar = () => {
             <details>
               <summary>About</summary>
               <div
-                className="absolute left-1/2 transform -translate-x-1/2 bg-white mt-1 shadow-lg"
-                style={{ width: "1158px" }}
+                className="absolute left-0 bg-white mt-3 rounded"
+                style={{ width: "670px" }}
               >
                 <ul className="p-4">
                   <li>
