@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import quick_stock from "../../../../public/icon/QUICK STOCK icon-01 1.svg";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Navbar = () => {
@@ -129,13 +131,149 @@ const Navbar = () => {
                 className="absolute left-0 bg-white mt-3 rounded"
                 style={{ width: "870px" }}
               >
-                <div className="p-4">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
+                <div className="px-5 py-2">
+                  <h1 className="text-xl text-black font-medium underline">
+                    Products
+                  </h1>
+                  <div className="grid grid-cols-2">
+                    <div className="mt-3 text-black">
+                      <div className="flex items-center">
+                        <Image src={quick_stock} width={40} alt="quick_stock" />
+                        <div className="ms-2">
+                          <div className="flex items-center">
+                            <h1 className="font-semibold text-base">
+                              QuickStock
+                            </h1>
+                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                          </div>
+                          <p className="font-medium">
+                            Inventory Management Software
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cursus nibh mauris, nec turpis orci lectus maecenas.
+                        Suspendisse sed magna eget nibh in turpis. Consequat
+                        duis diam lacus arcu
+                      </p>
+                    </div>
+                    <div className="mt-3 text-black">
+                      <div className="flex items-center">
+                        <Image src={quick_stock} width={40} alt="quick_stock" />
+                        <div className="ms-2">
+                          <div className="flex items-center">
+                            <h1 className="font-semibold text-base">
+                              QuickStock
+                            </h1>
+                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                          </div>
+                          <p className="font-medium">
+                            Inventory Management Software
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cursus nibh mauris, nec turpis orci lectus maecenas.
+                        Suspendisse sed magna eget nibh in turpis. Consequat
+                        duis diam lacus arcu
+                      </p>
+                    </div>
+                    <div className="mt-3 text-black">
+                      <div className="flex items-center">
+                        <Image src={quick_stock} width={40} alt="quick_stock" />
+                        <div className="ms-2">
+                          <div className="flex items-center">
+                            <h1 className="font-semibold text-base">
+                              QuickStock
+                            </h1>
+                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                          </div>
+                          <p className="font-medium">
+                            Inventory Management Software
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cursus nibh mauris, nec turpis orci lectus maecenas.
+                        Suspendisse sed magna eget nibh in turpis. Consequat
+                        duis diam lacus arcu
+                      </p>
+                    </div>
+                    <div className="mt-3 text-black">
+                      <div className="flex items-center">
+                        <Image src={quick_stock} width={40} alt="quick_stock" />
+                        <div className="ms-2">
+                          <div className="flex items-center">
+                            <h1 className="font-semibold text-base">
+                              QuickStock
+                            </h1>
+                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                          </div>
+                          <p className="font-medium">
+                            Inventory Management Software
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cursus nibh mauris, nec turpis orci lectus maecenas.
+                        Suspendisse sed magna eget nibh in turpis. Consequat
+                        duis diam lacus arcu
+                      </p>
+                    </div>
+                    <div className="mt-3 text-black">
+                      <div className="flex items-center">
+                        <Image src={quick_stock} width={40} alt="quick_stock" />
+                        <div className="ms-2">
+                          <div className="flex items-center">
+                            <h1 className="font-semibold text-base">
+                              QuickStock
+                            </h1>
+                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                          </div>
+                          <p className="font-medium">
+                            Inventory Management Software
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cursus nibh mauris, nec turpis orci lectus maecenas.
+                        Suspendisse sed magna eget nibh in turpis. Consequat
+                        duis diam lacus arcu
+                      </p>
+                    </div>
+                    <div className="mt-3 text-black">
+                      <div className="flex items-center">
+                        <Image src={quick_stock} width={40} alt="quick_stock" />
+                        <div className="ms-2">
+                          <div className="flex items-center">
+                            <h1 className="font-semibold text-base">
+                              QuickStock
+                            </h1>
+                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                          </div>
+                          <p className="font-medium">
+                            Inventory Management Software
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cursus nibh mauris, nec turpis orci lectus maecenas.
+                        Suspendisse sed magna eget nibh in turpis. Consequat
+                        duis diam lacus arcu
+                      </p>
+                    </div>
+                  </div>
+                  <div className="pt-2">
+                    <p className="px-5 py-2 font-medium w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
+                      Free Consultancy
+                    </p>
+                  </div>
                 </div>
               </div>
             </details>
