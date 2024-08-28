@@ -105,11 +105,8 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
-          </li>
-          <li>
             <details>
-              <summary>Parent</summary>
+              <summary>Services</summary>
               <div
                 className="absolute left-1/2 transform -translate-x-1/2 bg-white mt-1 shadow-lg"
                 style={{ width: "1158px" }}
@@ -126,7 +123,46 @@ const Navbar = () => {
             </details>
           </li>
           <li>
-            <a>Item 3</a>
+            <details>
+              <summary>Products</summary>
+              <div
+                className="absolute left-1/2 transform -translate-x-1/2 bg-white mt-1 shadow-lg"
+                style={{ width: "1158px" }}
+              >
+                <ul className="p-4">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li>
+            <a>Case Studies</a>
+          </li>
+          <li>
+            <details>
+              <summary>About</summary>
+              <div
+                className="absolute left-1/2 transform -translate-x-1/2 bg-white mt-1 shadow-lg"
+                style={{ width: "1158px" }}
+              >
+                <ul className="p-4">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
+          <li>
+            <a>Contact</a>
           </li>
         </ul>
       </div>
