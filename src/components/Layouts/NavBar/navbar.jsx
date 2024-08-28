@@ -11,10 +11,6 @@ const Navbar = () => {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   const toggleItem1Submenu = () => setIsItem1SubmenuOpen(!isItem1SubmenuOpen);
 
-  const navlinks = <>
-  
-  </>;
-
   return (
     <div className="navbar">
       <div className="navbar-start">
@@ -114,14 +110,19 @@ const Navbar = () => {
           <li>
             <details>
               <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <div
+                className="absolute left-1/2 transform -translate-x-1/2 bg-white mt-1 shadow-lg"
+                style={{ width: "1158px" }}
+              >
+                <ul className="p-4">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </div>
             </details>
           </li>
           <li>
@@ -131,7 +132,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <a className="px-6 py-3 rounded-lg bg-primry text-white">
+        <a className="px-6 py-3 rounded-lg bg-primary text-white">
           Free Consultancy
         </a>
       </div>
