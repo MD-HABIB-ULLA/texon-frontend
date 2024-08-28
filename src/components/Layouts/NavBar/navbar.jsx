@@ -54,7 +54,7 @@ const Navbar = () => {
                 onMouseLeave={() => setIsItem1SubmenuOpen(false)}
               >
                 <div className="flex justify-between items-center">
-                  <a>Item 1</a>
+                  <a>Services</a>
                   <button onClick={toggleItem1Submenu}>
                     {isItem1SubmenuOpen ? (
                       <svg
@@ -86,14 +86,36 @@ const Navbar = () => {
                   </button>
                 </div>
                 {isItem1SubmenuOpen && (
-                  <ul className="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
+                  <div className="p-2 block">
+                    <div className="flex items-center pb-2">
+                      <Image src={development} width={20} alt="development" />
+                      <p className="ms-2">Software Development</p>
+                    </div>
+                    <div className="flex items-center pb-2">
+                      <Image src={web} width={20} alt="web" />
+                      <p className="ms-2">Web Development</p>
+                    </div>
+                    <div className="flex items-center pb-2">
+                      <Image src={app} width={20} alt="app" />
+                      <p className="ms-2">Mobile App Develop</p>
+                    </div>
+                    <div className="flex items-center pb-2">
+                      <Image src={management} width={20} alt="management" />
+                      <p className="ms-2">Management Software</p>
+                    </div>
+                    <div className="flex items-center pb-2">
+                      <Image src={ai} width={20} alt="ai" />
+                      <p className="ms-2">Ai & Automation</p>
+                    </div>
+                    <div className="flex items-center pb-2">
+                      <Image src={aws} width={20} alt="aws" />
+                      <p className="ms-2">AWS Services</p>
+                    </div>
+                    <div className="flex items-center pb-2">
+                      <Image src={development} width={20} alt="development" />
+                      <p className="ms-2">IT Infrastructure</p>
+                    </div>
+                  </div>
                 )}
               </li>
               <li>
