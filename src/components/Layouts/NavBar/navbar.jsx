@@ -119,10 +119,16 @@ const Navbar = () => {
                 )}
               </li>
               <li>
-                <a>Item 2</a>
+                <a>Products</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Case Studies</a>
+              </li>
+              <li>
+                <a>About</a>
+              </li>
+              <li>
+                <a>Contact</a>
               </li>
             </ul>
           )}
