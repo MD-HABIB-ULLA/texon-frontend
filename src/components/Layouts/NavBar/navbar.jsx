@@ -1,5 +1,8 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -8,8 +11,12 @@ const Navbar = () => {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
   const toggleItem1Submenu = () => setIsItem1SubmenuOpen(!isItem1SubmenuOpen);
 
+  const navlinks = <>
+  
+  </>;
+
   return (
-    <div className="navbar bg-white">
+    <div className="navbar">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -94,10 +101,12 @@ const Navbar = () => {
             </ul>
           )}
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link href={"/"}>
+          <Image src={logo} className="object-contain w-auto" alt="logo" />
+        </Link>
       </div>
 
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
         <ul className="menu menu-horizontal px-1">
           <li>
             <a>Item 1</a>
@@ -122,7 +131,9 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="px-6 py-3 rounded-lg bg-primry text-white">
+          Free Consultancy
+        </a>
       </div>
     </div>
   );
