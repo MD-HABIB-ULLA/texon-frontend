@@ -32,6 +32,20 @@ body {
   align-items: center;
 }
 
+.swiper-slide {
+  width: 60%; /* Set each slide to 75% width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.mySwiper {
+  display: flex;
+  justify-content: center; /* Center the slides */
+}
+
 .swiper-slide img {
   display: block;
   width: 100%;
