@@ -3,7 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import ai from "../../../../public/icon/ai.svg";
+import app from "../../../../public/icon/app-development.svg";
+import aws from "../../../../public/icon/aws.svg";
+import development from "../../../../public/icon/development.svg";
+import management from "../../../../public/icon/management.svg";
 import quick_stock from "../../../../public/icon/QUICK STOCK icon-01 1.svg";
+import web from "../../../../public/icon/web.svg";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Navbar = () => {
@@ -113,13 +119,93 @@ const Navbar = () => {
                 className="absolute left-0 bg-white mt-3 rounded"
                 style={{ width: "870px" }}
               >
-                <div className="p-4">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
+                <div className="grid grid-cols-3">
+                  <div className="px-5 py-2 bg-custom-gradient text-black">
+                    <h1 className="text-xl font-medium underline">Services</h1>
+                    <div className="space-y-3 py-3">
+                      <div className="flex items-center">
+                        <Image src={development} width={20} alt="development" />
+                        <p className="ms-2">Software Development</p>
+                      </div>
+                      <div className="flex items-center">
+                        <Image src={web} width={20} alt="web" />
+                        <p className="ms-2">Web Development</p>
+                      </div>
+                      <div className="flex items-center">
+                        <Image src={app} width={20} alt="app" />
+                        <p className="ms-2">Mobile App Develop</p>
+                      </div>
+                      <div className="flex items-center">
+                        <Image src={management} width={20} alt="management" />
+                        <p className="ms-2">Management Software</p>
+                      </div>
+                      <div className="flex items-center">
+                        <Image src={ai} width={18} alt="ai" />
+                        <p className="ms-2">Ai & Automation</p>
+                      </div>
+                      <div className="flex items-center">
+                        <Image src={aws} width={20} alt="aws" />
+                        <p className="ms-2">AWS Services</p>
+                      </div>
+                      <div className="flex items-center">
+                        <Image src={development} width={18} alt="development" />
+                        <p className="ms-2">IT Infrastructure</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="px-5 py-2 text-black">
+                    <h1 className="text-xl font-medium underline">
+                      Technologies
+                    </h1>
+                    <div className="space-y-3 py-3">
+                      <div>
+                        <p>JavaScript</p>
+                      </div>
+                      <div>
+                        <p>C++</p>
+                      </div>
+                      <div>
+                        <p>.Net</p>
+                      </div>
+                      <div>
+                        <p>Python</p>
+                      </div>
+                      <div>
+                        <p>Java</p>
+                      </div>
+                      <div>
+                        <p>PHP</p>
+                      </div>
+                      <div>
+                        <p>Flutter</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="px-5 py-2">
+                    <h1 className="text-xl text-black font-medium underline">
+                      Collaboration Models
+                    </h1>
+                    <div className="space-y-3 py-3">
+                      <div>
+                        <p>Hire Developers</p>
+                      </div>
+                      <div>
+                        <p>Tech consultancy</p>
+                      </div>
+                      <div>
+                        <p>Team Augmentation</p>
+                      </div>
+                      <hr className="py-4" />
+                    </div>
+                    <div className="">
+                      <p className="pb-5 text-black">
+                        Want to accelerate your business
+                      </p>
+                      <p className="px-5 py-2 font-medium w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
+                        Hire The Best Team
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </details>
@@ -271,7 +357,7 @@ const Navbar = () => {
                   </div>
                   <div className="pt-2">
                     <p className="px-5 py-2 font-medium w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
-                      Free Consultancy
+                      See all Products
                     </p>
                   </div>
                 </div>
@@ -288,14 +374,7 @@ const Navbar = () => {
                 className="absolute left-0 bg-white mt-3 rounded"
                 style={{ width: "670px" }}
               >
-                <ul className="p-4">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                {/* <p>comming soon</p> */}
               </div>
             </details>
           </li>
