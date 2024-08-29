@@ -143,10 +143,10 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
         <ul className="menu menu-horizontal px-1">
           <li className="relative group">
-            <details>
+            <a>
               <summary>Services</summary>
               <div
-                className="absolute left-0 bg-white mt-1 rounded group-hover:block hidden"
+                className="absolute left-0 bg-white top-full rounded group-hover:block hidden"
                 style={{ width: "870px" }}
               >
                 <div className="grid grid-cols-3">
@@ -238,13 +238,13 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-            </details>
+            </a>
           </li>
-          <li>
-            <details>
+          <li className="relative group">
+            <a>
               <summary>Products</summary>
               <div
-                className="absolute left-0 bg-white mt-3 rounded"
+                className="absolute left-0 bg-white top-full rounded group-hover:block hidden"
                 style={{ width: "870px" }}
               >
                 <div className="px-5 py-2">
@@ -392,7 +392,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-            </details>
+            </a>
           </li>
           <li>
             <a>Case Studies</a>
