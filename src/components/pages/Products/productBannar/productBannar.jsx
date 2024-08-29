@@ -2,7 +2,7 @@
 
 export default function ProductBanner() {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-10 md:py-20 lg:py-20 flex flex-col lg:flex-row lg:space-x-12">
+    <div className="max-w-screen-xl mx-auto px-4 py-14 md:py-20 lg:py-40 flex flex-col lg:flex-row lg:space-x-12">
       {/* Text Section */}
       <div className="space-y-7 lg:w-2/3">
         <h1 className="font-medium text-xl">Texon Products</h1>

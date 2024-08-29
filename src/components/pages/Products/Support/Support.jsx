@@ -11,7 +11,7 @@ export default function Support() {
               1
             </p>
 
-            <h1 className="text-4xl font-medium">
+            <h1 className="text-3xl font-medium">
               No coding, hosting or maintenance required:
             </h1>
             <p>
@@ -26,7 +26,7 @@ export default function Support() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               2
             </p>
-            <h1 className="text-4xl font-medium">Flexible pricing models:</h1>
+            <h1 className="text-3xl font-medium">Flexible pricing models:</h1>
             <p>
               You can try our solution for free without any charges. You can
               also get free installation services from our experts.
@@ -36,7 +36,7 @@ export default function Support() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               3
             </p>
-            <h1 className="text-4xl font-medium">
+            <h1 className="text-3xl font-medium">
               Free installation services or 3 months free trial:
             </h1>
             <p>
@@ -49,7 +49,7 @@ export default function Support() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               4
             </p>
-            <h1 className="text-4xl font-medium">24/7 Support:</h1>
+            <h1 className="text-3xl font-medium">24/7 Support:</h1>
             <p>
               We provide 24/7 support for any issues or bugs that you may
               encounter. You can also request custom features or integrations
