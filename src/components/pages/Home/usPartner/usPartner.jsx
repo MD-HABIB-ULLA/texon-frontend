@@ -15,7 +15,7 @@ export default function UsPartner() {
             global family!
           </p>
 
-          <button className="py-2 px-5 rounded-lg raleway bg-white hover:bg-black hover:text-white text-primry cursor-pointer font-medium">
+          <button className="px-5 py-2 text-base rounded-lg raleway bg-white hover:bg-black hover:text-white text-primry cursor-pointer font-medium">
             Schedul a Call
           </button>
         </div>

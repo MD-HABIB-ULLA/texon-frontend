@@ -22,7 +22,7 @@ export default function AboutTexon() {
               Mobile app, eCommerce ecosystem, UI/UX design, Inventory
               Management system, ERP & HR Management system, and more.
             </p>
-            <button className="py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
+            <button className="px-5 py-2 text-base rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
               View Portfolio
             </button>
           </div>

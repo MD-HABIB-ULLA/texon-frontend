@@ -15,7 +15,7 @@ export default function TexonGlance() {
             thrive in your business with automated software/app. And to achieve
             that, we prioritize prompt communication.
           </p>
-          <button className="py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
+          <button className="px-5 py-2 text-base rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
             View Portfolio
           </button>
         </div>

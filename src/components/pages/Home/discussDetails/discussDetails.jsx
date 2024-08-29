@@ -17,7 +17,7 @@ export default function DiscussDetails() {
               Let’s Discuss in Detail
             </p>
 
-            <button className="py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
+            <button className="px-5 py-2 text-base rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
               Schedul a Call
             </button>
           </div>
