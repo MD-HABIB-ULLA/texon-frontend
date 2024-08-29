@@ -6,7 +6,7 @@ import edutech from "../../../../../public/images/edutech.svg";
 
 export default function TechKnowledge() {
   return (
-    <div className="max-w-screen-xl mx-auto py-10">
+    <div className="max-w-screen-xl mx-auto py-5 md:pb-10">
       <div className="px-2">
         <div>
           <h1 className="text-center text-xl pb-5">Blogs</h1>
@@ -67,7 +67,7 @@ export default function TechKnowledge() {
             </div>
           </div>
         </div>
-        <div className="flex md:justify-center lg:justify-center mt-5">
+        <div className="flex md:justify-center lg:justify-center mt-5 md:mt-0">
           <button className="py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
             View All vlogs
           </button>

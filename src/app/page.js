@@ -8,8 +8,6 @@ import UsPartner from "@/components/pages/Home/usPartner/usPartner";
 import AboutTexon from "../components/pages/Home/aboutTexon/aboutTexon";
 import DevelopmentServices from "../components/pages/Home/developmentServices/developmentServices";
 import DiscussDetails from "../components/pages/Home/discussDetails/discussDetails";
-import DynamicWebsite from "../components/pages/Home/dynamicWebsite/dynamicWebsite";
-import MobileApps from "../components/pages/Home/mobileApps/mobileApps";
 import OurCompany from "../components/pages/Home/ourCompany/ourCompany";
 import Questions from "../components/pages/Home/questions/questions";
 import SoftwareProducts from "../components/pages/Home/softwareProducts/softwareProducts";
@@ -27,8 +25,6 @@ export default function Home() {
       <DevelopmentServices />
       <Technology />
       <AboutTexon />
-      <DynamicWebsite />
-      <MobileApps />
       <Clients />
       <DiscussDetails />
       <TechKnowledge />

@@ -9,7 +9,7 @@ import web from "../../../../../public/services/web.svg";
 
 export default function CoreServices() {
   return (
-    <div className="max-w-screen-xl mx-auto py-10">
+    <div className="max-w-screen-xl mx-auto pb-10">
       <div className="px-2">
         <h1 className="text-center text-xl pb-5">What We do</h1>
         <div className="md:pb-10 lg:pb-5">

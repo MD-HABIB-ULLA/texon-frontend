@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SoftwareProducts() {
   return (
-    <div className="max-w-screen-xl mx-auto py-10 mt-10">
+    <div className="max-w-screen-xl mx-auto py-5 mt-10">
       <div className="px-2">
         <h1 className="text-center text-xl pb-5">Software Products</h1>
         <HeadingTitle
