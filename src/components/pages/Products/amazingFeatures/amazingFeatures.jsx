@@ -2,7 +2,7 @@ import HeadingTitle from "@/components/common/title/headingTitle";
 
 export default function AmazingFeatures() {
   return (
-    <div className="max-w-screen-xl m-auto pt-10 lg:pt-20">
+    <div className="max-w-screen-xl m-auto pt-10">
       <div className="px-2">
         <div className="pt-5">
           <HeadingTitle
@@ -22,7 +22,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 1
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Customizable design
               </p>
             </div>
@@ -30,7 +30,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 2
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Powerful backend
               </p>
             </div>
@@ -38,7 +38,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 3
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Secure payment gateway integration
               </p>
             </div>
@@ -46,7 +46,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 4
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Product filter and search
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 5
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Localization
               </p>
             </div>
@@ -62,7 +62,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 6
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Wish list
               </p>
             </div>
@@ -70,7 +70,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 7
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xll">
+              <p className="ms-5 font-medium text-xl lg:text-2xll">
                 Social media integration
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 8
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Coupon code
               </p>
             </div>
@@ -86,7 +86,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 9
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Live chat
               </p>
             </div>
@@ -94,7 +94,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 10
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Store locator
               </p>
             </div>
@@ -104,7 +104,7 @@ export default function AmazingFeatures() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 11
               </p>
-              <p className="ms-5 font-semibold text-xl lg:text-2xl">
+              <p className="ms-5 font-medium text-xl lg:text-2xl">
                 Affiliate system
               </p>
             </div>

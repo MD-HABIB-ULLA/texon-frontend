@@ -6,7 +6,7 @@ import development_team_3 from "../../../../../public/about/development_team_3.s
 
 export default function DevelopmentTeam() {
   return (
-    <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:py-20">
+    <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:py-10">
       <div className="px-2">
         <HeadingTitle
           heading={"Meet the Development Team"}
@@ -146,7 +146,7 @@ export default function DevelopmentTeam() {
           </div>
         </div>
         <div className="pb-10 flex justify-center">
-          <a className="hidden lg:block font-semibold py-2 px-10 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer w-fit">
+          <a className="hidden lg:block font-medium px-10 py-2 text-base rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer w-fit">
             See All
           </a>
         </div>
