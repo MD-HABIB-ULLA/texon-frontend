@@ -11,7 +11,7 @@ export default function CustomDevelopment() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 1
               </p>
-              <h1 className="text-4xl font-medium">
+              <h1 className="text-3xl font-medium">
                 Custom Website Development
               </h1>
               <p className="pb-4">
@@ -30,7 +30,7 @@ export default function CustomDevelopment() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 2
               </p>
-              <h1 className="text-4xl font-medium">
+              <h1 className="text-3xl font-medium">
                 E-commerce Website Development
               </h1>
               <p className="pb-4">
@@ -52,7 +52,7 @@ export default function CustomDevelopment() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 3
               </p>
-              <h1 className="text-4xl font-medium">
+              <h1 className="text-3xl font-medium">
                 Content Management Systems (CMS)
               </h1>
               <p className="pb-4">
@@ -71,7 +71,7 @@ export default function CustomDevelopment() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 4
               </p>
-              <h1 className="text-4xl font-medium">UI/UX Design</h1>
+              <h1 className="text-3xl font-medium">UI/UX Design</h1>
               <p className="pb-4">
                 Our UI/UX design services include creating wireframes,
                 prototypes, and visual designs for your website.
@@ -88,7 +88,7 @@ export default function CustomDevelopment() {
               <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
                 5
               </p>
-              <h1 className="text-4xl font-medium">Website Maintenance</h1>
+              <h1 className="text-3xl font-medium">Website Maintenance</h1>
               <p className="pb-4">
                 We offer ongoing website maintenance services to keep your site
                 running smoothly and securely.

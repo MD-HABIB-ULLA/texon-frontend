@@ -6,7 +6,7 @@ export default function WebDevelopmentService() {
     <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:py-20">
       <div className="px-4 md:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center lg:items-start">
-          <div className="lg:w-1/2 lg:pr-8 mb-6 lg:mb-0 mt-10">
+          <div className="lg:w-1/2 lg:pr-8 mb-6 lg:mb-0 mt-10 text-center lg:text-start">
             <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
               Web Development <br />
               Service
@@ -22,8 +22,8 @@ export default function WebDevelopmentService() {
             <Image
               src={web_services}
               alt="web_services"
-              width={400} // Adjust as needed
-              height={250} // Adjust as needed
+              width={400}
+              height={250}
               className="object-contain bg-white rounded-lg shadow-md"
             />
           </div>

@@ -23,7 +23,7 @@ export default function ServicesInclude() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               1
             </p>
-            <p className="ms-5 font-semibold text-xl lg:text-2xl">
+            <p className="ms-5 font-medium text-xl lg:text-2xl">
               Multivendor Ecommerce eco systems Development
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function ServicesInclude() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               2
             </p>
-            <p className="ms-5 font-semibold text-xl lg:text-2xl">
+            <p className="ms-5 font-medium text-xl lg:text-2xl">
               Single Vendor Ecommerce Development
             </p>
           </div>
@@ -39,7 +39,7 @@ export default function ServicesInclude() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               3
             </p>
-            <p className="ms-5 font-semibold text-xl lg:text-2xl">
+            <p className="ms-5 font-medium text-xl lg:text-2xl">
               B2C or B2B Website Development
             </p>
           </div>
@@ -47,7 +47,7 @@ export default function ServicesInclude() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               4
             </p>
-            <p className="ms-5 font-semibold text-xl lg:text-2xl">
+            <p className="ms-5 font-medium text-xl lg:text-2xl">
               Business Management Software
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function ServicesInclude() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               5
             </p>
-            <p className="ms-5 font-semibold text-xl lg:text-2xl">
+            <p className="ms-5 font-medium text-xl lg:text-2xl">
               Cloud service
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function ServicesInclude() {
             <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
               6
             </p>
-            <p className="ms-5 font-semibold text-xl lg:text-2xl">
+            <p className="ms-5 font-medium text-xl lg:text-2xl">
               API Integrations & Web consultancy
             </p>
           </div>
