@@ -142,11 +142,11 @@ const Navbar = () => {
 
       <div className="navbar-center hidden lg:flex bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
         <ul className="menu menu-horizontal px-1">
-          <li>
+          <li className="relative group">
             <details>
               <summary>Services</summary>
               <div
-                className="absolute left-0 bg-white mt-3 rounded"
+                className="absolute left-0 bg-white mt-1 rounded group-hover:block hidden"
                 style={{ width: "870px" }}
               >
                 <div className="grid grid-cols-3">
