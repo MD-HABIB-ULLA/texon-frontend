@@ -231,7 +231,7 @@ const Navbar = () => {
                       <p className="pb-5 text-black">
                         Want to accelerate your business
                       </p>
-                      <p className="px-5 py-2 font-medium w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
+                      <p className="px-5 py-2 text-base w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
                         Hire The Best Team
                       </p>
                     </div>
@@ -251,7 +251,7 @@ const Navbar = () => {
                   <h1 className="text-xl text-black font-medium underline">
                     Products
                   </h1>
-                  <div className="grid grid-cols-2">
+                  <div className="grid grid-cols-2 gap-2">
                     <div className="mt-3 text-black">
                       <div className="flex items-center">
                         <Image src={quick_stock} width={40} alt="quick_stock" />
@@ -385,8 +385,8 @@ const Navbar = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="pt-2">
-                    <p className="px-5 py-2 font-medium w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
+                  <div className="pt-4 pb-3">
+                    <p className="px-5 py-2 w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
                       See all Products
                     </p>
                   </div>
@@ -398,7 +398,7 @@ const Navbar = () => {
             <a>Case Studies</a>
           </li>
           <li>
-            <details>
+            <a>
               <summary>About</summary>
               <div
                 className="absolute left-0 bg-white mt-3 rounded"
@@ -406,7 +406,7 @@ const Navbar = () => {
               >
                 {/* <p>comming soon</p> */}
               </div>
-            </details>
+            </a>
           </li>
           <li>
             <a>Contact</a>
@@ -415,7 +415,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end hidden lg:flex">
-        <a className="px-5 py-2 text-lg font-medium rounded-lg bg-primry text-white">
+        <a className="px-5 py-2 text-base rounded-lg bg-primry text-white">
           Free Consultancy
         </a>
       </div>
