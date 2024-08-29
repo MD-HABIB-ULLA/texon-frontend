@@ -1,3 +1,11 @@
+import Image from "next/image";
+import alpha from "../../../../../public/work/alpha.svg";
+import btrip from "../../../../../public/work/btrip.svg";
+import examtice from "../../../../../public/work/examtice.svg";
+import megamall from "../../../../../public/work/megamall.svg";
+import pozo from "../../../../../public/work/pozo.svg";
+import softmax from "../../../../../public/work/softmax.svg";
+
 export default function OurPreviousWork() {
   return (
     <div className="bg-[#A8D0FE]">
@@ -15,9 +23,98 @@ export default function OurPreviousWork() {
           </div>
         </div>
 
-        {/* slider section  */}
-        <div>
-          <h1>upcommig</h1>
+        {/* grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-5 mt-8">
+          <div className="text-center md:text-start">
+            <Image
+              src={alpha}
+              alt="alpha"
+              className="w-full h-auto mb-4 rounded-t-lg"
+            />
+            <div>
+              <h1 className="text-xl md:text-2xl font-semibold mb-2">
+                Alpha Catering Admin Portal
+              </h1>
+              <p className="font-medium text-gray-600">
+                Software Development . UI/UX Design
+              </p>
+            </div>
+          </div>
+          <div className="text-center md:text-start">
+            <Image
+              src={pozo}
+              alt="pozo"
+              className="w-full h-auto mb-4 rounded-t-lg"
+            />
+            <div>
+              <h1 className="text-xl md:text-2xl font-semibold mb-2">
+                Pozo.app Business Management Software
+              </h1>
+              <p className="font-medium text-gray-600">
+                Website Design & Development . UI/UX Design
+              </p>
+            </div>
+          </div>
+          <div className="text-center md:text-start">
+            <Image
+              src={megamall}
+              alt="megamall"
+              className="w-full h-auto mb-4 rounded-t-lg"
+            />
+            <div>
+              <h1 className="text-xl md:text-2xl font-semibold mb-2">
+                Megamall Ecommerce website
+              </h1>
+              <p className="font-medium text-gray-600">
+                Website Design & Development . UI/UX Design
+              </p>
+            </div>
+          </div>
+          <div className="text-center md:text-start">
+            <Image
+              src={examtice}
+              alt="examtice"
+              className="w-full h-auto mb-4 rounded-t-lg"
+            />
+            <div>
+              <h1 className="text-xl md:text-2xl font-semibold mb-2">
+                Examtice App
+              </h1>
+              <p className="font-medium text-gray-600">
+                Mobile App Design & Development . UI/UX Design
+              </p>
+            </div>
+          </div>
+          <div className="text-center md:text-start">
+            <Image
+              src={btrip}
+              alt="btrip"
+              className="w-full h-auto mb-4 rounded-t-lg"
+            />
+            <div>
+              <h1 className="text-xl md:text-2xl font-semibold mb-2">
+                Btrip Travel Agency Website
+              </h1>
+              <p className="font-medium text-gray-600">
+                Website Design & Development . UI/UX Design
+              </p>
+            </div>
+          </div>
+          <div className="text-center md:text-start">
+            <Image
+              src={softmax}
+              alt="softmax"
+              className="w-full h-auto mb-4 rounded-t-lg"
+            />
+            <div>
+              <h1 className="text-xl md:text-2xl font-semibold mb-2">
+                Softmax Online School
+              </h1>
+              <p className="font-medium text-gray-600">
+                Mobile App Design & Development . UI/UX Design
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import ClientsSlide from "./clientsSlide";
 
 export default function Clients() {
   return (
-    <div className="max-w-screen-xl mx-auto py-10 px-2">
+    <div className="max-w-screen-xl mx-auto py-10 px-2 hidden lg:block">
       <HeadingTitle
         heading={
           <>
