@@ -144,14 +144,18 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li className="relative group">
             <a>
-              <summary>Services</summary>
+              <summary>
+                <Link href="/services">Services</Link>
+              </summary>
               <div
                 className="absolute left-0 bg-white top-full rounded group-hover:block hidden"
                 style={{ width: "870px" }}
               >
                 <div className="grid grid-cols-3">
                   <div className="px-5 py-2 bg-custom-gradient text-black">
-                    <h1 className="text-xl font-medium underline">Services</h1>
+                    <h1 className="text-xl font-medium underline">
+                      <Link href="/services">Services</Link>
+                    </h1>
                     <div className="space-y-3 py-3">
                       <div className="flex items-center">
                         <Image src={development} width={20} alt="development" />
@@ -185,7 +189,7 @@ const Navbar = () => {
                   </div>
                   <div className="px-5 py-2 text-black">
                     <h1 className="text-xl font-medium underline">
-                      Technologies
+                      <Link href="/#technologies">Technologies</Link>
                     </h1>
                     <div className="space-y-3 py-3">
                       <div>
@@ -242,14 +246,16 @@ const Navbar = () => {
           </li>
           <li className="relative group">
             <a>
-              <summary>Products</summary>
+              <summary>
+                <Link href="/products">Products</Link>
+              </summary>
               <div
                 className="absolute left-0 bg-white top-full rounded group-hover:block hidden"
                 style={{ width: "870px" }}
               >
                 <div className="px-5 py-2">
                   <h1 className="text-xl text-black font-medium underline">
-                    Products
+                    <Link href="/products">Products</Link>
                   </h1>
                   <div className="grid grid-cols-2 gap-2">
                     <div className="mt-3 text-black">
@@ -387,7 +393,7 @@ const Navbar = () => {
                   </div>
                   <div className="pt-4 pb-3">
                     <p className="px-5 py-2 w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
-                      See all Products
+                      <Link href="/products">See all Products</Link>
                     </p>
                   </div>
                 </div>
@@ -395,11 +401,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a>Case Studies</a>
+            <Link href="/#casestudies">Case Studies</Link>
           </li>
           <li>
             <a>
-              <summary>About</summary>
+              <summary>
+                <Link href={"about"}>About</Link>
+              </summary>
               <div
                 className="absolute left-0 bg-white mt-3 rounded"
                 style={{ width: "670px" }}
@@ -409,7 +417,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a>Contact</a>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>

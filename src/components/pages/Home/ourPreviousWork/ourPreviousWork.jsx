@@ -8,7 +8,7 @@ import softmax from "../../../../../public/work/softmax.svg";
 
 export default function OurPreviousWork() {
   return (
-    <div className="bg-[#A8D0FE]">
+    <div className="bg-[#A8D0FE]" id="casestudies">
       <div className="max-w-screen-xl mx-auto py-20 my-20 px-2">
         {/* text section  */}
         <div className="text-center">
