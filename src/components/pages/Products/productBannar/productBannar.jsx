@@ -21,7 +21,7 @@ export default function ProductBanner() {
       {/* Form Section */}
       <div className="w-full lg:w-1/3">
         <form className="space-y-4">
-          <h2 className="font-semibold text-xl my-4">
+          <h2 className="font-semibold text-xl mb-4">
             Get Started with Your Free Demo
           </h2>
           <div>
@@ -49,7 +49,11 @@ export default function ProductBanner() {
             />
           </div>
           <div className="flex items-center space-x-2">
-            <input type="checkbox" defaultChecked className="checkbox rounded-none" />
+            <input
+              type="checkbox"
+              defaultChecked
+              className="checkbox rounded-none"
+            />
             <label className="text-base-700 ps-2">
               I agree to the{" "}
               <a href="#" className="text-primry hover:underline">
@@ -65,7 +69,7 @@ export default function ProductBanner() {
           <div>
             <button
               type="submit"
-              className="font-semibold py-3 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer w-full"
+              className="font-medium px-5 py-2 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer w-full"
             >
               Schedule a Demo
             </button>
