@@ -133,9 +133,11 @@ const Navbar = () => {
             </ul>
           )}
         </div>
-        <Link href={"/"}>
-          <Image src={logo} className="object-contain w-auto" alt="logo" />
-        </Link>
+        <div className="hidden lg:flex">
+          <Link href={"/"}>
+            <Image src={logo} className="object-contain w-auto" alt="logo" />
+          </Link>
+        </div>
       </div>
 
       <div className="navbar-center hidden lg:flex bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
@@ -412,10 +414,15 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="navbar-end">
-        <a className="px-6 py-3 rounded-lg bg-primary text-white">
+      <div className="navbar-end hidden lg:flex">
+        <a className="px-5 py-3 font-medium rounded-lg bg-primry text-white">
           Free Consultancy
         </a>
+      </div>
+      <div className="navbar-end lg:hidden">
+        <Link href={"/"}>
+          <Image src={logo} className="object-contain w-auto" alt="logo" />
+        </Link>
       </div>
     </div>
   );
