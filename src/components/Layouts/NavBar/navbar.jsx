@@ -415,7 +415,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end hidden lg:flex">
-        <a className="px-5 py-3 font-medium rounded-lg bg-primry text-white">
+        <a className="px-5 py-2 text-lg font-medium rounded-lg bg-primry text-white">
           Free Consultancy
         </a>
       </div>

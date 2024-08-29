@@ -20,7 +20,6 @@ export default function Home() {
     <main>
       <OurCompany />
       <TexonGlance />
-      {/* <NextLevel /> */}
       <OurPreviousWork />
       <CoreServices />
       <FeaturedClients />
