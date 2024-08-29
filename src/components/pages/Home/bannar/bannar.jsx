@@ -8,7 +8,7 @@ import trustpilot from "../../../../../public/company/trustpilot 1.svg";
 
 export default function Bannar() {
   return (
-    <div className="max-w-screen-xl mx-auto h-screen">
+    <div className="max-w-screen-xl mx-auto">
       <div className="text-center mt-8 md:mt-14 lg:mt-28 space-y-8 px-2">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-black">
           Empowering <br /> Entrepreneurs <br /> Through Technology
@@ -22,11 +22,11 @@ export default function Bannar() {
           <button className="px-5 py-2 text-base rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium">
             <a>Get a Quotation</a>
           </button>
-          <button className="px-5 py-2 text-base rounded-lg raleway bg-[#252432] hover:bg-blue text-white cursor-pointer ms-5 font-medium">
+          <button className="px-5 py-2 text-base rounded-lg raleway bg-[#252432] hover:bg-blue text-white cursor-pointer ms-1 mt-10 md:mt-0 md:ms-5 font-medium">
             View Portfolio
           </button>
         </div>
-        <div className="flex flex-col md:flex-row justify-between py-14">
+        <div className="flex flex-col md:flex-row justify-between py-10 md:py-14">
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-5 md:space-y-0 md:space-x-10">
             <div className="text-center md:text-left pt-1">
               <Image src={google} alt="google" className="mx-auto md:mx-0" />
