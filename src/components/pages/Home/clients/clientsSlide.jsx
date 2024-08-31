@@ -3,39 +3,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-import client from "../../../../../public/images/client.svg";
+import gest1 from "../../../../../public/images/Mehedi.svg";
 import "./styles.css";
 
-// Import required modules
+// import required modules
 import Image from "next/image";
-import { FreeMode, Pagination } from "swiper/modules";
-
-export default function ClientsSlide() {
+import { Pagination } from "swiper/modules";
+export const ClientsSlide = () => {
   return (
-    <>
-      <Swiper
-        slidesPerView={1.33} // Show slides with approximately 75% width
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
+    <div className="">
+      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         <SwiperSlide>
-          <div className="flex justify-center">
-            <Image src={client} alt="client" width={100} height={5} />
-            <div className="ml-4 text-left space-y-3 py-5">
-              <h4 className="text-sm text-[#525252]">May 8, 2020</h4>
-              <h1 className="text-3xl font-bold">Mehedi Shamim</h1>
-              <h3 className="text-base font-medium">
-                Head of Brand, Marketing, and Strategy <br /> at Apex Property
-              </h3>
-              <p className="">
+          <div className="py-8">
+            <div className="flex justify-center">
+              <h1 className="lg:text-3xl md:text-2xl text-xl text-center border-b my-5 py-5 inline font-primary">
+                What Our Clients Say About Us
+              </h1>
+            </div>
+            <div className="max-w-4xl mx-auto">
+              <p>
                 The Texon Limited team did an excellent job delivering a custom
                 software solution that fit our specific needs. Their technical
                 expertise and attention to detail made the project a success. We
@@ -43,18 +31,26 @@ export default function ClientsSlide() {
                 and within budget.
               </p>
             </div>
+            <div className="w-20 mx-auto py-5">
+              <Image src={gest1} alt="gest1" />
+            </div>
+            <div>
+              <p className="py-5">
+                Mehedi Shamim -{" "}
+                <span className="font-medium">Apex Property</span>
+              </p>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-center">
-            <Image src={client} alt="client" width={100} height={5} />
-            <div className="ml-4 text-left space-y-3 py-5">
-              <h4 className="text-sm text-[#525252]">May 8, 2020</h4>
-              <h1 className="text-3xl font-bold">Mehedi Shamim</h1>
-              <h3 className="text-base font-medium">
-                Head of Brand, Marketing, and Strategy <br /> at Apex Property
-              </h3>
-              <p className="">
+          <div className=" py-8">
+            <div className="flex justify-center">
+              <h1 className="lg:text-3xl md:text-2xl text-xl text-center border-b my-5 py-5 inline font-primary">
+                Reviews
+              </h1>
+            </div>
+            <div className="max-w-4xl mx-auto">
+              <p>
                 The Texon Limited team did an excellent job delivering a custom
                 software solution that fit our specific needs. Their technical
                 expertise and attention to detail made the project a success. We
@@ -62,29 +58,20 @@ export default function ClientsSlide() {
                 and within budget.
               </p>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="flex justify-center">
-            <Image src={client} alt="client" width={100} height={5} />
-            <div className="ml-4 text-left space-y-3 py-5">
-              <h4 className="text-sm text-[#525252]">May 8, 2020</h4>
-              <h1 className="text-3xl font-bold">Mehedi Shamim</h1>
-              <h3 className="text-base font-medium">
-                Head of Brand, Marketing, and Strategy <br /> at Apex Property
-              </h3>
-              <p className="">
-                The Texon Limited team did an excellent job delivering a custom
-                software solution that fit our specific needs. Their technical
-                expertise and attention to detail made the project a success. We
-                were impressed with their ability to deliver the project on time
-                and within budget.
+            <div className="w-20 mx-auto py-5">
+              <Image src={gest1} alt="gest1" />
+            </div>
+            <div>
+              <p className="py-5">
+                Mehedi Shamim -{" "}
+                <span className="font-medium">Apex Property</span>
               </p>
             </div>
           </div>
         </SwiperSlide>
-       
       </Swiper>
-    </>
+    </div>
   );
-}
+};
+
+export default ClientsSlide;
