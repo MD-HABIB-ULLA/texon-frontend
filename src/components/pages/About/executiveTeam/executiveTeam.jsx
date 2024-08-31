@@ -10,7 +10,7 @@ export default function ExecutiveTeam() {
     <div className="max-w-screen-xl mx-auto px-2">
       <HeadingTitle heading={"Meet the Executive Team"} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 my-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10 lg:mb-20">
         <div className="lg:flex lg:place-items-end">
           <Image
             src={Team1}
@@ -18,7 +18,7 @@ export default function ExecutiveTeam() {
             className="object-cover mb-5 md:mb-0 lg:mb-0 pr-0 md:pr-5 lg:pr-5"
           />
           <div>
-            <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
+            <h1 className="lg:text-2xl md:text-xl text-xl font-semibold">
               Fabien Pinckaers • CEO
             </h1>
             <p className="mt-2">
@@ -35,7 +35,7 @@ export default function ExecutiveTeam() {
             className="object-cover mb-5 md:mb-0 lg:mb-0 pr-0 md:pr-5 lg:pr-5"
           />
           <div>
-            <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
+            <h1 className="lg:text-2xl md:text-xl text-xl font-semibold">
               Antony Lesuisse • CTO
             </h1>
             <p className="mt-2">
@@ -52,7 +52,7 @@ export default function ExecutiveTeam() {
             className="object-cover mb-5 md:mb-0 lg:mb-0 pr-0 md:pr-5 lg:pr-5"
           />
           <div>
-            <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
+            <h1 className="lg:text-2xl md:text-xl text-xl font-semibold">
               Alessandro Mazzocchetti • CFO
             </h1>
             <p className="mt-2">
@@ -62,14 +62,14 @@ export default function ExecutiveTeam() {
             </p>
           </div>
         </div>
-        <div className="lg:flex lg:place-items-end">
+        <div className="lg:flex lg:place-items-end mt-0 md:mt-10 lg:mt-10">
           <Image
             src={Team3}
             alt="Team5"
             className="object-cover mb-5 md:mb-0 lg:mb-0 pr-0 md:pr-5 lg:pr-5"
           />
           <div>
-            <h1 className="lg:text-2xl md:text-2xl text-xl font-semibold">
+            <h1 className="lg:text-2xl md:text-xl text-xl font-semibold">
               Sébastien Bruyr • CCO
             </h1>
             <p className="mt-2">
