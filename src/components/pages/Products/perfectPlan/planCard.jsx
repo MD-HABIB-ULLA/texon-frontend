@@ -42,7 +42,7 @@ const plans = [
 
 export default function PlanCard() {
   return (
-    <div className="max-w-screen-xl mx-auto px-2 md:py-10 lg:pt-10 lg:pb-20">
+    <div className="max-w-screen-xl mx-auto md:py-10 lg:pt-2 lg:pb-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {plans.map((plan, index) => (
           <div
@@ -67,7 +67,7 @@ export default function PlanCard() {
       </div>
 
       {/*  */}
-      <div className="mt-5 w-full max-w-[400px] sm:w-[80%] md:w-[70%] lg:w-[50%] xl:w-[400px] lg:mx-auto">
+      <div className="mt-8 w-full max-w-[400px] sm:w-[80%] md:w-[70%] lg:w-[50%] xl:w-[400px] lg:mx-auto">
         <SubscriptionPlan />
       </div>
     </div>
