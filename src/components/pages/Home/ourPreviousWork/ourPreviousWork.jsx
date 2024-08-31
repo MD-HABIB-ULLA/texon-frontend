@@ -9,11 +9,11 @@ import softmax from "../../../../../public/work/softmax.svg";
 export default function OurPreviousWork() {
   return (
     <div className="bg-[#A8D0FE]" id="casestudies">
-      <div className="max-w-screen-xl mx-auto py-20 my-20 px-2">
+      <div className="max-w-screen-xl mx-auto py-14 my-14 px-2">
         {/* text section  */}
         <div className="text-center">
           <p className="text-xl">Case Studies</p>
-          <h1 className="text-3xl lg:text-4xl font-semibold lg:font-bold pt-3 pb-5">
+          <h1 className="text-3xl lg:text-3xl font-semibold lg:font-bold pt-3 pb-4">
             Our Previous Work
           </h1>
           <div className="flex items-center justify-center">

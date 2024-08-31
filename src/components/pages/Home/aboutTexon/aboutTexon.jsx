@@ -8,11 +8,11 @@ export default function AboutTexon() {
   return (
     <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:pt-10 px-2">
       <div className="flex justify-between">
-        <div className="space-y-6 lg:w-1/2 text-center lg:text-start">
+        <div className="space-y-6 lg:w-1/2 text-center lg:text-start lg:mt-10">
           <h1 className="font-medium text-xl w-auto text-center lg:text-start">
             About Texon
           </h1>
-          <h3 className="text-4xl md:text-4xl font-semibold">Who We Are?</h3>
+          <h3 className="text-2xl md:text-3xl font-semibold">Who We Are?</h3>
           <p>
             Texon limited is a custom software development company that we are
             working for empowering entrepreneurs ideas to business with Gen-Z

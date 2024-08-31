@@ -25,7 +25,7 @@ export default function CoreServices() {
             }
           />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-0 md:pt-10 lg:pt-0">
           {/* 1 Card */}
           <div className="relative flex flex-col items-center rounded-lg bg-white max-w-lg w-full group mt-10 lg:mt-20 md:mt-0 ">
             <div className="flex flex-col items-center p-5">

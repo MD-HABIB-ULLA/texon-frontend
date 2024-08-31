@@ -4,10 +4,10 @@ import texon_logo from "../../../../../public/about/Texon Logo.svg";
 
 export default function TexonGlance() {
   return (
-    <div className="max-w-screen-xl mx-auto px-2 py-8">
+    <div className="max-w-screen-xl mx-auto px-2 md:py-8">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 md:space-x-10">
         <div className="space-y-6 md:max-w-md mt-5 md:mt-10 text-center md:text-start">
-          <h1 className="text-4xl md:text-5xl font-semibold leading-snug">
+          <h1 className="text-4xl md:text-4xl font-semibold leading-snug">
             Texon <br /> at a Glance
           </h1>
           <p>

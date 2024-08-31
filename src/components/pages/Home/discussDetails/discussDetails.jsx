@@ -5,7 +5,7 @@ import logos from "../../../../../public/svgs/logos_whatsapp-icon.svg";
 
 export default function DiscussDetails() {
   return (
-    <div className="max-w-screen-xl mx-auto py-7 md:py-12 lg:py-16 px-2">
+    <div className="max-w-screen-xl mx-auto py-7 md:py-12 lg:pt-16 lg:pb-10 px-2">
       <div className="flex flex-col lg:flex-row gap-5">
         {/* Section 1 - 75% Width on Large Screens */}
         <div className="w-full lg:w-3/4 flex items-center justify-between bg-charleston text-white rounded-lg">
