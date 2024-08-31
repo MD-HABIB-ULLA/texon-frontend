@@ -4,9 +4,9 @@ import discussImage from "../../../../../public/images/product development.svg";
 export default function DiscussForm() {
   return (
     <div className="max-w-screen-xl mx-auto bg-primry my-20 rounded-md">
-      <div className="px-4 md:px-8 flex flex-col md:flex-row">
+      <div className="px-2 md:px-8 flex flex-col md:flex-row">
         {/* Text */}
-        <div className="text-white p-5 md:w-1/2">
+        <div className="text-white p-2 md:p-5 md:w-1/2">
           <p className="text-lg mb-2 font-medium">Got a project in mind?</p>
           <h1 className="text-3xl md:text-4xl mb-4 font-semibold">
             Let’s Discuss in Detail
@@ -19,7 +19,7 @@ export default function DiscussForm() {
         </div>
 
         {/* Form */}
-        <form className="card-body md:w-1/2 p-4 lg:mt-10">
+        <form className="card-body md:w-1/2 p-2 md:p-4 lg:mt-10">
           <div className="form-control mb-4">
             <label className="label">
               <span className="label-text text-white">Full Name</span>

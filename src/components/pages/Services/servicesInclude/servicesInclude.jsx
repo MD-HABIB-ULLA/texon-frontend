@@ -70,7 +70,7 @@ export default function ServicesInclude() {
         </div>
       </div>
 
-      <div className="flex justify-center py-20">
+      <div className="flex justify-center py-5 md:py-10 lg:py-20">
         <div className="texonBg">
           <HeadingTitle
             subHeading={
