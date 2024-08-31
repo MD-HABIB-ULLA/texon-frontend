@@ -22,7 +22,7 @@ export default function OurSolution() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center pb-10 mx-auto">
+      <div className="flex justify-center pb-12 mx-auto">
         <Image src={shukhi_mart} alt="shukhi_mart" />
       </div>
     </div>

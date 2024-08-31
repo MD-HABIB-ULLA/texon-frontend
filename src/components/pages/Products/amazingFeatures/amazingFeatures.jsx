@@ -18,7 +18,7 @@ export default function AmazingFeatures() {
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               1
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -26,7 +26,7 @@ export default function AmazingFeatures() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               2
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -34,7 +34,7 @@ export default function AmazingFeatures() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               3
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -42,7 +42,7 @@ export default function AmazingFeatures() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               4
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -50,19 +50,19 @@ export default function AmazingFeatures() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               5
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">Localization</p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               6
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">Wish list</p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               7
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xll">
@@ -70,19 +70,19 @@ export default function AmazingFeatures() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               8
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">Coupon code</p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               9
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">Live chat</p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               10
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -92,7 +92,7 @@ export default function AmazingFeatures() {
         </div>
         <div className="flex justify-start md:justify-center lg:justify-center mt-5">
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md md:w-2/5 w-full">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               11
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">

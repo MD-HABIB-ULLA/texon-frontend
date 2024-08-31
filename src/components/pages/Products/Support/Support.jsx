@@ -7,7 +7,7 @@ export default function Support() {
       <div className="max-w-screen-xl mx-auto px-2 py-20">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-5 lg:px-10">
           <div className="md:col-span-3 bg-white p-4 rounded-md space-y-5">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               1
             </p>
 
@@ -23,7 +23,7 @@ export default function Support() {
             </div>
           </div>
           <div className="md:col-span-2 bg-white p-4 rounded-md space-y-5">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               2
             </p>
             <h1 className="text-3xl font-medium">Flexible pricing models:</h1>
@@ -33,7 +33,7 @@ export default function Support() {
             </p>
           </div>
           <div className="md:col-span-2 bg-white p-4 rounded-md space-y-5">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               3
             </p>
             <h1 className="text-3xl font-medium">
@@ -46,7 +46,7 @@ export default function Support() {
             </p>
           </div>
           <div className="md:col-span-3 bg-white p-4 rounded-md space-y-5">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               4
             </p>
             <h1 className="text-3xl font-medium">24/7 Support:</h1>
