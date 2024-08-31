@@ -257,7 +257,7 @@ const Navbar = () => {
                   <h1 className="text-xl text-black font-medium border-b w-fit">
                     <Link href="/products">Products</Link>
                   </h1>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-2 gap-5">
                     <div className="mt-3 text-black">
                       <div className="flex items-center">
                         <Image src={quick_stock} width={40} alt="quick_stock" />
