@@ -42,7 +42,7 @@ const plans = [
 
 export default function PlanCard() {
   return (
-    <div className="max-w-screen-xl mx-auto md:py-10 lg:pt-2 lg:pb-20">
+    <div className="max-w-screen-xl mx-auto md:py-10 lg:pt-2 lg:pb-14">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {plans.map((plan, index) => (
           <div
