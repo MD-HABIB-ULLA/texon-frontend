@@ -6,7 +6,7 @@ import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-white mt-5">
+    <footer className="bg-white mt-5 text-charleston">
       <div className="py-10 px-4 max-w-screen-xl mx-auto">
         <div className="md:grid md:grid-cols-2 lg:grid-cols-5 gap-5">
           <div className="mb-6 lg:mb-0">

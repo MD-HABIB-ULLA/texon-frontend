@@ -6,7 +6,7 @@ import TrustedCompanies from "@/components/pages/Products/trustedCompanies/trust
 
 export default function Products() {
   return (
-    <div>
+    <div className="text-charleston">
       <OurSolution />
       <Support />
       <AmazingFeatures />

@@ -15,7 +15,7 @@ import TechKnowledge from "../components/pages/Home/techKnowledge/techKnowledge"
 
 export default function Home() {
   return (
-    <main>
+    <main className="text-charleston">
       <OurCompany />
       <TexonGlance />
       <OurPreviousWork />

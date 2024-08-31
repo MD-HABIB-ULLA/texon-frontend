@@ -9,7 +9,7 @@ import ProjectCount from "@/components/pages/Services/projectCount/projectCount"
 
 export default function About() {
   return (
-    <div>
+    <div className="text-charleston">
       <AboutService />
       <AboutAgency />
       <Mission />

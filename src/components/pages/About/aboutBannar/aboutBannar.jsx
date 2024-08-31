@@ -3,7 +3,7 @@ import about_bg from "../../../../../public/about/about_bg.svg";
 
 export default function AboutBannar() {
   return (
-    <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:py-20">
+    <div className="max-w-screen-xl mx-auto py-5 md:py-10 lg:py-20 text-charleston">
       <div className="px-2">
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="space-y-7 lg:w-1/2 lg:pr-8">

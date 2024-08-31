@@ -3,7 +3,7 @@ import servicesBanner from "../../../../../public/services/services-bannar.svg";
 
 export default function ServicesBanner() {
   return (
-    <div className="max-w-screen-xl mx-auto py-10 md:py-14 lg:py-40">
+    <div className="max-w-screen-xl mx-auto py-10 md:py-14 lg:py-40 text-charleston">
       <div className="px-2">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="space-y-7 lg:w-2/4 lg:pr-8 text-center lg:text-start">

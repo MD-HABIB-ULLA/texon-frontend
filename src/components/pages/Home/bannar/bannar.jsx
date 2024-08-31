@@ -8,9 +8,9 @@ import trustpilot from "../../../../../public/company/trustpilot 1.svg";
 
 export default function Bannar() {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto text-charleston">
       <div className="text-center mt-8 md:mt-14 lg:mt-28 space-y-8 px-2">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-black">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold">
           Empowering <br /> Entrepreneurs <br /> Through Technology
         </h1>
         <p className="text-base">

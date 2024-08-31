@@ -7,13 +7,13 @@ import WebServices from "@/components/pages/Services/webServices/webServices";
 
 export default function Services() {
   return (
-    <>
+    <div className="text-charleston">
       <ProjectCount />
       <WebDevelopmentService />
       <ServicesInclude />
       <CustomDevelopment />
       <WebServices />
       <DiscussFrom />
-    </>
+    </div>
   );
 }
