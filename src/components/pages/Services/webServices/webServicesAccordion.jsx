@@ -13,7 +13,7 @@ export default function WebServicesAccordion() {
   };
 
   return (
-    <div className="md:p-8 lg:p-10">
+    <div className="md:px-8 lg:px-10">
       <div className="join join-vertical w-full gap-3 sm:gap-4 md:gap-5 lg:gap-6">
         {/* Technological Expertise */}
         <div className="collapse join-item bg-[#F5F8FF]">

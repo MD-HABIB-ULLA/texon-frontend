@@ -8,7 +8,7 @@ export default function CustomDevelopment() {
           {/* First card with 66% width */}
           <div className="md:col-span-3 bg-white p-4 rounded-md flex flex-col">
             <div className="space-y-5">
-              <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+              <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
                 1
               </p>
               <h1 className="text-3xl font-medium">
@@ -19,7 +19,7 @@ export default function CustomDevelopment() {
                 brand and appeal to your target audience.
               </p>
             </div>
-            <button className="mt-auto py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
+            <button className="mt-auto py-2 px-3 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
               Read More
               <MdOutlineKeyboardArrowRight className="text-2xl pt-1" />
             </button>
@@ -27,7 +27,7 @@ export default function CustomDevelopment() {
           {/* Second card with 40% width */}
           <div className="md:col-span-2 bg-white p-4 rounded-md flex flex-col">
             <div className="space-y-5">
-              <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+              <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
                 2
               </p>
               <h1 className="text-3xl font-medium">
@@ -38,7 +38,7 @@ export default function CustomDevelopment() {
                 optimized for conversion.
               </p>
             </div>
-            <button className="mt-auto py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
+            <button className="mt-auto py-2 px-3 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
               Read More
               <MdOutlineKeyboardArrowRight className="text-2xl pt-1" />
             </button>
@@ -49,7 +49,7 @@ export default function CustomDevelopment() {
           {/* Third card */}
           <div className="bg-white p-4 rounded-md flex flex-col">
             <div className="space-y-5">
-              <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+              <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
                 3
               </p>
               <h1 className="text-3xl font-medium">
@@ -60,7 +60,7 @@ export default function CustomDevelopment() {
                 you to update your site and content.
               </p>
             </div>
-            <button className="mt-auto py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
+            <button className="mt-auto py-2 px-3 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
               Read More
               <MdOutlineKeyboardArrowRight className="text-2xl pt-1" />
             </button>
@@ -68,7 +68,7 @@ export default function CustomDevelopment() {
           {/* Fourth card */}
           <div className="bg-white p-4 rounded-md flex flex-col">
             <div className="space-y-5">
-              <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+              <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
                 4
               </p>
               <h1 className="text-3xl font-medium">UI/UX Design</h1>
@@ -77,7 +77,7 @@ export default function CustomDevelopment() {
                 prototypes, and visual designs for your website.
               </p>
             </div>
-            <button className="mt-auto py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
+            <button className="mt-auto py-2 px-3 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
               Read More
               <MdOutlineKeyboardArrowRight className="text-2xl pt-1" />
             </button>
@@ -85,7 +85,7 @@ export default function CustomDevelopment() {
           {/* Fifth card */}
           <div className="bg-white p-4 rounded-md flex flex-col">
             <div className="space-y-5">
-              <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+              <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
                 5
               </p>
               <h1 className="text-3xl font-medium">Website Maintenance</h1>
@@ -94,7 +94,7 @@ export default function CustomDevelopment() {
                 running smoothly and securely.
               </p>
             </div>
-            <button className="mt-auto py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
+            <button className="mt-auto py-2 px-3 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer font-medium flex items-center w-fit">
               Read More
               <MdOutlineKeyboardArrowRight className="text-2xl pt-1" />
             </button>

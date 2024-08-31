@@ -18,9 +18,9 @@ export default function ServicesInclude() {
         </div>
 
         {/*  */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 pt-5 lg:pt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 pt-5 lg:pt-0">
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               1
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -28,7 +28,7 @@ export default function ServicesInclude() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               2
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -36,7 +36,7 @@ export default function ServicesInclude() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               3
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -44,7 +44,7 @@ export default function ServicesInclude() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               4
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -52,7 +52,7 @@ export default function ServicesInclude() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               5
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -60,7 +60,7 @@ export default function ServicesInclude() {
             </p>
           </div>
           <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
-            <p className="bg-black font-medium px-5 py-2 text-2xl rounded-full text-white inline-block">
+            <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               6
             </p>
             <p className="ms-5 font-medium text-xl lg:text-2xl">
@@ -74,7 +74,7 @@ export default function ServicesInclude() {
         <div className="texonBg">
           <HeadingTitle
             subHeading={
-              <div className="text-white md:text-2xl lg:text-2xl font-semibold">
+              <div className="text-white md:text-2xl lg:text-2xl font-semibold pt-4">
                 Everybody wants to be Texon. <br /> But no one can’t be!{" "}
               </div>
             }

@@ -3,7 +3,7 @@ import WebServicesAccordion from "./webServicesAccordion";
 
 export default function WebServices() {
   return (
-    <div className="bg-white pt-20 pb-10">
+    <div className="bg-white py-14">
       <div className="max-w-screen-xl mx-auto">
         <div className="px-2">
           <div>
