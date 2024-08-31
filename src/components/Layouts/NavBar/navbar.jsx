@@ -254,7 +254,7 @@ const Navbar = () => {
                 style={{ width: "870px" }}
               >
                 <div className="px-5 py-2">
-                  <h1 className="text-xl text-black font-medium underline">
+                  <h1 className="text-xl text-black font-medium border-b w-fit">
                     <Link href="/products">Products</Link>
                   </h1>
                   <div className="grid grid-cols-2 gap-2">
@@ -263,21 +263,19 @@ const Navbar = () => {
                         <Image src={quick_stock} width={40} alt="quick_stock" />
                         <div className="ms-2">
                           <div className="flex items-center">
-                            <h1 className="font-semibold text-base">
+                            <h1 className="font-medium text-base">
                               QuickStock
                             </h1>
-                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                            <IoIosArrowRoundForward className="text-xl ms-1" />
                           </div>
-                          <p className="font-medium">
+                          <p className="text-sm font-medium">
                             Inventory Management Software
                           </p>
                         </div>
                       </div>
                       <p className="mt-1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cursus nibh mauris, nec turpis orci lectus maecenas.
-                        Suspendisse sed magna eget nibh in turpis. Consequat
-                        duis diam lacus arcu
+                        Cursus nibh mauris
                       </p>
                     </div>
                     <div className="mt-3 text-black">
@@ -285,21 +283,19 @@ const Navbar = () => {
                         <Image src={quick_stock} width={40} alt="quick_stock" />
                         <div className="ms-2">
                           <div className="flex items-center">
-                            <h1 className="font-semibold text-base">
+                            <h1 className="font-medium text-base">
                               QuickStock
                             </h1>
-                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                            <IoIosArrowRoundForward className="text-xl ms-1" />
                           </div>
-                          <p className="font-medium">
+                          <p className="text-sm font-medium">
                             Inventory Management Software
                           </p>
                         </div>
                       </div>
                       <p className="mt-1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cursus nibh mauris, nec turpis orci lectus maecenas.
-                        Suspendisse sed magna eget nibh in turpis. Consequat
-                        duis diam lacus arcu
+                        Cursus nibh mauris
                       </p>
                     </div>
                     <div className="mt-3 text-black">
@@ -307,21 +303,19 @@ const Navbar = () => {
                         <Image src={quick_stock} width={40} alt="quick_stock" />
                         <div className="ms-2">
                           <div className="flex items-center">
-                            <h1 className="font-semibold text-base">
+                            <h1 className="font-medium text-base">
                               QuickStock
                             </h1>
-                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                            <IoIosArrowRoundForward className="text-xl ms-1" />
                           </div>
-                          <p className="font-medium">
+                          <p className="text-sm font-medium">
                             Inventory Management Software
                           </p>
                         </div>
                       </div>
                       <p className="mt-1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cursus nibh mauris, nec turpis orci lectus maecenas.
-                        Suspendisse sed magna eget nibh in turpis. Consequat
-                        duis diam lacus arcu
+                        Cursus nibh mauris
                       </p>
                     </div>
                     <div className="mt-3 text-black">
@@ -329,21 +323,19 @@ const Navbar = () => {
                         <Image src={quick_stock} width={40} alt="quick_stock" />
                         <div className="ms-2">
                           <div className="flex items-center">
-                            <h1 className="font-semibold text-base">
+                            <h1 className="font-medium text-base">
                               QuickStock
                             </h1>
-                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                            <IoIosArrowRoundForward className="text-xl ms-1" />
                           </div>
-                          <p className="font-medium">
+                          <p className="text-sm font-medium">
                             Inventory Management Software
                           </p>
                         </div>
                       </div>
                       <p className="mt-1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cursus nibh mauris, nec turpis orci lectus maecenas.
-                        Suspendisse sed magna eget nibh in turpis. Consequat
-                        duis diam lacus arcu
+                        Cursus nibh mauris
                       </p>
                     </div>
                     <div className="mt-3 text-black">
@@ -351,21 +343,19 @@ const Navbar = () => {
                         <Image src={quick_stock} width={40} alt="quick_stock" />
                         <div className="ms-2">
                           <div className="flex items-center">
-                            <h1 className="font-semibold text-base">
+                            <h1 className="font-medium text-base">
                               QuickStock
                             </h1>
-                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                            <IoIosArrowRoundForward className="text-xl ms-1" />
                           </div>
-                          <p className="font-medium">
+                          <p className="text-sm font-medium">
                             Inventory Management Software
                           </p>
                         </div>
                       </div>
                       <p className="mt-1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cursus nibh mauris, nec turpis orci lectus maecenas.
-                        Suspendisse sed magna eget nibh in turpis. Consequat
-                        duis diam lacus arcu
+                        Cursus nibh mauris
                       </p>
                     </div>
                     <div className="mt-3 text-black">
@@ -373,21 +363,19 @@ const Navbar = () => {
                         <Image src={quick_stock} width={40} alt="quick_stock" />
                         <div className="ms-2">
                           <div className="flex items-center">
-                            <h1 className="font-semibold text-base">
+                            <h1 className="font-medium text-base">
                               QuickStock
                             </h1>
-                            <IoIosArrowRoundForward className="text-2xl ms-1" />
+                            <IoIosArrowRoundForward className="text-xl ms-1" />
                           </div>
-                          <p className="font-medium">
+                          <p className="text-sm font-medium">
                             Inventory Management Software
                           </p>
                         </div>
                       </div>
                       <p className="mt-1">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cursus nibh mauris, nec turpis orci lectus maecenas.
-                        Suspendisse sed magna eget nibh in turpis. Consequat
-                        duis diam lacus arcu
+                        Cursus nibh mauris
                       </p>
                     </div>
                   </div>
