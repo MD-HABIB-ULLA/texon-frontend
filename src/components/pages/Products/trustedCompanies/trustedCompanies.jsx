@@ -21,7 +21,7 @@ export default function TrustedCompanies() {
           }
         />
         <div className="flex justify-center mb-5">
-          <button className="hidden lg:block text-base font-medium py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer">
+          <button className="text-base font-medium py-2 px-5 rounded-lg raleway bg-primry hover:bg-blue text-white cursor-pointer">
             View Testimonials
           </button>
         </div>
