@@ -13,7 +13,7 @@ export default function QuestionsAccordion() {
   };
 
   return (
-    <div className="md:p-8 lg:p-10">
+    <div className="pb-5">
       <div className="join join-vertical w-full gap-3 sm:gap-4 md:gap-5 lg:gap-6">
         <div className="collapse join-item bg-white">
           <input

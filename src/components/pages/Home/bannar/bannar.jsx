@@ -3,7 +3,6 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import clutch from "../../../../../public/company/clutch-logo-2D745B01F0-seeklogo.com 1.svg";
 import google from "../../../../../public/company/Current-Google-logo-2015-2023-600x203 1.svg";
-import whatsapp from "../../../../../public/company/logos_whatsapp-icon.svg";
 import trustpilot from "../../../../../public/company/trustpilot 1.svg";
 
 export default function Bannar() {
@@ -26,7 +25,7 @@ export default function Bannar() {
             View Portfolio
           </button>
         </div>
-        <div className="flex flex-col md:flex-row justify-between py-10 md:py-14">
+        <div className="flex flex-col py-10 md:py-14">
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-start space-y-5 md:space-y-0 md:space-x-10">
             <div className="text-center md:text-left pt-1">
               <Image src={google} alt="google" className="mx-auto md:mx-0" />
@@ -71,13 +70,6 @@ export default function Bannar() {
                 </span>
               </div>
             </div>
-          </div>
-          <div className="mt-5 md:mt-0">
-            <Image
-              src={whatsapp}
-              alt="whatsapp"
-              className="mx-auto md:mx-0 w-14"
-            />
           </div>
         </div>
       </div>

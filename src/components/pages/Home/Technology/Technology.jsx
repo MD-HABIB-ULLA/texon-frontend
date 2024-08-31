@@ -11,7 +11,7 @@ import reactjs from "../../../../../public/company/reactjs.svg";
 export default function Technology() {
   return (
     <div className="bg-back" id="technologies">
-      <div className="max-w-screen-xl mx-auto px-4 pb-10 md:pb-12 pt-10 mt-10">
+      <div className="max-w-screen-xl mx-auto pt-10 pb-12 my-10">
         <h1 className="text-center font-medium text-xl text-black">NEXTGEN</h1>
         <HeadingTitle
           heading={<span className="text-black">Technology We used</span>}

@@ -8,7 +8,7 @@ export default function DevelopmentServices() {
     <div className="max-w-screen-xl mx-auto py-10">
       <div className="px-2">
         <div>
-          <h1 className="text-center text-xl pb-5">Why You Choose Us</h1>
+          <h1 className="text-center text-xl">Why You Choose Us</h1>
           <HeadingTitle
             heading={
               <>
@@ -18,7 +18,7 @@ export default function DevelopmentServices() {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-5   lg:mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* First Card */}
           <div className="relative flex flex-col items-center rounded-lg bg-white w-full p-8 group">
             <div className="flex flex-col items-center">

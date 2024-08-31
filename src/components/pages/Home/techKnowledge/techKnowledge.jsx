@@ -9,7 +9,7 @@ export default function TechKnowledge() {
     <div className="max-w-screen-xl mx-auto py-5 md:pb-10">
       <div className="px-2">
         <div>
-          <h1 className="text-center text-xl pb-5">Blogs</h1>
+          <h1 className="text-center text-xl">Blogs</h1>
           <HeadingTitle
             heading={<>Tech Knowledge</>}
             subHeading={
@@ -21,7 +21,7 @@ export default function TechKnowledge() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 lg:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div>
             <Image src={customvscms} alt="customvscms"></Image>
             <div className="space-y-4">

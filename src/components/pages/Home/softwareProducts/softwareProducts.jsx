@@ -8,7 +8,7 @@ export default function SoftwareProducts() {
   return (
     <div className="max-w-screen-xl mx-auto py-5 mt-10">
       <div className="px-2">
-        <h1 className="text-center text-xl pb-5">Software Products</h1>
+        <h1 className="text-center text-xl">Software Products</h1>
         <HeadingTitle
           heading={
             <>
@@ -16,16 +16,16 @@ export default function SoftwareProducts() {
             </>
           }
           subHeading={
-            <>
+            <div className="text-base">
               With our remarkable services & solutions, we help to flourish your
               business. Our expertise in <br /> NextGen technologies, tools and
               services ensures that our software products are fully <br />{" "}
               tailored to meet your unique business needs.
-            </>
+            </div>
           }
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-5 md:mt-10 lg:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div className="rounded-lg">
             <Image src={school} alt="school" className="rounded-t-lg" />
             <div className="bg-white p-6 rounded-b-lg">

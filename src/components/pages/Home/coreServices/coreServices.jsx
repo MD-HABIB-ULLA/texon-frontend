@@ -11,17 +11,17 @@ export default function CoreServices() {
   return (
     <div className="max-w-screen-xl mx-auto pb-10">
       <div className="px-2">
-        <h1 className="text-center text-xl pb-5">What We do</h1>
-        <div className="md:pb-10 lg:pb-5">
+        <h1 className="text-center text-xl">What We do</h1>
+        <div className="">
           <HeadingTitle
             heading={<>Core Services and Competencies</>}
             subHeading={
-              <>
+              <div className="text-base">
                 We transform your ideas into accomplished technology solutions.{" "}
                 <br />
                 Our Team of professional developers has in-depth knowledge of
                 all technologies and trends.
-              </>
+              </div >
             }
           />
         </div>

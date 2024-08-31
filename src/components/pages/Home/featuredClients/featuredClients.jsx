@@ -18,7 +18,7 @@ export default function FeaturedClients() {
             "Our reputation branches across different industries and far beyond the borders"
           }
         />
-        <div className="mt-5 md:mt-10">
+        <div className="">
           <Marquee pauseOnHover speed={60} gradient={false}>
             <div className="flex items-center px-3">
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">
