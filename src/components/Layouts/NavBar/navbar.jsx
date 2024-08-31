@@ -20,7 +20,7 @@ const Navbar = () => {
   const toggleItem1Submenu = () => setIsItem1SubmenuOpen(!isItem1SubmenuOpen);
 
   return (
-    <div className="navbar">
+    <div className="navbar mx-auto max-w-screen-xl">
       <div className="navbar-start">
         <div className="dropdown">
           <div

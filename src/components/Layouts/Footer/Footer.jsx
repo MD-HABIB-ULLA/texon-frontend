@@ -7,7 +7,7 @@ import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 const Footer = () => {
   return (
     <footer className="bg-white mt-5 text-charleston">
-      <div className="py-10 px-4 max-w-screen-xl mx-auto">
+      <div className="py-10 px-2 max-w-screen-xl mx-auto bg-primry">
         <div className="md:grid md:grid-cols-2 lg:grid-cols-5 gap-5">
           <div className="mb-6 lg:mb-0">
             <Image src={logo} className="w-36" alt="logo" />
@@ -159,7 +159,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-blue py-4">
-        <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center justify-between px-4">
+        <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center justify-between px-2">
           <div className="text-center lg:text-left mb-4 lg:mb-0 flex items-center justify-center lg:justify-start space-x-2">
             <p>
               © 2023 Texon Limited —
