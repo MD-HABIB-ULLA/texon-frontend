@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { IoIosArrowDown, IoIosClose } from "react-icons/io"; // Import ArrowDown and Close icons from react-icons
+import { IoIosArrowDown, IoIosClose } from "react-icons/io";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +35,57 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isModalOpen]);
+
+  const getModalContent = () => {
+    switch (modalContent) {
+      case "Services":
+        return (
+          <>
+            <h2 className="text-xl mb-4">Our Services</h2>
+            <p>
+              We offer a range of services including web development, SEO
+              optimization, and digital marketing.
+            </p>
+            <ul className="list-disc ml-4">
+              <li>Web Development</li>
+              <li>SEO Optimization</li>
+              <li>Digital Marketing</li>
+            </ul>
+          </>
+        );
+      case "Products":
+        return (
+          <>
+            <h2 className="text-xl mb-4">Our Products</h2>
+            <p>
+              Explore our range of high-quality products designed to meet your
+              needs.
+            </p>
+            <ul className="list-disc ml-4">
+              <li>Product 1</li>
+              <li>Product 2</li>
+              <li>Product 3</li>
+            </ul>
+          </>
+        );
+      case "About":
+        return (
+          <>
+            <h2 className="text-xl mb-4">About Us</h2>
+            <p>
+              Learn more about our company and what drives us to deliver
+              exceptional services and products.
+            </p>
+            <p>
+              Our mission is to provide top-notch solutions and to exceed our
+              customers' expectations.
+            </p>
+          </>
+        );
+      default:
+        return <p>No content available.</p>;
+    }
+  };
 
   return (
     <div>
@@ -86,7 +137,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 flex items-center">
             <li>
               <a
-                onClick={() => handleOpenModal("Services Content")}
+                onClick={() => handleOpenModal("Services")}
                 className="flex items-center"
               >
                 Services
@@ -95,7 +146,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                onClick={() => handleOpenModal("Products Content")}
+                onClick={() => handleOpenModal("Products")}
                 className="flex items-center"
               >
                 Products
@@ -104,7 +155,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                onClick={() => handleOpenModal("About Content")}
+                onClick={() => handleOpenModal("About")}
                 className="flex items-center"
               >
                 About
@@ -112,7 +163,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a>Case Studies</a>{" "}
+              <a>Case Studies</a>
               {/* No modal functionality for Case Studies */}
             </li>
             <li>
@@ -136,8 +187,7 @@ const Navbar = () => {
               onClick={handleCloseModal}
               className="absolute top-4 right-4 h-6 w-6 cursor-pointer"
             />
-            <h2 className="text-xl mb-4">Modal Title</h2>
-            <p>{modalContent}</p>
+            {getModalContent()}
           </div>
         </div>
       )}
