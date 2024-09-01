@@ -5,7 +5,7 @@ import {
 } from "react-icons/io5";
 
 export default function QuestionsAccordion() {
-  const [openIdx, setOpenIndex] = useState(0); // Initial value set to 0
+  const [openIdx, setOpenIndex] = useState(null); // Default to null for no open item
 
   const handleToggle = (idx) => {
     setOpenIndex(openIdx === idx ? null : idx);
@@ -15,7 +15,7 @@ export default function QuestionsAccordion() {
     <div className="pb-5">
       <div className="join join-vertical w-full gap-3 sm:gap-4 md:gap-5 lg:gap-6">
         <div
-          className={`collapse join-item bg-white ${
+          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
             openIdx === 0 ? "collapse-open" : ""
           }`}
         >
@@ -30,19 +30,21 @@ export default function QuestionsAccordion() {
               <IoArrowDownCircleOutline className="w-10" />
             )}
           </div>
-          {openIdx === 0 && (
-            <div className="collapse-content">
-              <p>
-                UX design stands for User Experience design. It is the process
-                of designing digital or physical products that are easy to use,
-                intuitive, and enjoyable for the user.
-              </p>
-            </div>
-          )}
+          <div
+            className={`collapse-content transition-max-height duration-300 ease-in-out ${
+              openIdx === 0 ? "max-h-40" : "max-h-0"
+            }`}
+          >
+            <p>
+              UX design stands for User Experience design. It is the process of
+              designing digital or physical products that are easy to use,
+              intuitive, and enjoyable for the user.
+            </p>
+          </div>
         </div>
 
         <div
-          className={`collapse join-item bg-white ${
+          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
             openIdx === 1 ? "collapse-open" : ""
           }`}
         >
@@ -57,19 +59,21 @@ export default function QuestionsAccordion() {
               <IoArrowDownCircleOutline className="w-10" />
             )}
           </div>
-          {openIdx === 1 && (
-            <div className="collapse-content">
-              <p>
-                The key principles of UX design are user-centric design,
-                consistency, usability, accessibility, feedback, clarity, and
-                flexibility.
-              </p>
-            </div>
-          )}
+          <div
+            className={`collapse-content transition-max-height duration-300 ease-in-out ${
+              openIdx === 1 ? "max-h-40" : "max-h-0"
+            }`}
+          >
+            <p>
+              The key principles of UX design are user-centric design,
+              consistency, usability, accessibility, feedback, clarity, and
+              flexibility.
+            </p>
+          </div>
         </div>
 
         <div
-          className={`collapse join-item bg-white ${
+          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
             openIdx === 2 ? "collapse-open" : ""
           }`}
         >
@@ -84,19 +88,21 @@ export default function QuestionsAccordion() {
               <IoArrowDownCircleOutline className="w-10" />
             )}
           </div>
-          {openIdx === 2 && (
-            <div className="collapse-content">
-              <p>
-                UX design focuses on the overall experience of the user, while
-                UI design concentrates on the visual and interactive aspects of
-                the product's interface.
-              </p>
-            </div>
-          )}
+          <div
+            className={`collapse-content transition-max-height duration-300 ease-in-out ${
+              openIdx === 2 ? "max-h-40" : "max-h-0"
+            }`}
+          >
+            <p>
+              UX design focuses on the overall experience of the user, while UI
+              design concentrates on the visual and interactive aspects of the
+              product's interface.
+            </p>
+          </div>
         </div>
 
         <div
-          className={`collapse join-item bg-white ${
+          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
             openIdx === 3 ? "collapse-open" : ""
           }`}
         >
@@ -111,19 +117,21 @@ export default function QuestionsAccordion() {
               <IoArrowDownCircleOutline className="w-10" />
             )}
           </div>
-          {openIdx === 3 && (
-            <div className="collapse-content">
-              <p>
-                A wireframe is a simple visual guide that outlines the structure
-                and layout of a webpage or app, focusing on element placement
-                without detailed design.
-              </p>
-            </div>
-          )}
+          <div
+            className={`collapse-content transition-max-height duration-300 ease-in-out ${
+              openIdx === 3 ? "max-h-40" : "max-h-0"
+            }`}
+          >
+            <p>
+              A wireframe is a simple visual guide that outlines the structure
+              and layout of a webpage or app, focusing on element placement
+              without detailed design.
+            </p>
+          </div>
         </div>
 
         <div
-          className={`collapse join-item bg-white ${
+          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
             openIdx === 4 ? "collapse-open" : ""
           }`}
         >
@@ -138,15 +146,17 @@ export default function QuestionsAccordion() {
               <IoArrowDownCircleOutline className="w-10" />
             )}
           </div>
-          {openIdx === 4 && (
-            <div className="collapse-content">
-              <p>
-                User testing is the process of evaluating a product by observing
-                real users as they interact with it to identify usability issues
-                and gather feedback for improvements.
-              </p>
-            </div>
-          )}
+          <div
+            className={`collapse-content transition-max-height duration-300 ease-in-out ${
+              openIdx === 4 ? "max-h-40" : "max-h-0"
+            }`}
+          >
+            <p>
+              User testing is the process of evaluating a product by observing
+              real users as they interact with it to identify usability issues
+              and gather feedback for improvements.
+            </p>
+          </div>
         </div>
       </div>
     </div>
