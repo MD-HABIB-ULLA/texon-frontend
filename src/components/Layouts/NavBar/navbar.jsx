@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { IoIosArrowDown, IoIosClose } from "react-icons/io";
+import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -131,9 +133,11 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a href="">
+            <Image src={logo} className="object-contain w-auto" alt="logo" />
+          </a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
           <ul className="menu menu-horizontal px-1 flex items-center">
             <li>
               <a
@@ -172,7 +176,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="px-5 py-2 text-base rounded-lg bg-primry text-white">
+            Free Consultancy
+          </a>
         </div>
       </div>
 
@@ -181,7 +187,7 @@ const Navbar = () => {
         <div className="fixed inset-0 flex justify-center mt-16 p-1">
           <div
             ref={modalRef}
-            className="relative bg-primry rounded p-4 max-w-screen-lg w-full max-h-[600px]"
+            className="relative bg-white rounded p-4 max-w-screen-lg w-full max-h-[600px]"
           >
             <IoIosClose
               onClick={handleCloseModal}
