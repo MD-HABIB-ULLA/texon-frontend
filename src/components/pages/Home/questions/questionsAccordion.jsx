@@ -5,7 +5,7 @@ import {
 } from "react-icons/io5";
 
 export default function QuestionsAccordion() {
-  const [openIdx, setOpenIndex] = useState(null); // Default to null for no open item
+  const [openIdx, setOpenIndex] = useState(0); // Set initial state to 0 for the first toggle
 
   const handleToggle = (idx) => {
     setOpenIndex(openIdx === idx ? null : idx);
