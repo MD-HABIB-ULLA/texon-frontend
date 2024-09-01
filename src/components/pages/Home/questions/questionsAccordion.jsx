@@ -1,4 +1,3 @@
-"use client";
 import { useState } from "react";
 import {
   IoArrowDownCircleOutline,
@@ -6,24 +5,22 @@ import {
 } from "react-icons/io5";
 
 export default function QuestionsAccordion() {
-  const [openIdx, setOpenIndex] = useState(0);
+  const [openIdx, setOpenIndex] = useState(null);
 
   const handleToggle = (idx) => {
-    setOpenIndex(openIdx === idx ? -1 : idx);
+    setOpenIndex(openIdx === idx ? null : idx);
   };
 
   return (
     <div className="pb-5">
       <div className="join join-vertical w-full gap-3 sm:gap-4 md:gap-5 lg:gap-6">
-        <div className="collapse join-item bg-white">
-          <input
-            type="radio"
-            name="my-accordion-4"
-            checked={openIdx === 0}
-            onChange={() => handleToggle(0)}
-          />
+        <div
+          className={`collapse join-item bg-white ${
+            openIdx === 0 ? "collapse-open" : ""
+          }`}
+        >
           <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium"
+            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
             onClick={() => handleToggle(0)}
           >
             What is UX design?
@@ -41,15 +38,14 @@ export default function QuestionsAccordion() {
             </p>
           </div>
         </div>
-        <div className="collapse join-item bg-white">
-          <input
-            type="radio"
-            name="my-accordion-4"
-            checked={openIdx === 1}
-            onChange={() => handleToggle(1)}
-          />
+
+        <div
+          className={`collapse join-item bg-white ${
+            openIdx === 1 ? "collapse-open" : ""
+          }`}
+        >
           <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium"
+            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
             onClick={() => handleToggle(1)}
           >
             What are the key principles of UX design?
@@ -67,15 +63,14 @@ export default function QuestionsAccordion() {
             </p>
           </div>
         </div>
-        <div className="collapse join-item bg-white">
-          <input
-            type="radio"
-            name="my-accordion-4"
-            checked={openIdx === 2}
-            onChange={() => handleToggle(2)}
-          />
+
+        <div
+          className={`collapse join-item bg-white ${
+            openIdx === 2 ? "collapse-open" : ""
+          }`}
+        >
           <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium"
+            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
             onClick={() => handleToggle(2)}
           >
             What is the difference between UX and UI design?
@@ -93,15 +88,14 @@ export default function QuestionsAccordion() {
             </p>
           </div>
         </div>
-        <div className="collapse join-item bg-white">
-          <input
-            type="radio"
-            name="my-accordion-4"
-            checked={openIdx === 3}
-            onChange={() => handleToggle(3)}
-          />
+
+        <div
+          className={`collapse join-item bg-white ${
+            openIdx === 3 ? "collapse-open" : ""
+          }`}
+        >
           <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium"
+            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
             onClick={() => handleToggle(3)}
           >
             What is a wireframe?
@@ -119,15 +113,14 @@ export default function QuestionsAccordion() {
             </p>
           </div>
         </div>
-        <div className="collapse join-item bg-white">
-          <input
-            type="radio"
-            name="my-accordion-4"
-            checked={openIdx === 4}
-            onChange={() => handleToggle(4)}
-          />
+
+        <div
+          className={`collapse join-item bg-white ${
+            openIdx === 4 ? "collapse-open" : ""
+          }`}
+        >
           <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium"
+            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
             onClick={() => handleToggle(4)}
           >
             What is user testing?

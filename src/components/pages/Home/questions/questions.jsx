@@ -1,3 +1,4 @@
+"use client";
 import HeadingTitle from "@/components/common/title/headingTitle";
 import QuestionsAccordion from "./questionsAccordion";
 
