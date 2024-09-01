@@ -1,8 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { IoIosArrowDown, IoIosClose } from "react-icons/io";
+import {
+  IoIosArrowDown,
+  IoIosArrowRoundForward,
+  IoIosClose,
+} from "react-icons/io";
+import quick_stock from "../../../../public/icon/QUICK STOCK icon-01 1.svg";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Navbar = () => {
@@ -41,34 +47,115 @@ const Navbar = () => {
   const getModalContent = () => {
     switch (modalContent) {
       case "Services":
-        return (
-          <>
-            <h2 className="text-xl mb-4">Our Services</h2>
-            <p>
-              We offer a range of services including web development, SEO
-              optimization, and digital marketing.
-            </p>
-            <ul className="list-disc ml-4">
-              <li>Web Development</li>
-              <li>SEO Optimization</li>
-              <li>Digital Marketing</li>
-            </ul>
-          </>
-        );
+        return <>{/* server */}</>;
       case "Products":
         return (
-          <>
-            <h2 className="text-xl mb-4">Our Products</h2>
-            <p>
-              Explore our range of high-quality products designed to meet your
-              needs.
-            </p>
-            <ul className="list-disc ml-4">
-              <li>Product 1</li>
-              <li>Product 2</li>
-              <li>Product 3</li>
-            </ul>
-          </>
+          <div className="p-8">
+            <h2 className="text-xl font-semibold border-b-2 w-fit">Products</h2>
+            <div className="grid grid-cols-3 gap-5 mt-7">
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+            </div>
+            <div className="pt-10">
+              <p className="px-5 py-2 w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
+                <Link href="/products">See all Products</Link>
+              </p>
+            </div>
+          </div>
         );
       case "About":
         return (
@@ -187,7 +274,7 @@ const Navbar = () => {
         <div className="fixed inset-0 flex justify-center mt-16 p-1">
           <div
             ref={modalRef}
-            className="relative bg-white rounded p-4 max-w-screen-lg w-full max-h-[600px]"
+            className="relative bg-white rounded max-w-screen-lg w-full max-h-[450px]"
           >
             <IoIosClose
               onClick={handleCloseModal}
