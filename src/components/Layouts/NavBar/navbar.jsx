@@ -10,11 +10,11 @@ import {
 } from "react-icons/io";
 import ai from "../../../../public/icon/ai.svg";
 import app from "../../../../public/icon/app-development.svg";
-import software_development from "../../../../public/icon/software_development.svg";
 import aws from "../../../../public/icon/aws.svg";
 import development from "../../../../public/icon/development.svg";
 import management from "../../../../public/icon/management.svg";
 import quick_stock from "../../../../public/icon/QUICK STOCK icon-01 1.svg";
+import software_development from "../../../../public/icon/software_development.svg";
 import web from "../../../../public/icon/web.svg";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
@@ -63,7 +63,11 @@ const Navbar = () => {
                 </h1>
                 <div className="space-y-5 pt-5">
                   <div className="flex items-center">
-                    <Image src={software_development} width={20} alt="software_development" />
+                    <Image
+                      src={software_development}
+                      width={20}
+                      alt="software_development"
+                    />
                     <p className="ms-2">Software Development</p>
                   </div>
                   <div className="flex items-center">
@@ -260,9 +264,7 @@ const Navbar = () => {
       case "About":
         return (
           <div className="p-8">
-            <h2 className="text-xl font-medium underline">
-              About Texon
-            </h2>
+            <h2 className="text-xl font-medium underline">About Texon</h2>
             <p className="pt-4">
               Learn more about our company and what drives us to deliver
               exceptional services and products.
@@ -279,10 +281,10 @@ const Navbar = () => {
       <div className="navbar max-w-screen-xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-6 w-6 md:h-8 md:w-8"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -318,7 +320,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a href="">
+          <a className="hidden lg:block">
             <Image src={logo} className="object-contain w-auto" alt="logo" />
           </a>
         </div>
@@ -361,7 +363,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="px-5 py-2 text-base rounded-lg bg-primry text-white">
+          <a className="px-4 py-2 text-sm rounded-lg bg-primry text-white sm:px-5 sm:py-3 sm:text-base md:px-5 md:py-2 md:text-lg lg:px-5 lg:py-2">
             Free Consultancy
           </a>
         </div>
