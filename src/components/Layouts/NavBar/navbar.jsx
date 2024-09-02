@@ -277,6 +277,7 @@ const Navbar = () => {
     }
   };
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
   return (
     <div>
       <div className="navbar max-w-screen-xl mx-auto">
@@ -347,7 +348,34 @@ const Navbar = () => {
                   )}
                 </li>
                 <li>
-                  <a href="#">Products</a>
+                  <button
+                    onClick={() => setIsProductsOpen(!isProductsOpen)}
+                    className="flex items-center justify-between w-full text-left"
+                  >
+                    Products
+                    {isProductsOpen ? (
+                      <HiMinus className="ml-2" />
+                    ) : (
+                      <HiPlus className="ml-2" />
+                    )}
+                  </button>
+                  {isProductsOpen && (
+                    <ul>
+                      {/* Sidebar content here */}
+                      <li>
+                        <a>QuickStock</a>
+                      </li>
+                      <li>
+                        <a>QuickStock</a>
+                      </li>
+                      <li>
+                        <a>QuickStock</a>
+                      </li>
+                      <li>
+                        <a>QuickStock</a>
+                      </li>
+                    </ul>
+                  )}
                 </li>
                 <li>
                   <a href="#">About</a>
