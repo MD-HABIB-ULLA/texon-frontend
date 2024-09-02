@@ -8,7 +8,13 @@ import {
   IoIosArrowRoundForward,
   IoIosClose,
 } from "react-icons/io";
+import ai from "../../../../public/icon/ai.svg";
+import app from "../../../../public/icon/app-development.svg";
+import aws from "../../../../public/icon/aws.svg";
+import development from "../../../../public/icon/development.svg";
+import management from "../../../../public/icon/management.svg";
 import quick_stock from "../../../../public/icon/QUICK STOCK icon-01 1.svg";
+import web from "../../../../public/icon/web.svg";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Navbar = () => {
@@ -47,7 +53,100 @@ const Navbar = () => {
   const getModalContent = () => {
     switch (modalContent) {
       case "Services":
-        return <>{/* Services content */}</>;
+        return (
+          <div className="p-8">
+            <div className="grid grid-cols-3">
+              <div className=" text-black">
+                <h1 className="text-xl font-medium underline">
+                  <Link href="/services">Services</Link>
+                </h1>
+                <div className="space-y-5 pt-5">
+                  <div className="flex items-center">
+                    <Image src={development} width={20} alt="development" />
+                    <p className="ms-2">Software Development</p>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={web} width={20} alt="web" />
+                    <p className="ms-2">Web Development</p>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={app} width={20} alt="app" />
+                    <p className="ms-2">Mobile App Develop</p>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={management} width={20} alt="management" />
+                    <p className="ms-2">Management Software</p>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={ai} width={18} alt="ai" />
+                    <p className="ms-2">Ai & Automation</p>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={aws} width={20} alt="aws" />
+                    <p className="ms-2">AWS Services</p>
+                  </div>
+                  <div className="flex items-center">
+                    <Image src={development} width={18} alt="development" />
+                    <p className="ms-2">IT Infrastructure</p>
+                  </div>
+                </div>
+              </div>
+              <div className=" text-black">
+                <h1 className="text-xl font-medium underline">
+                  <Link href="/#technologies">Technologies</Link>
+                </h1>
+                <div className="space-y-5 pt-5">
+                  <div>
+                    <p>JavaScript</p>
+                  </div>
+                  <div>
+                    <p>C++</p>
+                  </div>
+                  <div>
+                    <p>.Net</p>
+                  </div>
+                  <div>
+                    <p>Python</p>
+                  </div>
+                  <div>
+                    <p>Java</p>
+                  </div>
+                  <div>
+                    <p>PHP</p>
+                  </div>
+                  <div>
+                    <p>Flutter</p>
+                  </div>
+                </div>
+              </div>
+              <div className="">
+                <h1 className="text-xl text-black font-medium underline">
+                  Collaboration Models
+                </h1>
+                <div className="space-y-5 pt-5 text-[#76758B]">
+                  <div>
+                    <p>Hire Developers</p>
+                  </div>
+                  <div>
+                    <p>Tech consultancy</p>
+                  </div>
+                  <div className="pb-10">
+                    <p>Team Augmentation</p>
+                  </div>
+                  <hr className="" />
+                </div>
+                <div className="pt-10">
+                  <p className="pb-5 text-black text-base font-medium">
+                    Want to accelerate your business
+                  </p>
+                  <p className="px-5 py-2 text-base w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
+                    Hire The Best Team
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
       case "Products":
         return (
           <div className="p-8">
@@ -159,13 +258,15 @@ const Navbar = () => {
         );
       case "About":
         return (
-          <>
-            <h2 className="text-xl mb-4">About Us</h2>
+          <div className="p-8">
+            <h2 className="text-xl font-semibold border-b-2 w-fit mb-4">
+              About Texon
+            </h2>
             <p>
               Learn more about our company and what drives us to deliver
               exceptional services and products.
             </p>
-          </>
+          </div>
         );
       default:
         return <p>No content available.</p>;
