@@ -26,28 +26,28 @@ const Navbar = () => {
     setModalContent("");
   };
 
-  const handleClickOutside = (event) => {
-    if (modalRef.current && !modalRef.current.contains(event.target)) {
+  const handleMouseLeave = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.relatedTarget)) {
       handleCloseModal();
     }
   };
 
   useEffect(() => {
-    if (isModalOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+    const modalNode = modalRef.current;
+    if (isModalOpen && modalNode) {
+      modalNode.addEventListener("mouseleave", handleMouseLeave);
     }
-
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      if (modalNode) {
+        modalNode.removeEventListener("mouseleave", handleMouseLeave);
+      }
     };
   }, [isModalOpen]);
 
   const getModalContent = () => {
     switch (modalContent) {
       case "Services":
-        return <>{/* server */}</>;
+        return <>{/* Services content */}</>;
       case "Products":
         return (
           <div className="p-8">
@@ -151,7 +151,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="pt-10">
-              <p className="px-5 py-2 w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
+              <p className="px-4 py-2 w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
                 <Link href="/products">See all Products</Link>
               </p>
             </div>
@@ -164,10 +164,6 @@ const Navbar = () => {
             <p>
               Learn more about our company and what drives us to deliver
               exceptional services and products.
-            </p>
-            <p>
-              Our mission is to provide top-notch solutions and to exceed our
-              customers' expectations.
             </p>
           </>
         );
@@ -228,7 +224,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 flex items-center">
             <li>
               <a
-                onClick={() => handleOpenModal("Services")}
+                onMouseEnter={() => handleOpenModal("Services")}
                 className="flex items-center"
               >
                 Services
@@ -237,7 +233,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                onClick={() => handleOpenModal("Products")}
+                onMouseEnter={() => handleOpenModal("Products")}
                 className="flex items-center"
               >
                 Products
@@ -246,7 +242,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                onClick={() => handleOpenModal("About")}
+                onMouseEnter={() => handleOpenModal("About")}
                 className="flex items-center"
               >
                 About
@@ -271,16 +267,18 @@ const Navbar = () => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 flex justify-center mt-16 p-1">
-          <div
-            ref={modalRef}
-            className="relative bg-white rounded max-w-screen-lg w-full max-h-[450px]"
-          >
-            <IoIosClose
-              onClick={handleCloseModal}
-              className="absolute top-4 right-4 h-6 w-6 cursor-pointer"
-            />
-            {getModalContent()}
+        <div className="hidden lg:block">
+          <div className="fixed inset-0 flex justify-center mt-16 p-1 z-40 ">
+            <div
+              ref={modalRef}
+              className="relative bg-white rounded max-w-screen-lg w-full max-h-[450px]"
+            >
+              <IoIosClose
+                onClick={handleCloseModal}
+                className="absolute top-8 right-8 h-6 w-6 cursor-pointer"
+              />
+              {getModalContent()}
+            </div>
           </div>
         </div>
       )}
