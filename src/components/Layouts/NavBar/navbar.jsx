@@ -10,6 +10,7 @@ import {
 } from "react-icons/io";
 import ai from "../../../../public/icon/ai.svg";
 import app from "../../../../public/icon/app-development.svg";
+import software_development from "../../../../public/icon/software_development.svg";
 import aws from "../../../../public/icon/aws.svg";
 import development from "../../../../public/icon/development.svg";
 import management from "../../../../public/icon/management.svg";
@@ -62,7 +63,7 @@ const Navbar = () => {
                 </h1>
                 <div className="space-y-5 pt-5">
                   <div className="flex items-center">
-                    <Image src={development} width={20} alt="development" />
+                    <Image src={software_development} width={20} alt="software_development" />
                     <p className="ms-2">Software Development</p>
                   </div>
                   <div className="flex items-center">
@@ -120,7 +121,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="">
-                <h1 className="text-xl text-black font-medium underline">
+                <h1 className="text-xl font-medium underline">
                   Collaboration Models
                 </h1>
                 <div className="space-y-5 pt-5 text-[#76758B]">
@@ -150,7 +151,7 @@ const Navbar = () => {
       case "Products":
         return (
           <div className="p-8">
-            <h2 className="text-xl font-semibold border-b-2 w-fit">Products</h2>
+            <h2 className="text-xl font-medium underline">Products</h2>
             <div className="grid grid-cols-3 gap-5 mt-7">
               <div>
                 <div className="flex items-center">
@@ -259,10 +260,10 @@ const Navbar = () => {
       case "About":
         return (
           <div className="p-8">
-            <h2 className="text-xl font-semibold border-b-2 w-fit mb-4">
+            <h2 className="text-xl font-medium underline">
               About Texon
             </h2>
-            <p>
+            <p className="pt-4">
               Learn more about our company and what drives us to deliver
               exceptional services and products.
             </p>
