@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { HiMenuAlt1, HiX } from "react-icons/hi"; // Importing the menu icon
 import {
   IoIosArrowDown,
   IoIosArrowRoundForward,
@@ -276,134 +277,54 @@ const Navbar = () => {
     }
   };
 
-  //   sm
-
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isItem1SubmenuOpen, setIsItem1SubmenuOpen] = useState(false);
-
-  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
-  const toggleItem1Submenu = () => setIsItem1SubmenuOpen(!isItem1SubmenuOpen);
   return (
     <div>
       <div className="navbar max-w-screen-xl mx-auto">
         <div className="navbar-start">
-          <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden"
-              onClick={toggleDropdown}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+          {/* Drawer for small screens */}
+          <div className="drawer lg:hidden">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label htmlFor="my-drawer" className="drawer-button">
+                <HiMenuAlt1 className="w-6 md:w-8 h-6 md:h-8" />{" "}
+                {/* Menu icon */}
+              </label>
             </div>
-            {isDropdownOpen && (
-              <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content bg-white z-[1] mt-3 w-screen p-2 shadow"
-              >
-                <li
-                  onMouseEnter={() => setIsItem1SubmenuOpen(true)}
-                  onMouseLeave={() => setIsItem1SubmenuOpen(false)}
-                >
-                  <div className="flex justify-between items-center">
-                    <a>Services</a>
-                    <button onClick={toggleItem1Submenu}>
-                      {isItem1SubmenuOpen ? (
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      ) : (
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-5 w-5"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      )}
-                    </button>
-                  </div>
-                  {isItem1SubmenuOpen && (
-                    <div className="p-2 block">
-                      <div className="flex items-center pb-2">
-                        <Image src={development} width={20} alt="development" />
-                        <p className="ms-2">Software Development</p>
-                      </div>
-                      <div className="flex items-center pb-2">
-                        <Image src={web} width={20} alt="web" />
-                        <p className="ms-2">Web Development</p>
-                      </div>
-                      <div className="flex items-center pb-2">
-                        <Image src={app} width={20} alt="app" />
-                        <p className="ms-2">Mobile App Develop</p>
-                      </div>
-                      <div className="flex items-center pb-2">
-                        <Image src={management} width={20} alt="management" />
-                        <p className="ms-2">Management Software</p>
-                      </div>
-                      <div className="flex items-center pb-2">
-                        <Image src={ai} width={20} alt="ai" />
-                        <p className="ms-2">Ai & Automation</p>
-                      </div>
-                      <div className="flex items-center pb-2">
-                        <Image src={aws} width={20} alt="aws" />
-                        <p className="ms-2">AWS Services</p>
-                      </div>
-                      <div className="flex items-center pb-2">
-                        <Image src={development} width={20} alt="development" />
-                        <p className="ms-2">IT Infrastructure</p>
-                      </div>
-                    </div>
-                  )}
+            <div className="drawer-side z-10">
+              <label
+                htmlFor="my-drawer"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu min-h-full w-80 md:w-96 bg-white p-4 text-base-content">
+                {/* Sidebar content here */}
+                <li className="flex justify-end">
+                  <label
+                    htmlFor="my-drawer"
+                    className="btn btn-square btn-sm bg-white hover:bg-white cursor-pointer rounded-none border-none shadow-none"
+                  >
+                    <HiX className="w-6 h-6" /> {/* Close icon */}
+                  </label>
                 </li>
                 <li>
-                  <a>Products</a>
+                  <a href="#">Sidebar Item 1</a>
                 </li>
                 <li>
-                  <a>Case Studies</a>
-                </li>
-                <li>
-                  <a>About</a>
-                </li>
-                <li>
-                  <a>Contact</a>
+                  <a href="#">Sidebar Item 2</a>
                 </li>
               </ul>
-            )}
+            </div>
           </div>
+
+          {/* Logo for larger screens */}
           <div className="hidden lg:flex">
             <Link href={"/"}>
               <Image src={logo} className="object-contain w-auto" alt="logo" />
             </Link>
           </div>
         </div>
+
         <div className="navbar-center hidden lg:flex bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
           <ul className="menu menu-horizontal px-1 flex items-center">
             <li>
