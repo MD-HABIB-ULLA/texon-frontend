@@ -308,10 +308,20 @@ const Navbar = () => {
                   </label>
                 </li>
                 <li>
-                  <a href="#">Sidebar Item 1</a>
+                  <a href="#">Services</a>
                 </li>
                 <li>
-                  <a href="#">Sidebar Item 2</a>
+                  <a href="#">Products</a>
+                </li>
+
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Case Studies</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
                 </li>
               </ul>
             </div>
