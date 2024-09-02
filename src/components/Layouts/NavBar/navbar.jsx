@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { HiMenuAlt1, HiX } from "react-icons/hi"; // Importing the menu icon
+import { HiMenuAlt1, HiMinus, HiPlus, HiX } from "react-icons/hi"; // Importing the menu icon
 import {
   IoIosArrowDown,
   IoIosArrowRoundForward,
@@ -276,7 +276,7 @@ const Navbar = () => {
         return <p>No content available.</p>;
     }
   };
-
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   return (
     <div>
       <div className="navbar max-w-screen-xl mx-auto">
@@ -308,12 +308,26 @@ const Navbar = () => {
                   </label>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <button
+                    onClick={() => setIsServicesOpen(!isServicesOpen)}
+                    className="flex items-center justify-between w-full text-left"
+                  >
+                    Services
+                    {isServicesOpen ? (
+                      <HiMinus className="ml-2" />
+                    ) : (
+                      <HiPlus className="ml-2" />
+                    )}
+                  </button>
+                  {isServicesOpen && (
+                    <span className="block mt-2 text-gray-700">
+                      Service details or list here
+                    </span>
+                  )}
                 </li>
                 <li>
                   <a href="#">Products</a>
                 </li>
-
                 <li>
                   <a href="#">About</a>
                 </li>
