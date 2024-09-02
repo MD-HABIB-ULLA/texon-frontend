@@ -297,9 +297,9 @@ const Navbar = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu min-h-full w-80 md:w-96 bg-white p-4 text-base-content">
+              <ul className="menu min-h-full text-base w-80 md:w-96 bg-white p-4 text-base-content">
                 {/* Sidebar content here */}
-                <li className="flex justify-end">
+                <li className="flex justify-end mb-4">
                   <label
                     htmlFor="my-drawer"
                     className="btn btn-square btn-sm bg-white hover:bg-white cursor-pointer rounded-none border-none shadow-none"
@@ -320,9 +320,30 @@ const Navbar = () => {
                     )}
                   </button>
                   {isServicesOpen && (
-                    <span className="block mt-2 text-gray-700">
-                      Service details or list here
-                    </span>
+                    <ul>
+                      {/* Sidebar content here */}
+                      <li>
+                        <a>Software Development</a>
+                      </li>
+                      <li>
+                        <a>Web Development</a>
+                      </li>
+                      <li>
+                        <a>Mobile App Develop</a>
+                      </li>
+                      <li>
+                        <a>Management Software</a>
+                      </li>
+                      <li>
+                        <a>Ai & Automation</a>
+                      </li>
+                      <li>
+                        <a>AWS Services</a>
+                      </li>
+                      <li>
+                        <a>IT Infrastructure</a>
+                      </li>
+                    </ul>
                   )}
                 </li>
                 <li>
