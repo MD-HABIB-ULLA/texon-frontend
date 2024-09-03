@@ -156,7 +156,9 @@ const Navbar = () => {
       case "Products":
         return (
           <div className="p-8">
-            <h2 className="text-xl font-medium underline">Products</h2>
+            <h2 className="text-xl font-medium underline">
+              <Link href="/products">Products</Link>
+            </h2>
             <div className="grid grid-cols-3 gap-5 mt-7">
               <div>
                 <div className="flex items-center">
@@ -265,7 +267,9 @@ const Navbar = () => {
       case "About":
         return (
           <div className="p-8">
-            <h2 className="text-xl font-medium underline">About Texon</h2>
+            <h2 className="text-xl font-medium underline">
+              <Link href="/about">About Texon</Link>
+            </h2>
             <p className="pt-4">
               Learn more about our company and what drives us to deliver
               exceptional services and products.
