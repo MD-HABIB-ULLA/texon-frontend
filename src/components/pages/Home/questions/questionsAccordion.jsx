@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import {
   IoArrowDownCircleOutline,
   IoArrowUpCircleOutline,
@@ -25,9 +26,9 @@ export default function QuestionsAccordion() {
           >
             What is UX design?
             {openIdx === 0 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div
@@ -54,9 +55,9 @@ export default function QuestionsAccordion() {
           >
             What are the key principles of UX design?
             {openIdx === 1 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div
@@ -83,9 +84,9 @@ export default function QuestionsAccordion() {
           >
             What is the difference between UX and UI design?
             {openIdx === 2 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div
@@ -112,9 +113,9 @@ export default function QuestionsAccordion() {
           >
             What is a wireframe?
             {openIdx === 3 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div
@@ -141,9 +142,9 @@ export default function QuestionsAccordion() {
           >
             What is user testing?
             {openIdx === 4 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div
