@@ -15,6 +15,7 @@ module.exports = {
       yellow: "#FEA500",
       charleston: "#252432",
       back: "#A8D0FE",
+      gray: "#E0E0E0",
     },
     extend: {
       backgroundImage: {
@@ -25,5 +26,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwind-scrollbar")],
 };
