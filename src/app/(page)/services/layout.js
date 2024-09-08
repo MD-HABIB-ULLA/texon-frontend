@@ -21,7 +21,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="overflow-y-scroll scrollbar-thin scrollbar-thumb-primry scrollbar-track-gray"
+    >
       <body
         className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable}`}
       >

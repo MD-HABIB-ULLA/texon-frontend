@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className="overflow-y-scroll scrollbar-thin scrollbar-thumb-blue scrollbar-track-gray"
+      className="overflow-y-scroll scrollbar-thin scrollbar-thumb-primry scrollbar-track-gray"
     >
       <body
         className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable}`}
