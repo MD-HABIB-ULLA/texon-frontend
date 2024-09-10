@@ -1,16 +1,12 @@
 "use client";
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import {
-    IoArrowDownCircleOutline,
-    IoArrowUpCircleOutline,
-} from "react-icons/io5";
 
 export default function WebServicesAccordion() {
-  const [openIdx, setOpenIndex] = useState(0);
+  const [openIdx, setOpenIndex] = useState(-1); // -1 means none is open
 
   const handleToggle = (idx) => {
-    setOpenIndex(openIdx === idx ? -1 : idx);
+    setOpenIndex(openIdx === idx ? -1 : idx); // Toggle between opening and closing
   };
 
   return (
@@ -19,8 +15,7 @@ export default function WebServicesAccordion() {
         {/* Technological Expertise */}
         <div className="collapse join-item bg-[#F5F8FF]">
           <input
-            type="radio"
-            name="my-accordion-4"
+            type="checkbox"
             checked={openIdx === 0}
             onChange={() => handleToggle(0)}
           />
@@ -35,27 +30,29 @@ export default function WebServicesAccordion() {
               <IoIosArrowDown className="w-10" />
             )}
           </div>
-          <div className="collapse-content">
-            <p>
-              Our team has expertise in HTML5, CSS3, JavaScript, React, Angular,
-              Vue.js, and other front-end technologies. Also, we have experience
-              in back-end technologies such as Node.js, Ruby on Rails, Django,
-              Laravel, and others to develop robust web applications.
-            </p>
-            <p className="pt-5">
-              Last but not least, our team is experienced in various content
-              management systems, such as WordPress, Drupal, and Joomla, to
-              create dynamic and user-friendly websites that are easy to manage
-              and update.
-            </p>
-          </div>
+          {openIdx === 0 && (
+            <div className="collapse-content">
+              <p>
+                Our team has expertise in HTML5, CSS3, JavaScript, React,
+                Angular, Vue.js, and other front-end technologies. Also, we have
+                experience in back-end technologies such as Node.js, Ruby on
+                Rails, Django, Laravel, and others to develop robust web
+                applications.
+              </p>
+              <p className="pt-5">
+                Last but not least, our team is experienced in various content
+                management systems, such as WordPress, Drupal, and Joomla, to
+                create dynamic and user-friendly websites that are easy to
+                manage and update.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Global Reach */}
         <div className="collapse join-item bg-[#F5F8FF]">
           <input
-            type="radio"
-            name="my-accordion-4"
+            type="checkbox"
             checked={openIdx === 1}
             onChange={() => handleToggle(1)}
           />
@@ -70,19 +67,20 @@ export default function WebServicesAccordion() {
               <IoIosArrowDown className="w-10" />
             )}
           </div>
-          <div className="collapse-content">
-            <p>
-              Highlights your ability to serve clients across the world,
-              breaking geographical barriers.
-            </p>
-          </div>
+          {openIdx === 1 && (
+            <div className="collapse-content">
+              <p>
+                Highlights your ability to serve clients across the world,
+                breaking geographical barriers.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Experience */}
         <div className="collapse join-item bg-[#F5F8FF]">
           <input
-            type="radio"
-            name="my-accordion-4"
+            type="checkbox"
             checked={openIdx === 2}
             onChange={() => handleToggle(2)}
           />
@@ -97,19 +95,20 @@ export default function WebServicesAccordion() {
               <IoIosArrowDown className="w-10" />
             )}
           </div>
-          <div className="collapse-content">
-            <p>
-              Emphasizes the depth of experience your team has, indicating
-              reliability and trustworthiness.
-            </p>
-          </div>
+          {openIdx === 2 && (
+            <div className="collapse-content">
+              <p>
+                Emphasizes the depth of experience your team has, indicating
+                reliability and trustworthiness.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Responsive Design */}
         <div className="collapse join-item bg-[#F5F8FF]">
           <input
-            type="radio"
-            name="my-accordion-4"
+            type="checkbox"
             checked={openIdx === 3}
             onChange={() => handleToggle(3)}
           />
@@ -124,19 +123,21 @@ export default function WebServicesAccordion() {
               <IoIosArrowDown className="w-10" />
             )}
           </div>
-          <div className="collapse-content">
-            <p>
-              Ensures that websites or applications are accessible and
-              user-friendly across all devices, from desktops to mobile phones.
-            </p>
-          </div>
+          {openIdx === 3 && (
+            <div className="collapse-content">
+              <p>
+                Ensures that websites or applications are accessible and
+                user-friendly across all devices, from desktops to mobile
+                phones.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Website Maintenance */}
         <div className="collapse join-item bg-[#F5F8FF]">
           <input
-            type="radio"
-            name="my-accordion-4"
+            type="checkbox"
             checked={openIdx === 4}
             onChange={() => handleToggle(4)}
           />
@@ -151,19 +152,20 @@ export default function WebServicesAccordion() {
               <IoIosArrowDown className="w-10" />
             )}
           </div>
-          <div className="collapse-content">
-            <p>
-              Shows your commitment to keeping websites up-to-date, secure, and
-              performing well over time.
-            </p>
-          </div>
+          {openIdx === 4 && (
+            <div className="collapse-content">
+              <p>
+                Shows your commitment to keeping websites up-to-date, secure,
+                and performing well over time.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* SEO-Friendly */}
         <div className="collapse join-item bg-[#F5F8FF]">
           <input
-            type="radio"
-            name="my-accordion-4"
+            type="checkbox"
             checked={openIdx === 5}
             onChange={() => handleToggle(5)}
           />
@@ -178,19 +180,20 @@ export default function WebServicesAccordion() {
               <IoIosArrowDown className="w-10" />
             )}
           </div>
-          <div className="collapse-content">
-            <p>
-              Indicates that your services include optimizing websites for
-              search engines, improving visibility and ranking.
-            </p>
-          </div>
+          {openIdx === 5 && (
+            <div className="collapse-content">
+              <p>
+                Indicates that your services include optimizing websites for
+                search engines, improving visibility and ranking.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Continuous Support */}
         <div className="collapse join-item bg-[#F5F8FF]">
           <input
-            type="radio"
-            name="my-accordion-4"
+            type="checkbox"
             checked={openIdx === 6}
             onChange={() => handleToggle(6)}
           />
@@ -205,12 +208,14 @@ export default function WebServicesAccordion() {
               <IoIosArrowDown className="w-10" />
             )}
           </div>
-          <div className="collapse-content">
-            <p>
-              Reassures clients that they will receive ongoing assistance and
-              maintenance even after project completion.
-            </p>
-          </div>
+          {openIdx === 6 && (
+            <div className="collapse-content">
+              <p>
+                Reassures clients that they will receive ongoing assistance and
+                maintenance even after project completion.
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
