@@ -6,7 +6,7 @@ export default function Questions() {
   return (
     <div className="max-w-screen-xl mx-auto py-10">
       <div className="px-2">
-        <div>
+        <div className="mb-5">
           <HeadingTitle
             heading={
               <>

@@ -13,12 +13,16 @@ export default function FeaturedClients() {
     <div className="bg-back">
       <div className="max-w-screen-xl mx-auto px-4 pb-10 md:pb-20 pt-10 mt-10">
         <HeadingTitle
-          heading={"Featured Clients"}
+          heading={
+            <span className="text-3xl md:text-3xl lg:text-4xl font-semibold lg:font-bold pb-1">
+              Featured Clients
+            </span>
+          }
           subHeading={
             "Our reputation branches across different industries and far beyond the borders"
           }
         />
-        <div className="">
+        <div className="mt-5">
           <Marquee pauseOnHover speed={60} gradient={false}>
             <div className="flex items-center px-3">
               <div className="bg-white px-5 py-10 w-40 h-32 flex items-center justify-center">

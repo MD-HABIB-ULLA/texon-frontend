@@ -14,7 +14,7 @@ export default function Technology() {
       <div className="max-w-screen-xl mx-auto pt-10 pb-12 my-10">
         <h1 className="text-center font-medium text-xl text-black">NEXTGEN</h1>
         <HeadingTitle
-          heading={<span className="text-black">Technology We used</span>}
+          heading={<span className="text-black lg:text-3xl">Technology We used</span>}
         />
         <div className="">
           <Marquee pauseOnHover speed={60} gradient={false}>

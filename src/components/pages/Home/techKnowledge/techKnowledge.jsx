@@ -1,5 +1,5 @@
-import Image from "next/image";
 import HeadingTitle from "@/components/common/title/headingTitle";
+import Image from "next/image";
 import chessmovecontent from "../../../../../public/images/Chess move content.svg";
 import customvscms from "../../../../../public/images/customvscms.svg";
 import edutech from "../../../../../public/images/edutech.svg";
@@ -21,7 +21,7 @@ export default function TechKnowledge() {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2">
           <div>
             <Image src={customvscms} alt="customvscms"></Image>
             <div className="space-y-4">

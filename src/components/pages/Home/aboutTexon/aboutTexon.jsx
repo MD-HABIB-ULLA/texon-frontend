@@ -12,7 +12,7 @@ export default function AboutTexon() {
           <h1 className="font-medium text-xl w-auto text-center lg:text-start">
             About Texon
           </h1>
-          <h3 className="text-2xl md:text-3xl font-semibold">Who We Are?</h3>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold">Who We Are?</h3>
           <p>
             Texon limited is a custom software development company that we are
             working for empowering entrepreneurs ideas to business with Gen-Z

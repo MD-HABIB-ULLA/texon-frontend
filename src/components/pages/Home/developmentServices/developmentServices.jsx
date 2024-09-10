@@ -7,7 +7,7 @@ export default function DevelopmentServices() {
   return (
     <div className="max-w-screen-xl mx-auto py-10">
       <div className="px-2">
-        <div>
+        <div className="pb-3">
           <h1 className="text-center text-xl">Why You Choose Us</h1>
           <HeadingTitle
             heading={

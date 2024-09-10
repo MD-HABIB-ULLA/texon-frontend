@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SoftwareProducts() {
   return (
-    <div className="max-w-screen-xl mx-auto py-5 mt-10">
+    <div className="max-w-screen-xl mx-auto py-5 mt-7 md:mt-10">
       <div className="px-2">
         <h1 className="text-center text-xl">Software Products</h1>
         <HeadingTitle
@@ -16,7 +16,7 @@ export default function SoftwareProducts() {
             </>
           }
           subHeading={
-            <div className="text-base">
+            <div className="text-base mt-2 pb-4">
               With our remarkable services & solutions, we help to flourish your
               business. Our expertise in <br /> NextGen technologies, tools and
               services ensures that our software products are fully <br />{" "}
