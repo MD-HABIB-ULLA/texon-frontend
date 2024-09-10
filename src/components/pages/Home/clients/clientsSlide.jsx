@@ -11,24 +11,24 @@ import "./styles.css";
 // import required modules
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
+import { FaPlayCircle } from "react-icons/fa";
 export const ClientsSlide = () => {
   return (
     <div className="bg-white rounded-xl text-charleston">
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         <SwiperSlide>
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
-            <div className="flex-shrink-0">
+            <div className="relative  flex-shrink-0">
               <Image
                 className=" shadow-md w-full"
                 src={clients_image}
                 alt="Client Image"
               />
+              <FaPlayCircle className="absolute inset-0 m-auto  text-6xl text-white opacity-80" />
             </div>
             <div className="text-start space-y-4">
               <h3 className="text-sm text-gray-500">May 8, 2020</h3>
-              <h1 className="text-2xl md:text-3xl font-bold">
-                Mehedi Shamim
-              </h1>
+              <h1 className="text-2xl md:text-3xl font-bold">Mehedi Shamim</h1>
               <h4 className="text-lg md:text-xl">
                 Head of Brand, Marketing, and Strategy at{" "}
                 <span className="font-medium">Apex Property</span>
