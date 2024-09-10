@@ -4,11 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { HiMenuAlt1, HiMinus, HiPlus, HiX } from "react-icons/hi"; // Importing the menu icon
-import {
-  IoIosArrowDown,
-  IoIosArrowRoundForward,
-  IoIosClose,
-} from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowRoundForward } from "react-icons/io";
 import ai from "../../../../public/icon/ai.svg";
 import app from "../../../../public/icon/app-development.svg";
 import aws from "../../../../public/icon/aws.svg";
@@ -455,10 +451,6 @@ const Navbar = () => {
               ref={modalRef}
               className="relative bg-white rounded max-w-screen-lg w-full max-h-[450px]"
             >
-              <IoIosClose
-                onClick={handleCloseModal}
-                className="absolute top-8 right-8 h-6 w-6 cursor-pointer"
-              />
               {getModalContent()}
             </div>
           </div>
