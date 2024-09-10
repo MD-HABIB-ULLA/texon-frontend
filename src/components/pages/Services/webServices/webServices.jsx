@@ -15,11 +15,11 @@ export default function WebServices() {
                 </>
               }
               subHeading={
-                <>
+                <span className="text-lg">
                   We have a proven track record of providing top-notch web{" "}
                   <br /> development services to <br /> clients around the
                   globe. Here are a few reasons why you should <br /> choose us:
-                </>
+                </span>
               }
             />
           </div>

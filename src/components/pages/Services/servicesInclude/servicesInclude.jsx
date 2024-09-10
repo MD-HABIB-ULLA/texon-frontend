@@ -4,15 +4,15 @@ export default function ServicesInclude() {
   return (
     <div className="max-w-screen-xl mx-auto">
       <div className="px-2">
-        <div>
+        <div className="pb-2">
           <HeadingTitle
             heading={<>Our Services Include</>}
             subHeading={
-              <>
+              <span className="text-base">
                 We have provided over 50+ custom based Service solutions with{" "}
                 <br />
                 100% customer satisfaction.
-              </>
+              </span>
             }
           />
         </div>

@@ -4,15 +4,17 @@ export default function AmazingFeatures() {
   return (
     <div className="max-w-screen-xl m-auto pt-10 px-2">
       <div className="pt-5">
-        <HeadingTitle
-          heading={<>Amazing features</>}
-          subHeading={
-            <div className="text-lg">
-              You can enjoy a lot of features that will make your online store
-              stand <br /> out from the crowd. Some of the features are:
-            </div>
-          }
-        />
+        <div className="pb-2">
+          <HeadingTitle
+            heading={<>Amazing features</>}
+            subHeading={
+              <div className="text-lg">
+                You can enjoy a lot of features that will make your online store
+                stand <br /> out from the crowd. Some of the features are:
+              </div>
+            }
+          />
+        </div>
       </div>
 
       <div>

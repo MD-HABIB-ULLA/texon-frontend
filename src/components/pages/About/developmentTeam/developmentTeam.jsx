@@ -7,12 +7,14 @@ import development_team_3 from "../../../../../public/about/development_team_3.s
 export default function DevelopmentTeam() {
   return (
     <div className="max-w-screen-xl mx-auto px-2 py-5">
-      <HeadingTitle
-        heading={"Meet the Development Team"}
-        subHeading={
-          <>We have a nice Family with Expert, Happy, and Cheerful People</>
-        }
-      />
+      <div className="pb-5">
+        <HeadingTitle
+          heading={"Meet the Development Team"}
+          subHeading={
+            <>We have a nice Family with Expert, Happy, and Cheerful People</>
+          }
+        />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mb-5">
         {/* Team Member 1 */}
