@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import {
-  IoArrowDownCircleOutline,
-  IoArrowUpCircleOutline,
+    IoArrowDownCircleOutline,
+    IoArrowUpCircleOutline,
 } from "react-icons/io5";
 
 export default function WebServicesAccordion() {
@@ -29,9 +30,9 @@ export default function WebServicesAccordion() {
           >
             Technological Expertise:
             {openIdx === 0 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div className="collapse-content">
@@ -64,9 +65,9 @@ export default function WebServicesAccordion() {
           >
             Global Reach
             {openIdx === 1 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div className="collapse-content">
@@ -91,9 +92,9 @@ export default function WebServicesAccordion() {
           >
             Experience
             {openIdx === 2 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div className="collapse-content">
@@ -118,9 +119,9 @@ export default function WebServicesAccordion() {
           >
             Responsive Design
             {openIdx === 3 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div className="collapse-content">
@@ -145,9 +146,9 @@ export default function WebServicesAccordion() {
           >
             Website Maintenance
             {openIdx === 4 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div className="collapse-content">
@@ -172,9 +173,9 @@ export default function WebServicesAccordion() {
           >
             SEO-Friendly
             {openIdx === 5 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div className="collapse-content">
@@ -199,9 +200,9 @@ export default function WebServicesAccordion() {
           >
             Continuous Support
             {openIdx === 6 ? (
-              <IoArrowUpCircleOutline className="w-10" />
+              <IoIosArrowUp className="w-10" />
             ) : (
-              <IoArrowDownCircleOutline className="w-10" />
+              <IoIosArrowDown className="w-10" />
             )}
           </div>
           <div className="collapse-content">
