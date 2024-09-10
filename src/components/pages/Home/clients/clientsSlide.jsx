@@ -13,7 +13,7 @@ import Image from "next/image";
 import { Pagination } from "swiper/modules";
 export const ClientsSlide = () => {
   return (
-    <div className="bg-white rounded-xl">
+    <div className="bg-white rounded-xl text-charleston">
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         <SwiperSlide>
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
@@ -26,14 +26,14 @@ export const ClientsSlide = () => {
             </div>
             <div className="text-start space-y-4">
               <h3 className="text-sm text-gray-500">May 8, 2020</h3>
-              <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
+              <h1 className="text-2xl md:text-3xl font-bold">
                 Mehedi Shamim
               </h1>
-              <h4 className="text-lg md:text-xl text-gray-600">
+              <h4 className="text-lg md:text-xl">
                 Head of Brand, Marketing, and Strategy at{" "}
                 <span className="font-medium">Apex Property</span>
               </h4>
-              <p className="mt-2 text-gray-700">
+              <p className="mt-2">
                 The Texon Limited team did an excellent job delivering a custom
                 software solution that fit our specific needs. Their technical
                 expertise and attention to detail made the project a success. We
