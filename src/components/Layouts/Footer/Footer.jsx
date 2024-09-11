@@ -2,23 +2,27 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoLocationOutline } from "react-icons/io5";
-import {
-  MdOutlineArrowUpward,
-  MdOutlineLocalPhone,
-  MdOutlineMailOutline,
-} from "react-icons/md";
+import { MdOutlineLocalPhone, MdOutlineMailOutline } from "react-icons/md";
+import { RxDoubleArrowUp } from "react-icons/rx";
 import ScrollToTop from "react-scroll-to-top";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Footer = () => {
   return (
     <>
-      <ScrollToTop
-        smooth
-        top={50}
-        className="flex justify-center items-center transition duration-300 hover:bg-blue hover:text-white rounded-none"
-        component={<MdOutlineArrowUpward size={30} />}
-      />
+      <div style={{ height: "150vh", padding: "20px" }}>
+        <ScrollToTop
+          smooth
+          top={50}
+          className="flex justify-center items-center"
+          style={{
+            borderRadius: "0px",
+            backgroundColor: "#252432",
+            color: "#FFFFFF",
+          }} // Inline style to remove rounding
+          component={<RxDoubleArrowUp size={20} />}
+        />
+      </div>
 
       <footer className="bg-white mt-5 text-charleston">
         <div className="py-10 px-2 max-w-screen-xl mx-auto">
