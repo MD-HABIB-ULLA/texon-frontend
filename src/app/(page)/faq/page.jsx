@@ -1,10 +1,13 @@
+"use client";
+import HeadingTitle from "@/components/common/title/headingTitle";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { PiHandshake } from "react-icons/pi";
 import { TbApps } from "react-icons/tb";
+import FaqAccordion from "./faqAccordion";
 
 export default function page() {
   return (
-    <div className="max-w-screen-xl mx-auto px-2 py-10 md:py-20">
+    <div className="max-w-screen-xl mx-auto px-2 pt-10 md:pt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Global Service */}
         <div className="flex items-center bg-white rounded-lg shadow-lg p-6 border-b-2 border-transparent hover:border-primry transition-all duration-300">
@@ -38,6 +41,21 @@ export default function page() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="pt-10 md:pt-20">
+        <HeadingTitle
+          heading={
+            <>
+              Which are the most asked <br />
+              <span className="text-[#6B7280] italic">questions ?</span>
+            </>
+          }
+        />
+      </div>
+
+      <div className="pb-7 md:pb-9 lg:pb-14">
+        <FaqAccordion />
       </div>
     </div>
   );
