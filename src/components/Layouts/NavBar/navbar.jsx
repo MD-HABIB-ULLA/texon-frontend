@@ -14,6 +14,7 @@ import quick_stock from "../../../../public/icon/QUICK STOCK icon-01 1.svg";
 import software_development from "../../../../public/icon/software_development.svg";
 import web from "../../../../public/icon/web.svg";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
+import { GoArrowLeft } from "react-icons/go";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -49,6 +50,8 @@ const Navbar = () => {
   }, [isModalOpen]);
 
   const getModalContent = () => {
+    const modalWidth =
+      modalContent === "About" ? "max-w-screen-md" : "max-w-screen-lg";
     switch (modalContent) {
       case "Services":
         return (
@@ -264,12 +267,79 @@ const Navbar = () => {
         return (
           <div className="p-8">
             <h2 className="text-xl font-medium underline">
-              <Link href="/about">About Texon</Link>
+              <Link href="/about">About</Link>
             </h2>
-            <p className="pt-4">
-              Learn more about our company and what drives us to deliver
-              exceptional services and products.
-            </p>
+            <div className="grid grid-cols-2 gap-5 mt-7">
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">About us</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">Advisor</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">Blogs</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">FAQ</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+                <p className="mt-1 text-[#525252] text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Cursus nibh mauris, nec turpis orci lectus maecenas.
+                </p>
+              </div>
+            </div>
+            <div className="pt-10">
+              <p className="px-4 py-2 w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
+                <Link href="/products">About Texon</Link>
+              </p>
+            </div>
           </div>
         );
       default:
@@ -288,7 +358,7 @@ const Navbar = () => {
             <div className="drawer-content">
               {/* Page content here */}
               <label htmlFor="my-drawer" className="drawer-button">
-                <HiMenuAlt1 className="w-6 md:w-8 h-6 md:h-8" />{" "}
+                <HiMenuAlt1 className="w-6 md:w-8 h-6 md:h-8 cursor-pointer" />{" "}
                 {/* Menu icon */}
               </label>
             </div>
@@ -305,7 +375,7 @@ const Navbar = () => {
                     htmlFor="my-drawer"
                     className="btn btn-square btn-sm bg-white hover:bg-white cursor-pointer rounded-none border-none shadow-none"
                   >
-                    <HiX className="w-6 h-6" /> {/* Close icon */}
+                    <GoArrowLeft className="w-6 h-6" /> {/* Close icon */}
                   </label>
                 </li>
                 <li>
@@ -449,7 +519,10 @@ const Navbar = () => {
           <div className="fixed inset-0 flex justify-center mt-16 p-1 z-40 ">
             <div
               ref={modalRef}
-              className="relative bg-white rounded max-w-screen-lg w-full max-h-[450px]"
+              //   className="relative bg-white rounded max-w-screen-lg w-full max-h-[450px]"
+              className={`relative bg-white rounded ${
+                modalContent === "About" ? "max-w-screen-md" : "max-w-screen-lg"
+              } w-full max-h-[450px]`}
             >
               {getModalContent()}
             </div>
