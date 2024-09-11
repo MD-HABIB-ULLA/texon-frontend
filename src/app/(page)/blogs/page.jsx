@@ -6,7 +6,7 @@ import edutech from "../../../../public/images/edutech.svg";
 
 const Page = () => {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 md:pt-10">
+    <div className="max-w-screen-xl mx-auto px-2 md:pt-10">
       <div className="py-10">
         <HeadingTitle
           heading={<>To helps the learn of the Tech world.</>}

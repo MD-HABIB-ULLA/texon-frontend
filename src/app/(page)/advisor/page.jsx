@@ -6,7 +6,7 @@ import tosar_chandra_das from "../../../../public/advisor/TosarChandraDas.jpg";
 
 const Page = () => {
   return (
-    <div className="max-w-screen-xl mx-auto px-4">
+    <div className="max-w-screen-xl mx-auto px-2">
       <div className="py-10">
         <HeadingTitle
           heading={<>Fueling Success Together!</>}

@@ -329,7 +329,9 @@ const Navbar = () => {
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">FAQ</h1>
+                      <h1 className="font-medium text-base">
+                        <Link href="/faq">FAQ</Link>
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Our mission and values</p>
