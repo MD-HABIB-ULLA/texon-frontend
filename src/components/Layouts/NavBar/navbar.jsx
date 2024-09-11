@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { HiMenuAlt1, HiMinus, HiPlus, HiX } from "react-icons/hi"; // Importing the menu icon
+import { GoArrowLeft } from "react-icons/go";
+import { HiMenuAlt1, HiMinus, HiPlus } from "react-icons/hi"; // Importing the menu icon
 import { IoIosArrowDown, IoIosArrowRoundForward } from "react-icons/io";
 import ai from "../../../../public/icon/ai.svg";
 import app from "../../../../public/icon/app-development.svg";
@@ -14,7 +15,6 @@ import quick_stock from "../../../../public/icon/QUICK STOCK icon-01 1.svg";
 import software_development from "../../../../public/icon/software_development.svg";
 import web from "../../../../public/icon/web.svg";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
-import { GoArrowLeft } from "react-icons/go";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -278,7 +278,7 @@ const Navbar = () => {
                       <h1 className="font-medium text-base">About us</h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
-                    <p className="text-sm">Inventory Management Software</p>
+                    <p className="text-sm">Our mission and values</p>
                   </div>
                 </div>
                 <p className="mt-1 text-[#525252] text-sm">
@@ -294,7 +294,7 @@ const Navbar = () => {
                       <h1 className="font-medium text-base">Advisor</h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
-                    <p className="text-sm">Inventory Management Software</p>
+                    <p className="text-sm">Our mission and values</p>
                   </div>
                 </div>
                 <p className="mt-1 text-[#525252] text-sm">
@@ -310,7 +310,7 @@ const Navbar = () => {
                       <h1 className="font-medium text-base">Blogs</h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
-                    <p className="text-sm">Inventory Management Software</p>
+                    <p className="text-sm">Our mission and values</p>
                   </div>
                 </div>
                 <p className="mt-1 text-[#525252] text-sm">
@@ -326,7 +326,7 @@ const Navbar = () => {
                       <h1 className="font-medium text-base">FAQ</h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
-                    <p className="text-sm">Inventory Management Software</p>
+                    <p className="text-sm">Our mission and values</p>
                   </div>
                 </div>
                 <p className="mt-1 text-[#525252] text-sm">
@@ -348,6 +348,7 @@ const Navbar = () => {
   };
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isAboutsOpen, setIsAboutssOpen] = useState(false);
   return (
     <div>
       <div className="navbar max-w-screen-xl mx-auto">
@@ -448,7 +449,34 @@ const Navbar = () => {
                   )}
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <button
+                    onClick={() => setIsAboutssOpen(!isAboutsOpen)}
+                    className="flex items-center justify-between w-full text-left"
+                  >
+                    About
+                    {isAboutsOpen ? (
+                      <HiMinus className="ml-2" />
+                    ) : (
+                      <HiPlus className="ml-2" />
+                    )}
+                  </button>
+                  {isAboutsOpen && (
+                    <ul>
+                      {/* Sidebar content here */}
+                      <li>
+                        <a>About us</a>
+                      </li>
+                      <li>
+                        <a>Advisor</a>
+                      </li>
+                      <li>
+                        <a>Blogs</a>
+                      </li>
+                      <li>
+                        <a>FAQ</a>
+                      </li>
+                    </ul>
+                  )}
                 </li>
                 <li>
                   <a href="#">Case Studies</a>
