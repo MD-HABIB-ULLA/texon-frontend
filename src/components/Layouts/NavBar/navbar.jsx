@@ -275,7 +275,9 @@ const Navbar = () => {
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">About us</h1>
+                      <h1 className="font-medium text-base">
+                        <Link href="/about">About us</Link>
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Our mission and values</p>
@@ -309,7 +311,9 @@ const Navbar = () => {
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">Blogs</h1>
+                      <h1 className="font-medium text-base">
+                        <Link href="/blogs">Blogs</Link>
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Our mission and values</p>
@@ -339,7 +343,7 @@ const Navbar = () => {
             </div>
             <div className="pt-10">
               <p className="px-4 py-2 w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
-                <Link href="/products">About Texon</Link>
+                <Link href="/about">About Texon</Link>
               </p>
             </div>
           </div>
