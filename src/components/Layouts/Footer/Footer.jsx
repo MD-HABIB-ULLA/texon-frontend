@@ -1,27 +1,46 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineLocalPhone, MdOutlineMailOutline } from "react-icons/md";
 import { RxDoubleArrowUp } from "react-icons/rx";
-import ScrollToTop from "react-scroll-to-top";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
 
 const Footer = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <div style={{ height: "150vh", padding: "20px" }}>
-        <ScrollToTop
-          smooth
-          top={50}
-          className="flex justify-center items-center"
+        <div
+          className={`fixed bottom-5 right-5 flex justify-center items-center bg-[#252432] text-white transition-all duration-500 ease-in-out ${
+            showScrollTop
+              ? "translate-y-0 opacity-100"
+              : "translate-y-10 opacity-0"
+          }`}
           style={{
             borderRadius: "0px",
-            backgroundColor: "#252432",
-            color: "#FFFFFF",
-          }} // Inline style to remove rounding
-          component={<RxDoubleArrowUp size={20} />}
-        />
+            width: "40px",
+            height: "40px",
+            cursor: "pointer",
+          }}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <RxDoubleArrowUp size={20} />
+        </div>
       </div>
 
       <footer className="bg-white mt-5 text-charleston">
