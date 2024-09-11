@@ -24,23 +24,21 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div style={{ height: "150vh", padding: "20px" }}>
-        <div
-          className={`fixed bottom-5 right-5 flex justify-center items-center bg-[#252432] text-white transition-all duration-500 ease-in-out ${
-            showScrollTop
-              ? "translate-y-0 opacity-100"
-              : "translate-y-10 opacity-0"
-          }`}
-          style={{
-            borderRadius: "0px",
-            width: "40px",
-            height: "40px",
-            cursor: "pointer",
-          }}
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        >
-          <RxDoubleArrowUp size={20} />
-        </div>
+      <div
+        className={`fixed bottom-5 right-5 flex justify-center items-center bg-[#252432] text-white transition-all duration-500 ease-in-out hover:bg-blue ${
+          showScrollTop
+            ? "translate-y-0 opacity-100"
+            : "translate-y-10 opacity-0"
+        }`}
+        style={{
+          borderRadius: "0px",
+          width: "40px",
+          height: "40px",
+          cursor: "pointer",
+        }}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <RxDoubleArrowUp size={20} />
       </div>
 
       <footer className="bg-white mt-5 text-charleston">
