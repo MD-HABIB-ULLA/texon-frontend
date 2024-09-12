@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className={`fixed bottom-5 right-5 flex justify-center items-center bg-[#252432] text-white transition-all duration-500 ease-in-out hover:bg-blue ${
+        className={`fixed bottom-3 right-3 flex justify-center items-center bg-[#252432] text-white transition-all duration-500 ease-in-out hover:bg-blue ${
           showScrollTop
             ? "translate-y-0 opacity-100"
             : "translate-y-10 opacity-0"

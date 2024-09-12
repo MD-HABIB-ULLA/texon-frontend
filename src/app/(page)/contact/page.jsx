@@ -68,10 +68,10 @@ export default function Contact() {
           <ContactForm />
         </div>
 
-        <div className="p-6">
+        <div className="mt-5 md:mt-10 mb-10 md:mb-20 lg:mb-24">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Contact Card */}
-            <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center">
+            <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:bg-[#1f2937]">
               <IoLocationOutline className="text-4xl mb-4" />
               <h2 className="text-xl font-semibold mb-2">Office Address 1</h2>
               <p className="text-center text-gray-300">
@@ -80,7 +80,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Card */}
-            <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center">
+            <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:bg-[#1f2937]">
               <IoLocationOutline className="text-4xl mb-4" />
               <h2 className="text-xl font-semibold mb-2">Office Address 2</h2>
               <p className="text-center text-gray-300">
@@ -89,7 +89,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Card */}
-            <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center">
+            <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:bg-[#1f2937]">
               <IoLocationOutline className="text-4xl mb-4" />
               <h2 className="text-xl font-semibold mb-2">Office Address 3</h2>
               <p className="text-center text-gray-300">
