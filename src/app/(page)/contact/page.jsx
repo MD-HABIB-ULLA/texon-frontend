@@ -1,8 +1,10 @@
+import HeadingTitle from "@/components/common/title/headingTitle";
 import Image from "next/image";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { PiHandshake } from "react-icons/pi";
 import { TbApps } from "react-icons/tb";
 import contact_us_bannar from "../../../../public/contact/contact_us_bg_2.png";
+import ContactForm from "./ContactForm";
 export default function Contact() {
   return (
     <>
@@ -52,6 +54,16 @@ export default function Contact() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="py-5 md:pb-10 lg:pb-16">
+        <h1 className="text-center font-medium">Online Booking</h1>
+        <HeadingTitle
+          heading={<>Hey! Get in touch</>}
+          subHeading={<>Our experts get back to within 1-2 Hours.</>}
+        />
+
+        <ContactForm />
       </div>
     </>
   );
