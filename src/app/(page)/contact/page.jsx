@@ -1,11 +1,12 @@
 import HeadingTitle from "@/components/common/title/headingTitle";
 import Image from "next/image";
-import { AiOutlineGlobal } from "react-icons/ai";
+import { AiOutlineGlobal, AiOutlineMail } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { PiHandshake } from "react-icons/pi";
 import { TbApps } from "react-icons/tb";
 import contact_us_bannar from "../../../../public/contact/contact_us_bg_2.png";
 import ContactForm from "./ContactForm";
+import { MdOutlineLocalPhone } from "react-icons/md";
 export default function Contact() {
   return (
     <>
@@ -73,28 +74,30 @@ export default function Contact() {
             {/* Contact Card */}
             <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:bg-[#1f2937]">
               <IoLocationOutline className="text-4xl mb-4" />
-              <h2 className="text-xl font-semibold mb-2">Office Address 1</h2>
-              <p className="text-center text-gray-300">
+              <h2 className="text-lg font-medium mb-2 uppercase">
+                Office Address 1
+              </h2>
+              <p className="text-center">
                 Begum Rokeya Sarani, East Shewrapara, Mirpur, Dhaka 1216
               </p>
             </div>
 
             {/* Contact Card */}
             <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:bg-[#1f2937]">
-              <IoLocationOutline className="text-4xl mb-4" />
-              <h2 className="text-xl font-semibold mb-2">Office Address 2</h2>
-              <p className="text-center text-gray-300">
-                Example Address Line 1, City, State, Zip Code
-              </p>
+              <MdOutlineLocalPhone  className="text-4xl mb-4" />
+              <h2 className="text-lg font-medium mb-2 uppercase">
+                Phone Number
+              </h2>
+              <p className="text-center">+88 01409 003646</p>
+              <p className="text-center">+88 01751 513310</p>
             </div>
 
             {/* Contact Card */}
             <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:bg-[#1f2937]">
-              <IoLocationOutline className="text-4xl mb-4" />
-              <h2 className="text-xl font-semibold mb-2">Office Address 3</h2>
-              <p className="text-center text-gray-300">
-                Another Address Line, City, State, Zip Code
-              </p>
+              <AiOutlineMail  className="text-4xl mb-4" />
+              <h2 className="text-lg font-medium mb-2 uppercase">Our Mail</h2>
+              <p className="text-center">texonltd@gmail.com</p>
+              <p className="text-center">contact@texonltd.com</p>
             </div>
           </div>
         </div>
