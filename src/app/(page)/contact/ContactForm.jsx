@@ -4,7 +4,9 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Name */}
         <div>
-          <label className="block text-[#4B5563] mb-2">Name</label>
+          <label className="block text-[#4B5563] mb-2">
+            Name<span className="text-[#FF0000] text-sm">*</span>
+          </label>
           <input
             type="text"
             name="name"
@@ -16,7 +18,9 @@ export default function ContactForm() {
 
         {/* Email */}
         <div>
-          <label className="block text-[#4B5563] mb-2">Email</label>
+          <label className="block text-[#4B5563] mb-2">
+            Email<span className="text-[#FF0000] text-sm">*</span>
+          </label>
           <input
             type="email"
             name="email"
@@ -28,7 +32,9 @@ export default function ContactForm() {
 
         {/* Phone */}
         <div>
-          <label className="block text-[#4B5563] mb-2">Phone</label>
+          <label className="block text-[#4B5563] mb-2">
+            Phone<span className="text-[#FF0000] text-sm">*</span>
+          </label>
           <input
             type="tel"
             name="phone"
@@ -65,7 +71,9 @@ export default function ContactForm() {
 
       {/* Message */}
       <div className="mt-4">
-        <label className="block text-[#4B5563] mb-2">Message</label>
+        <label className="block text-[#4B5563] mb-2">
+          Message<span className="text-[#FF0000] text-sm">*</span>
+        </label>
         <textarea
           name="message"
           className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-blue"
