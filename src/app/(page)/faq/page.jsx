@@ -16,7 +16,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className="max-w-screen-xl mx-auto px-2 pt-10 md:pt-20">
+      <div className="max-w-screen-xl mx-auto px-2 -mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Global Service */}
           <div className="flex items-center bg-white rounded-lg shadow-lg p-6 border-b-2 border-transparent hover:border-primry transition-all duration-300">
