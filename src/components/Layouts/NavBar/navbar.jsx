@@ -490,7 +490,7 @@ const Navbar = () => {
                   <a href="#">Case Studies</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#"></a>
                 </li>
               </ul>
             </div>
@@ -538,7 +538,7 @@ const Navbar = () => {
               {/* No modal functionality for Case Studies */}
             </li>
             <li>
-              <a>Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
