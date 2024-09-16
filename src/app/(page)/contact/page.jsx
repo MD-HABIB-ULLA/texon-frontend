@@ -2,11 +2,11 @@ import HeadingTitle from "@/components/common/title/headingTitle";
 import Image from "next/image";
 import { AiOutlineGlobal, AiOutlineMail } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineLocalPhone } from "react-icons/md";
 import { PiHandshake } from "react-icons/pi";
 import { TbApps } from "react-icons/tb";
 import contact_us_bannar from "../../../../public/contact/contact_us_bg_2.png";
 import ContactForm from "./ContactForm";
-import { MdOutlineLocalPhone } from "react-icons/md";
 export default function Contact() {
   return (
     <>
@@ -84,7 +84,7 @@ export default function Contact() {
 
             {/* Contact Card */}
             <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:bg-[#1f2937]">
-              <MdOutlineLocalPhone  className="text-4xl mb-4" />
+              <MdOutlineLocalPhone className="text-4xl mb-4" />
               <h2 className="text-lg font-medium mb-2 uppercase">
                 Phone Number
               </h2>
@@ -94,13 +94,24 @@ export default function Contact() {
 
             {/* Contact Card */}
             <div className="bg-[#111827] text-white p-6 rounded shadow-md flex flex-col items-center transition-transform transform hover:scale-105 hover:bg-[#1f2937]">
-              <AiOutlineMail  className="text-4xl mb-4" />
+              <AiOutlineMail className="text-4xl mb-4" />
               <h2 className="text-lg font-medium mb-2 uppercase">Our Mail</h2>
               <p className="text-center">texonltd@gmail.com</p>
               <p className="text-center">contact@texonltd.com</p>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="max-w-screen-xl mx-auto pb-6 md:pb-16 lg:pb-20">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7301.455007636766!2d90.375503!3d23.792716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7daeb606bb1%3A0xb135266040948ee6!2sTexon%20-%20Software%20Solutions!5e0!3m2!1sen!2sbd!4v1726482914973!5m2!1sen!2sbd"
+          width="100%"
+          height="500"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </>
   );
