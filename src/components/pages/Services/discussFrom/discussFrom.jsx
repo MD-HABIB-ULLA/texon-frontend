@@ -9,6 +9,8 @@ export default function DiscussForm() {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
+  const [service, setService] = useState("");
+  const [budget, setBudget] = useState("");
   return (
     <div className="max-w-screen-xl mx-auto bg-primry my-20 rounded-md">
       <div className="px-2 md:px-8 flex flex-col md:flex-row">
@@ -52,7 +54,7 @@ export default function DiscussForm() {
                 id="company"
                 name="company"
                 className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
-                placeholder="Enter your phone number"
+                placeholder="Ex. Texon ltd"
               />
             </div>
             <div className="form-control flex-1">
@@ -64,7 +66,7 @@ export default function DiscussForm() {
                 id="email"
                 name="email"
                 className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
-                placeholder="Enter your email"
+                placeholder="you@example.com"
               />
             </div>
           </div>
@@ -72,15 +74,13 @@ export default function DiscussForm() {
           {/* Service Required and Project Budget Dropdowns */}
           <div className="flex flex-col md:flex-row gap-4 mb-6">
             <div className="form-control flex-1">
-              <label htmlFor="service" className="block mb-2 text-white">
-                Service Required*
-              </label>
+              <label className="block mb-2 text-white">Service Required*</label>
               <select
-                id="service"
-                name="service"
-                className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow bg-white text-black"
+                className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
+                value={service}
+                onChange={(e) => setService(e.target.value)}
               >
-                <option disabled value="">
+                <option value="" disabled>
                   Select Your Service
                 </option>
                 <option value="employee">Employee</option>
@@ -89,16 +89,15 @@ export default function DiscussForm() {
                 <option value="admin">Admin</option>
               </select>
             </div>
+
             <div className="form-control flex-1">
-              <label htmlFor="budget" className="block mb-2 text-white">
-                Project Budget*
-              </label>
+              <label className="block mb-2 text-white">Project Budget*</label>
               <select
-                id="budget"
-                name="budget"
-                className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow bg-white text-black"
+                className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
+                value={budget}
+                onChange={(e) => setBudget(e.target.value)}
               >
-                <option disabled value="">
+                <option value="" disabled>
                   Select Your Range
                 </option>
                 <option value="50000">50,000</option>
@@ -117,7 +116,7 @@ export default function DiscussForm() {
             <textarea
               id="message"
               name="message"
-              className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
+              className="w-full px-3 py-2 border border-gray rounded h-24 focus:outline-none focus:ring-1 focus:border-yellow"
               placeholder="Tell us more about your idea"
             />
           </div>
