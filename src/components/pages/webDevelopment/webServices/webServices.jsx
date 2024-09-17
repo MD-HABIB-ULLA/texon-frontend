@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import web_services from "../../../../../public/services/web_dev 1.svg";
+import {MdKeyboardArrowRight} from 'react-icons/md'; // Import the icon
 
 const WebServices = () => {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 my-12 md:mt-20 md:mb-24">
+    <div className="max-w-screen-xl mx-auto px-4 my-12 md:mt-24 md:mb-24">
       <div className="text-center mb-12">
         <h1 className="text-lg md:text-2xl lg:text-2xl font-semibold leading-relaxed">
           At Texon Limited, we understand that a great website is essential for
@@ -13,7 +14,6 @@ const WebServices = () => {
           create the perfect online presence.
         </h1>
       </div>
-
       <div className="flex flex-col md:flex-row items-center md:justify-between">
         <div className="flex-shrink-0 mb-8 md:mb-0 md:w-1/2 bg-white rounded">
           <Image
@@ -48,8 +48,7 @@ const WebServices = () => {
           </div>
         </div>
       </div>
-
-      <div className="pt-20 text-center">
+      <div className="pt-20 pb-12 text-center">
         <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">
           Everybody wants to be{" "}
           <span className="text-primry font-extrabold">Texon.</span> <br /> But
@@ -67,8 +66,9 @@ const WebServices = () => {
             We create custom websites that are designed to reflect your brand
             and appeal to your target audience.
           </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue">
+          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
             Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
 
@@ -81,8 +81,9 @@ const WebServices = () => {
             We develop e-commerce websites that are easy to use, secure, and
             optimized for conversion.
           </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue">
+          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
             Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
 
@@ -95,8 +96,9 @@ const WebServices = () => {
             We build websites that are powered by a CMS, making it easy for you
             to update your site and content.
           </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue">
+          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
             Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
 
@@ -109,8 +111,9 @@ const WebServices = () => {
             Our UI/UX design services include creating wireframes, prototypes,
             and visual designs for your website.
           </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue">
+          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
             Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
 
@@ -123,8 +126,9 @@ const WebServices = () => {
             We offer ongoing website maintenance services to keep your site
             running smoothly and securely.
           </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue">
+          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
             Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
       </div>
