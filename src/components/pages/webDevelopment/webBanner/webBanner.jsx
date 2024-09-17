@@ -3,7 +3,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 export default function WebBanner() {
   return (
     <div className="bg-[#111827] pt-20 pb-14">
-      <div className="max-w-screen-xl mx-auto px-4">
+      <div className="max-w-screen-xl mx-auto px-2">
         <div className="flex flex-col items-center">
           <h1 className="text-white text-center text-3xl md:text-4xl font-medium mb-6">
             Web Design & Development
