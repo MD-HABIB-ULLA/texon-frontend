@@ -9,8 +9,6 @@ export default function DiscussForm() {
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
-  const [service, setService] = useState("");
-  const [budget, setBudget] = useState("");
   return (
     <div className="max-w-screen-xl mx-auto bg-primry my-20 rounded-md">
       <div className="px-2 md:px-8 flex flex-col md:flex-row">
@@ -75,12 +73,8 @@ export default function DiscussForm() {
           <div className="flex flex-col md:flex-row gap-4 mb-6">
             <div className="form-control flex-1">
               <label className="block mb-2 text-white">Service Required*</label>
-              <select
-                className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
-                value={service}
-                onChange={(e) => setService(e.target.value)}
-              >
-                <option value="" disabled>
+              <select className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow">
+                <option value="" disabled selected>
                   Select Your Service
                 </option>
                 <option value="employee">Employee</option>
@@ -92,12 +86,8 @@ export default function DiscussForm() {
 
             <div className="form-control flex-1">
               <label className="block mb-2 text-white">Project Budget*</label>
-              <select
-                className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
-                value={budget}
-                onChange={(e) => setBudget(e.target.value)}
-              >
-                <option value="" disabled>
+              <select className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow">
+                <option value="" disabled selected>
                   Select Your Range
                 </option>
                 <option value="50000">50,000</option>
