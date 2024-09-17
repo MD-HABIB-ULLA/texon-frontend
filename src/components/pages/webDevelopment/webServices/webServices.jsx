@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { MdKeyboardArrowRight } from "react-icons/md"; // Import the icon
 import web_services from "../../../../../public/services/web_dev 1.svg";
-import {MdKeyboardArrowRight} from 'react-icons/md'; // Import the icon
 
 const WebServices = () => {
   return (
@@ -48,7 +48,7 @@ const WebServices = () => {
           </div>
         </div>
       </div>
-      <div className="pt-20 pb-12 text-center">
+      <div className="pt-20 pb-16 text-center">
         <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">
           Everybody wants to be{" "}
           <span className="text-primry font-extrabold">Texon.</span> <br /> But
@@ -56,77 +56,87 @@ const WebServices = () => {
         </h1>
       </div>
 
-      <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* <!-- Card 1 --> */}
-        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue">
-          <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
-            Custom Website Development
-          </h2>
-          <p className="text-[#9CA3AF] text-base mb-4">
-            We create custom websites that are designed to reflect your brand
-            and appeal to your target audience.
-          </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
+              Custom Website Development
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              We create custom websites that are designed to reflect your brand
+              and appeal to your target audience.
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
             Read more
             <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
 
         {/* <!-- Card 2 --> */}
-        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue">
-          <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
-            E-commerce Website Development
-          </h2>
-          <p className="text-[#9CA3AF] text-base mb-4">
-            We develop e-commerce websites that are easy to use, secure, and
-            optimized for conversion.
-          </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
+              E-commerce Website Development
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              We develop e-commerce websites that are easy to use, secure, and
+              optimized for conversion.
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
             Read more
             <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
 
         {/* <!-- Card 3 --> */}
-        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue">
-          <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
-            Content Management Systems (CMS)
-          </h2>
-          <p className="text-[#9CA3AF] text-base mb-4">
-            We build websites that are powered by a CMS, making it easy for you
-            to update your site and content.
-          </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
+              Content Management Systems (CMS)
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              We build websites that are powered by a CMS, making it easy for
+              you to update your site and content.
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
             Read more
             <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
 
         {/* <!-- Card 4 --> */}
-        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue">
-          <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
-            UI/UX Design
-          </h2>
-          <p className="text-[#9CA3AF] text-base mb-4">
-            Our UI/UX design services include creating wireframes, prototypes,
-            and visual designs for your website.
-          </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
+              UI/UX Design
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              Our UI/UX design services include creating wireframes, prototypes,
+              and visual designs for your website.
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
             Read more
             <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
 
         {/* <!-- Card 5 --> */}
-        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue">
-          <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
-            Website Maintenance
-          </h2>
-          <p className="text-[#9CA3AF] text-base mb-4">
-            We offer ongoing website maintenance services to keep your site
-            running smoothly and securely.
-          </p>
-          <button className="bg-primry text-white py-1 px-4 rounded transition-colors duration-300 hover:bg-blue flex items-center">
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-[#6B7280]">
+              Website Maintenance
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              We offer ongoing website maintenance services to keep your site
+              running smoothly and securely.
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
             Read more
             <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
