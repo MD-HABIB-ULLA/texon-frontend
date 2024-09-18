@@ -98,7 +98,9 @@ const Navbar = () => {
                   </div>
                   <div className="flex items-center">
                     <Image src={aws} width={20} alt="aws" />
-                    <p className="ms-2">AWS Services</p>
+                    <p className="ms-2">
+                      <Link href="/cloudcomputing">AWS Services</Link>
+                    </p>
                   </div>
                   <div className="flex items-center">
                     <Image src={development} width={18} alt="development" />
