@@ -92,7 +92,9 @@ const Navbar = () => {
                   </div>
                   <div className="flex items-center">
                     <Image src={ai} width={18} alt="ai" />
-                    <p className="ms-2">Ai & Automation</p>
+                    <p className="ms-2">
+                      <Link href="/aiandautomation">Ai & Automation</Link>
+                    </p>
                   </div>
                   <div className="flex items-center">
                     <Image src={aws} width={20} alt="aws" />
