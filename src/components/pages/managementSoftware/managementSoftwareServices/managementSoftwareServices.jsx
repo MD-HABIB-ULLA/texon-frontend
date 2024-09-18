@@ -1,25 +1,25 @@
 import Image from "next/image";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdKeyboardArrowRight } from "react-icons/md"; // Import the icon
-import mobile_services from "../../../../../public/services/mobile-app-development.png";
+import business_software from "../../../../../public/services/business_software.png";
 
-const MobileApplicationServices = () => {
+const ManagementSoftwareServices = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-4 my-12 md:mt-24 md:mb-24">
       <div className="text-center mb-12">
         <h1 className="text-lg md:text-2xl lg:text-2xl font-semibold leading-relaxed">
-          In today's fast-paced world, having a mobile app is essential for any
-          business looking to stay ahead. At Texon Limited, we offer
-          comprehensive app development services to help businesses create
-          engaging and effective mobile apps.
+          At Texon Limited, we understand that a great website is essential for
+          any business looking to succeed online. That's why we offer a wide
+          range of website development services to help businesses of all sizes
+          create the perfect online presence.
         </h1>
       </div>
       <div className="flex flex-col md:flex-row items-center md:justify-between">
         <div className="flex-shrink-0 mb-8 md:mb-0 md:w-1/2 bg-white rounded">
           <Image
-            src={mobile_services}
+            src={business_software}
             alt="web_services"
-            className="w-full h-auto max-w-md mx-auto"
+            className="w-full h-full max-w-md mx-auto object-cover"
           />
         </div>
         <div className="md:w-1/2 md:pl-8">
@@ -27,16 +27,19 @@ const MobileApplicationServices = () => {
             Our Services Include:
           </h2>
           <p className="text-lg mb-6">
-            We have provided over 50+ custom based Service solutions with 100%
+            We have provided over 50+ custom-based service solutions with 100%
             customer satisfaction.
           </p>
-
           <div className="space-y-5">
             {[
-              "Native Android App Development",
-              "Native iOS App Development",
-              "Cross-platform App Development",
-              "Hybrid App Development",
+              "Texon ERP Software",
+              "Finance Management Software",
+              "Export Import Business Management Software",
+              "Desktop POS Software",
+              "Pharmacy Management Software",
+              "Fashion House Management Software",
+              "Dealership Business Management Software",
+              "Book Publisher’s Management Software",
             ].map((service, index) => (
               <div key={index} className="flex items-start space-x-3">
                 <IoMdCheckmarkCircleOutline className="text-xl text-primry" />
@@ -60,12 +63,12 @@ const MobileApplicationServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              Native App Development
+              Ecommerce Website and App
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We develop apps for iOS and Android platforms, ensuring that your
-              app is optimized for each platform and offers a seamless user
-              experience,
+              Do you want to start your own online store without any hassle? Do
+              you want to sell your products or services to millions of
+              customers around the world? If yes,
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -78,11 +81,13 @@ const MobileApplicationServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              Cross-Platform App Development
+              Educational Website and Accounting Software
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We create apps that work seamlessly on multiple platforms, so your
-              customers can access your app from anywhere, anytime,
+              Are you looking for a smart, easy and affordable way to manage
+              your educational institution? Do you want to streamline your
+              administrative tasks, improve your academic performance, and
+              enhance your
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -95,11 +100,13 @@ const MobileApplicationServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              Trending UI/UX Design
+              Texon ERP Software
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We design user-friendly and engaging interfaces that provide a
-              great user experience and encourage interaction,
+              Advanced ERP software is currently the power house of every
+              business, Texon ERP software integrates all of the essential
+              functions for running a business—e,g,, accounting, inventory and
+              order management, human
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -112,11 +119,12 @@ const MobileApplicationServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              Backend Development
+              Texon POS Software
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We develop robust and scalable backends that ensure your app can
-              handle high traffic and deliver fast performance,
+              Point-of-sale (POS) software refers to the combination of computer
+              hardware and software performing precise business transactions,
+              Texon POS Software
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -129,11 +137,13 @@ const MobileApplicationServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              Testing and Launch
+              Pharmacy Management Software
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We test your app thoroughly to ensure that it works seamlessly,
-              and we help you launch your app on the app stores,
+              Texon Limited’s Pharmacy Management Software ensures efficient
+              business operation, a modern billing system, sales and purchase
+              management, expense and revenue management, tracks inventory, and
+              helps you grow your business digitally,
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -141,15 +151,66 @@ const MobileApplicationServices = () => {
             <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
           </button>
         </div>
-        {/* <!-- Card 6 --> */}
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              App Maintenance and Support
+              Fashion and Footwear Management Software
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We offer ongoing app maintenance services to ensure that your app
-              is always running smoothly and securely,
+              To grow your fashion and footwear business, there is no substitute
+              for using business management software, especially inventory,
+              finance, expense, and sales management,
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
+            Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
+          </button>
+        </div>
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-charleston">
+              Export Import Business Management Software
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              The import and export industry is the backbone of every developed
+              and underdeveloped country, because the earnings from import and
+              export are humongous and can transform an underdeveloped country
+              into
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
+            Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
+          </button>
+        </div>
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-charleston">
+              Book Publishers Management Software
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              Texon Limited delivers end-to-end publishing management software
+              for trade, academic, and independent businesses, We help book
+              publishers automate production workflow, optimize distribution
+              processes and monetization, and acquire powerful reporting and
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
+            Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
+          </button>
+        </div>
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-charleston">
+              Dealership Business Management Software
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              Texon Dealership Business Management Software is specifically made
+              for retailers, wholesalers, and distributors by considering all
+              the complexities of their businesses, There are varied types of
+              useful reports, accounting, stock
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -162,4 +223,4 @@ const MobileApplicationServices = () => {
   );
 };
 
-export default MobileApplicationServices;
+export default ManagementSoftwareServices;
