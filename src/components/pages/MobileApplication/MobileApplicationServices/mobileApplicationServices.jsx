@@ -1,17 +1,17 @@
 import Image from "next/image";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { MdKeyboardArrowRight } from "react-icons/md"; // Import the icon
-import web_services from "../../../../../public/services/web_dev 1.svg";
+import web_services from "../../../../../public/services/mobile-app-development.png";
 
-const WebServices = () => {
+const MobileApplicationServices = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-4 my-12 md:mt-24 md:mb-24">
       <div className="text-center mb-12">
         <h1 className="text-lg md:text-2xl lg:text-2xl font-semibold leading-relaxed">
-          At Texon Limited, we understand that a great website is essential for
-          any business looking to succeed online. That's why we offer a wide
-          range of website development services to help businesses of all sizes
-          create the perfect online presence.
+          In today's fast-paced world, having a mobile app is essential for any
+          business looking to stay ahead. At Texon Limited, we offer
+          comprehensive app development services to help businesses create
+          engaging and effective mobile apps.
         </h1>
       </div>
       <div className="flex flex-col md:flex-row items-center md:justify-between">
@@ -27,18 +27,16 @@ const WebServices = () => {
             Our Services Include:
           </h2>
           <p className="text-lg mb-6">
-            We have provided over 50+ custom-based service solutions with 100%
+            We have provided over 50+ custom based Service solutions with 100%
             customer satisfaction.
           </p>
+
           <div className="space-y-5">
             {[
-              "Multivendor Ecommerce eco systems Development",
-              "Single Vendor Ecommerce Development",
-              "B2C or B2B Website Development",
-              "Business Management Software",
-              "Cloud service",
-              "UI/UX Design",
-              "API Integrations & Web consultancy",
+              "Native Android App Development",
+              "Native iOS App Development",
+              "Cross-platform App Development",
+              "Hybrid App Development",
             ].map((service, index) => (
               <div key={index} className="flex items-start space-x-3">
                 <IoMdCheckmarkCircleOutline className="text-xl text-primry" />
@@ -51,9 +49,8 @@ const WebServices = () => {
       <div className="py-12 md:py-20 lg:py-28 text-center">
         <div className="bg-primry text-white py-5 rounded">
           <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">
-            Everybody wants to be{" "}
-            <span className="font-extrabold">Texon.</span> <br /> But no one
-            can’t be!
+            Everybody wants to be <span className="font-extrabold">Texon.</span>{" "}
+            <br /> But no one can’t be!
           </h1>
         </div>
       </div>
@@ -63,11 +60,12 @@ const WebServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              Custom Website Development
+              Native App Development
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We create custom websites that are designed to reflect your brand
-              and appeal to your target audience.
+              We develop apps for iOS and Android platforms, ensuring that your
+              app is optimized for each platform and offers a seamless user
+              experience,
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -80,11 +78,11 @@ const WebServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              E-commerce Website Development
+              Cross-Platform App Development
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We develop e-commerce websites that are easy to use, secure, and
-              optimized for conversion.
+              We create apps that work seamlessly on multiple platforms, so your
+              customers can access your app from anywhere, anytime,
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -97,11 +95,11 @@ const WebServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              Content Management Systems (CMS)
+              Trending UI/UX Design
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We build websites that are powered by a CMS, making it easy for
-              you to update your site and content.
+              We design user-friendly and engaging interfaces that provide a
+              great user experience and encourage interaction,
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -114,11 +112,11 @@ const WebServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              UI/UX Design
+              Backend Development
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              Our UI/UX design services include creating wireframes, prototypes,
-              and visual designs for your website.
+              We develop robust and scalable backends that ensure your app can
+              handle high traffic and deliver fast performance,
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -131,11 +129,27 @@ const WebServices = () => {
         <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-semibold mb-4 text-charleston">
-              Website Maintenance
+              Testing and Launch
             </h2>
             <p className="text-[#9CA3AF] text-base mb-4">
-              We offer ongoing website maintenance services to keep your site
-              running smoothly and securely.
+              We test your app thoroughly to ensure that it works seamlessly,
+              and we help you launch your app on the app stores,
+            </p>
+          </div>
+          <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
+            Read more
+            <MdKeyboardArrowRight className="ml-1 mt-1" /> {/* Add the icon */}
+          </button>
+        </div>
+        {/* <!-- Card 6 --> */}
+        <div className="bg-white p-5 rounded-lg border border-[#E5E7EB] transition-transform duration-300 hover:scale-105 hover:border-blue flex flex-col justify-between">
+          <div>
+            <h2 className="text-xl font-semibold mb-4 text-charleston">
+              App Maintenance and Support
+            </h2>
+            <p className="text-[#9CA3AF] text-base mb-4">
+              We offer ongoing app maintenance services to ensure that your app
+              is always running smoothly and securely,
             </p>
           </div>
           <button className="bg-primry text-white py-1 px-3 rounded transition-colors duration-300 hover:bg-blue flex items-center mt-auto w-fit">
@@ -148,4 +162,4 @@ const WebServices = () => {
   );
 };
 
-export default WebServices;
+export default MobileApplicationServices;

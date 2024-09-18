@@ -78,7 +78,9 @@ const Navbar = () => {
                   </div>
                   <div className="flex items-center">
                     <Image src={app} width={20} alt="app" />
-                    <p className="ms-2">Mobile App Develop</p>
+                    <p className="ms-2">
+                      <Link href="/mobileapplication">Mobile App Develop</Link>
+                    </p>
                   </div>
                   <div className="flex items-center">
                     <Image src={management} width={20} alt="management" />
