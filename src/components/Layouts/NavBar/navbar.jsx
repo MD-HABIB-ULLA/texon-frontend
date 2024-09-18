@@ -104,7 +104,9 @@ const Navbar = () => {
                   </div>
                   <div className="flex items-center">
                     <Image src={development} width={18} alt="development" />
-                    <p className="ms-2">IT Infrastructure</p>
+                    <p className="ms-2">
+                      <Link href="/itInfrastructure">IT Infrastructure</Link>
+                    </p>
                   </div>
                 </div>
               </div>
