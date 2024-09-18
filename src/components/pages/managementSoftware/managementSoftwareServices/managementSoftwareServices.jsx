@@ -19,7 +19,7 @@ const ManagementSoftwareServices = () => {
           <Image
             src={business_software}
             alt="web_services"
-            className="w-full h-full max-w-md mx-auto object-cover"
+            className="w-full max-w-md mx-auto object-cover h-64 sm:h-80 md:h-[400px] lg:h-[500px]"
           />
         </div>
         <div className="md:w-1/2 md:pl-8">

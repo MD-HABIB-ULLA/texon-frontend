@@ -4,25 +4,27 @@ import ManagementSoftwareChooseAccordion from "./managementSoftwareChooseAccordi
 const ManagementSoftwareChoose = () => {
   return (
     <>
-      <HeadingTitle
-        heading={
-          <h1 className="text-3xl font-bold">
-            Why you should choose our App Development Services?
-          </h1>
-        }
-        subHeading={
-          <>
-            <p>
-              Choosing the right app development company can be a daunting task.
-              You want to make
-            </p>
-            <p>
-              sure that you're working with a team that not only has technical
-              expertise but also understands your business requirements:
-            </p>
-          </>
-        }
-      ></HeadingTitle>
+      <div className="px-2">
+        <HeadingTitle
+          heading={
+            <h1 className="text-3xl font-bold">
+              Why you should choose our App Development Services?
+            </h1>
+          }
+          subHeading={
+            <>
+              <p>
+                Choosing the right app development company can be a daunting
+                task. You want to make
+              </p>
+              <p>
+                sure that you're working with a team that not only has technical
+                expertise but also understands your business requirements:
+              </p>
+            </>
+          }
+        ></HeadingTitle>
+      </div>
 
       <div className="max-w-screen-xl mx-auto pt-5 pb-14">
         <ManagementSoftwareChooseAccordion />
