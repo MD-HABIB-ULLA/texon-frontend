@@ -49,11 +49,13 @@ const WebServices = () => {
         </div>
       </div>
       <div className="pt-20 pb-16 text-center">
-        <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">
-          Everybody wants to be{" "}
-          <span className="text-primry font-extrabold">Texon.</span> <br /> But
-          no one can’t be!
-        </h1>
+        <div className="bg-primry text-white py-5 rounded">
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-medium">
+            Everybody wants to be{" "}
+            <span className="font-extrabold">Texon.</span> <br /> But no one
+            can’t be!
+          </h1>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
