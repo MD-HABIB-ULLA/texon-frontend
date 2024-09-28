@@ -312,7 +312,11 @@ const Navbar = () => {
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">Plumber Web</h1>
+                      <h1 className="font-medium text-base">
+                        <Link href="https://texonltd.com/products/plumber-web">
+                          Plumber Web
+                        </Link>
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
@@ -324,7 +328,11 @@ const Navbar = () => {
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">Texon Mart</h1>
+                      <h1 className="font-medium text-base">
+                        <Link href="https://texonltd.com/products/texonmart">
+                          Texon Mart
+                        </Link>
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
@@ -336,7 +344,12 @@ const Navbar = () => {
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">Quick Stock</h1>
+                      <h1 className="font-medium text-base">
+                        {" "}
+                        <Link href="https://texonltd.com/products/texon-inventory-software">
+                          Quick Stock
+                        </Link>{" "}
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
