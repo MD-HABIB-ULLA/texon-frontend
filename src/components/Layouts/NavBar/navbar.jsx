@@ -172,105 +172,179 @@ const Navbar = () => {
             <h2 className="text-xl font-medium underline">
               <Link href="/products">Products</Link>
             </h2>
-            <div className="grid grid-cols-3 gap-5 mt-7">
+            <div className="grid grid-cols-3 gap-5 mt-5">
               <div>
                 <div className="flex items-center">
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <h1 className="font-medium text-base">
+                        Ecommerce Site & APP
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
                   </div>
                 </div>
-                <p className="mt-1 text-[#525252] text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Cursus nibh mauris, nec turpis orci lectus maecenas.
-                </p>
               </div>
               <div>
                 <div className="flex items-center">
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <h1 className="font-medium text-base">
+                        EduTech & Accounting
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
                   </div>
                 </div>
-                <p className="mt-1 text-[#525252] text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Cursus nibh mauris, nec turpis orci lectus maecenas.
-                </p>
               </div>
               <div>
                 <div className="flex items-center">
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <h1 className="font-medium text-base">ERP Software</h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
                   </div>
                 </div>
-                <p className="mt-1 text-[#525252] text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Cursus nibh mauris, nec turpis orci lectus maecenas.
-                </p>
               </div>
               <div>
                 <div className="flex items-center">
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <h1 className="font-medium text-base">POS Software</h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
                   </div>
                 </div>
-                <p className="mt-1 text-[#525252] text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Cursus nibh mauris, nec turpis orci lectus maecenas.
-                </p>
               </div>
               <div>
                 <div className="flex items-center">
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <h1 className="font-medium text-base">
+                        Pharmacy Software
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
                   </div>
                 </div>
-                <p className="mt-1 text-[#525252] text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Cursus nibh mauris, nec turpis orci lectus maecenas.
-                </p>
               </div>
               <div>
                 <div className="flex items-center">
                   <Image src={quick_stock} width={40} alt="quick_stock" />
                   <div className="ms-2">
                     <div className="flex items-center">
-                      <h1 className="font-medium text-base">QuickStock</h1>
+                      <h1 className="font-medium text-base">
+                        Fashion & Footware
+                      </h1>
                       <IoIosArrowRoundForward className="text-xl ms-1" />
                     </div>
                     <p className="text-sm">Inventory Management Software</p>
                   </div>
                 </div>
-                <p className="mt-1 text-[#525252] text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Cursus nibh mauris, nec turpis orci lectus maecenas.
-                </p>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">
+                        Export Import Business
+                      </h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">Book Publisher</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">
+                        Dealership Business
+                      </h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">
+                        Dealership Business
+                      </h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">Plumber Web</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">Texon Mart</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex items-center">
+                  <Image src={quick_stock} width={40} alt="quick_stock" />
+                  <div className="ms-2">
+                    <div className="flex items-center">
+                      <h1 className="font-medium text-base">Quick Stock</h1>
+                      <IoIosArrowRoundForward className="text-xl ms-1" />
+                    </div>
+                    <p className="text-sm">Inventory Management Software</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="pt-10">
+            <div className="pt-5">
               <p className="px-4 py-2 w-fit rounded-lg bg-primry hover:bg-blue cursor-pointer text-white">
                 <Link href="/products">See all Products</Link>
               </p>
