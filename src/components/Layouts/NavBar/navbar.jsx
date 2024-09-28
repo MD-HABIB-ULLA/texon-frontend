@@ -557,9 +557,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="px-4 py-2 text-sm rounded-lg bg-primry text-white sm:px-5 sm:py-3 sm:text-base md:px-5 md:py-2 md:text-lg lg:px-5 lg:py-2">
+          <Link
+            href="/free_consultancy"
+            className="px-4 py-2 text-sm rounded-lg bg-primry text-white sm:px-5 sm:py-3 sm:text-base md:px-5 md:py-2 md:text-lg lg:px-5 lg:py-2"
+          >
             Free Consultancy
-          </a>
+          </Link>
         </div>
       </div>
 
