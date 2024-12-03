@@ -13,11 +13,7 @@ export default function FeaturedClients() {
     <div className="bg-back">
       <div className="max-w-screen-xl mx-auto px-4 pb-10 md:pb-20 pt-10 mt-10">
         <HeadingTitle
-          heading={
-            <span className="text-3xl md:text-3xl lg:text-4xl font-semibold lg:font-bold pb-1">
-              Featured Clients
-            </span>
-          }
+          heading={"Featured Clients"}
           subHeading={
             "Our reputation branches across different industries and far beyond the borders"
           }
