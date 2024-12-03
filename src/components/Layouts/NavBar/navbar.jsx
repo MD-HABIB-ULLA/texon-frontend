@@ -70,9 +70,15 @@ const Navbar = () => {
     switch (modalContent) {
       case "Services":
         return (
-          <div className="p-8 ">
-            <div className="grid grid-cols-3">
-              <div className=" text-black">
+          <div className=" h-full ">
+            <div className="grid grid-cols-3 h-full">
+              <div
+                className="text-black h-full p-6"
+                style={{
+                  background:
+                    "linear-gradient(to bottom right, #fdeef6, white)",
+                }}
+              >
                 <h1 className="text-xl font-medium underline">
                   <Link href="/services">Services</Link>
                 </h1>
@@ -125,7 +131,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className=" text-black">
+              <div className=" text-black p-6">
                 <h1 className="text-xl font-medium underline">
                   <Link href="/#technologies">Technologies</Link>
                 </h1>
@@ -153,7 +159,7 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className=" p-6">
                 <h1 className="text-xl font-medium underline">
                   Collaboration Models
                 </h1>
@@ -672,7 +678,7 @@ const Navbar = () => {
             <div
               ref={modalRef}
               //   className="relative bg-white rounded max-w-screen-lg w-full max-h-[450px]"
-              className={`relative bg-white mt-5 rounded-[20px] ${
+              className={`relative bg-white mt-5 rounded-[20px] overflow-hidden ${
                 modalContent === "About" ? "max-w-screen-md" : "max-w-screen-lg"
               } w-full max-h-[450px]`}
             >
