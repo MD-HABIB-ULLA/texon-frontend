@@ -22,15 +22,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
-      className="overflow-y-scroll scrollbar-thin scrollbar-thumb-primry scrollbar-track-gray"
+      lang="en" data-theme="light" className="overflow-y-scroll scrollbar-thin scrollbar-thumb-primry scrollbar-track-gray"
     >
       <body
         className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable}`}
       >
         <div>
-          <div className="bg-[#F5F8FF]">
-            <div className="heroBg">
+          <div className="bg-[#F5F8FF] heroBg">
+            <div className="">
               <Navbar />
               <ServicesBanner />
             </div>
