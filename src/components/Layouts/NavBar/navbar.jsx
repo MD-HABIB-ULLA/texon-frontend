@@ -79,10 +79,10 @@ const Navbar = () => {
                     "linear-gradient(to bottom right, #fdeef6, white)",
                 }}
               >
-                <h1 className="text-xl font-medium underline">
+                <h1 className="text-2xl font-medium underline">
                   <Link href="/services">Services</Link>
                 </h1>
-                <div className="space-y-5 pt-5">
+                <div className="text-xl space-y-5 pt-5">
                   <div className="flex items-center">
                     <Image
                       src={software_development}
@@ -132,10 +132,10 @@ const Navbar = () => {
                 </div>
               </div>
               <div className=" text-black p-6">
-                <h1 className="text-xl font-medium underline">
+                <h1 className="text-2xl font-medium underline">
                   <Link href="/#technologies">Technologies</Link>
                 </h1>
-                <div className="space-y-5 pt-5">
+                <div className="space-y-5 pt-5 text-xl">
                   <div>
                     <p>JavaScript</p>
                   </div>
@@ -160,10 +160,10 @@ const Navbar = () => {
                 </div>
               </div>
               <div className=" p-6">
-                <h1 className="text-xl font-medium underline">
+                <h1 className="text-2xl font-medium underline">
                   Collaboration Models
                 </h1>
-                <div className="space-y-5 pt-5 text-[#76758B]">
+                <div className="space-y-5 pt-5 text-xl text-[#76758B]">
                   <div>
                     <p>Hire Developers</p>
                   </div>
