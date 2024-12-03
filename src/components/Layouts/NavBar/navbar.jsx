@@ -38,6 +38,21 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 800) {
+        setIsModalOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     const modalNode = modalRef.current;
     if (isModalOpen && modalNode) {
       modalNode.addEventListener("mouseleave", handleMouseLeave);
@@ -55,7 +70,7 @@ const Navbar = () => {
     switch (modalContent) {
       case "Services":
         return (
-          <div className="p-8">
+          <div className="p-8 ">
             <div className="grid grid-cols-3">
               <div className=" text-black">
                 <h1 className="text-xl font-medium underline">
@@ -460,7 +475,7 @@ const Navbar = () => {
   const [isAboutsOpen, setIsAboutssOpen] = useState(false);
   return (
     <div>
-      <div className="navbar max-w-screen-xl mx-auto">
+      <div className="navbar max-w-screen-xl mx-auto pt-2">
         <div className="navbar-start">
           {/* Drawer for small screens */}
           <div className="drawer lg:hidden">
@@ -605,44 +620,41 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="navbar-center hidden lg:flex bg-white bg-opacity-60 border-2 border-white text-[#8987A1] rounded-lg">
-          <ul className="menu menu-horizontal px-1 flex items-center">
-            <li>
-              <a
-                onMouseEnter={() => handleOpenModal("Services")}
-                className="flex items-center"
-              >
-                Services
-                <IoIosArrowDown className="h-4 w-4 ml-2" />
-              </a>
-            </li>
-            <li>
-              <a
-                onMouseEnter={() => handleOpenModal("Products")}
-                className="flex items-center"
-              >
-                Products
-                <IoIosArrowDown className="h-4 w-4 ml-2" />
-              </a>
-            </li>
-            <li>
-              <a
-                onMouseEnter={() => handleOpenModal("About")}
-                className="flex items-center"
-              >
-                About
-                <IoIosArrowDown className="h-4 w-4 ml-2" />
-              </a>
-            </li>
-            <li>
-              <a>Case Studies</a>
+        <div className="navbar-center hidden lg:flex text-[18px] px-4 py-4 bg-[#f8f0fd] border-2 border-white text-[#8987A1] rounded-[20px] h-[68px]">
+          <div className="flex px-1 items-center space-x-6 h-full">
+            <div
+              onMouseEnter={() => handleOpenModal("Services")}
+              className="flex items-center cursor-pointer"
+            >
+              <span>Services</span>
+              <IoIosArrowDown className="h-4 w-4 ml-2" />
+            </div>
+            <div
+              onMouseEnter={() => handleOpenModal("Products")}
+              className="flex items-center cursor-pointer"
+            >
+              <span>Products</span>
+              <IoIosArrowDown className="h-4 w-4 ml-2" />
+            </div>
+            <div
+              onMouseEnter={() => handleOpenModal("About")}
+              className="flex items-center cursor-pointer"
+            >
+              <span>About</span>
+              <IoIosArrowDown className="h-4 w-4 ml-2" />
+            </div>
+            <div className="cursor-pointer">
+              <span>Case Studies</span>
               {/* No modal functionality for Case Studies */}
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
+            </div>
+            <div>
+              <Link href="/contact" className="cursor-pointer">
+                Contact
+              </Link>
+            </div>
+          </div>
         </div>
+
         <div className="navbar-end">
           <Link
             href="/free_consultancy"
@@ -656,11 +668,11 @@ const Navbar = () => {
       {/* Modal */}
       {isModalOpen && (
         <div className="hidden lg:block">
-          <div className="fixed inset-0 flex justify-center mt-16 p-1 z-40 ">
+          <div className="fixed inset-0  flex justify-center mt-16 p-1 z-40 ">
             <div
               ref={modalRef}
               //   className="relative bg-white rounded max-w-screen-lg w-full max-h-[450px]"
-              className={`relative bg-white rounded ${
+              className={`relative bg-white mt-5 rounded-[20px] ${
                 modalContent === "About" ? "max-w-screen-md" : "max-w-screen-lg"
               } w-full max-h-[450px]`}
             >
