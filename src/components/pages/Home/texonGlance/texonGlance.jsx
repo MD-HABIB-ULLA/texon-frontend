@@ -5,8 +5,8 @@ import texon_logo from "../../../../../public/about/Texon Logo.svg";
 export default function TexonGlance() {
   return (
     <div className="max-w-screen-xl  mx-auto px-2 md:py-8">
-      <div className="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0 md:space-x-10">
-        <div className="space-y-4 text-center md:text-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-5 md:gap-0  ">
+        <div className="space-y-4 text-center md:text-start pr-5">
           <h1 className="text-4xl sm:text-5xl md:text-[64px] font-semibold leading-snug">
             Texon <br /> at a Glance
           </h1>
