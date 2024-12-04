@@ -16,7 +16,7 @@ export default function Questions() {
             }
           />
         </div>
-        <QuestionsAccordion />
+        <div className="max-w-3xl mx-auto"><QuestionsAccordion /></div>
       </div>
     </div>
   );

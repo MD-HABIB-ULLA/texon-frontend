@@ -6,160 +6,80 @@ import {
 } from "react-icons/io5";
 
 export default function QuestionsAccordion() {
-  const [openIdx, setOpenIndex] = useState(0); // Set initial state to 0 for the first toggle
+  const [openIndex, setOpenIndex] = useState(0)
 
-  const handleToggle = (idx) => {
-    setOpenIndex(openIdx === idx ? null : idx);
-  };
+  const faqData = [
+    {
+      question: "What is UX design?",
+      answer: "UX design stands for User Experience design. It is the process of designing digital or physical products that are easy to use, intuitive, and enjoyable for the user."
+    },
+    {
+      question: "What are the key principles of UX design?",
+      answer: "The key principles of UX design include user-centered design, accessibility, usability, hierarchy, consistency, and feedback. These principles ensure that the design meets user needs effectively."
+    },
+    {
+      question: "What is the difference between UX and UI design?",
+      answer: "While UX design focuses on the overall user experience and how users interact with a product, UI design specifically deals with the visual elements and interface components that users directly interact with."
+    },
+    {
+      question: "What is a wireframe?",
+      answer: "A wireframe is a basic visual representation of a webpage or application that outlines the structure, layout, and functionality without including detailed design elements or content."
+    },
+    {
+      question: "What is user testing?",
+      answer: "User testing is the process of evaluating a product by testing it with representative users. It helps identify usability issues and gather feedback to improve the user experience."
+    }
+  ]
 
   return (
     <div className="pb-5">
-      <div className="join join-vertical w-full gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+      <div className="w-full max-w-2xl mx-auto p-4 space-y-4">
+      {faqData.map((item, index) => (
         <div
-          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
-            openIdx === 0 ? "collapse-open" : ""
-          }`}
+          key={index}
+          className="bg-white rounded-[20px] p-6 shadow-sm cursor-pointer transition-all duration-200 hover:bg-gray-50"
+          onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
         >
-          <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
-            onClick={() => handleToggle(0)}
-          >
-            What is UX design?
-            {openIdx === 0 ? (
-              <IoIosArrowUp className="w-10" />
-            ) : (
-              <IoIosArrowDown className="w-10" />
-            )}
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg font-semibold text-gray-900">
+              {item.question}
+            </h3>
+            <button
+              className={`w-6 h-6 flex items-center justify-center rounded-full border border-gray-200 transition-transform duration-200 ${
+                openIndex === index ? 'rotate-180' : ''
+              }`}
+              aria-expanded={openIndex === index}
+              aria-controls={`content-${index}`}
+            >
+              <svg
+                className="w-4 h-4 text-black"
+                fill="none"
+                strokeWidth="2"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 9l-7 7-7-7"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </div>
           <div
-            className={`collapse-content transition-max-height duration-300 ease-in-out ${
-              openIdx === 0 ? "max-h-40" : "max-h-0"
+            id={`content-${index}`}
+            className={`mt-2 text-gray-600 overflow-hidden transition-all duration-200 ${
+              openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
             }`}
+            role="region"
+            aria-labelledby={`question-${index}`}
           >
-            <p>
-              UX design stands for User Experience design. It is the process of
-              designing digital or physical products that are easy to use,
-              intuitive, and enjoyable for the user.
-            </p>
+            <p className="pt-2">{item.answer}</p>
           </div>
         </div>
-
-        <div
-          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
-            openIdx === 1 ? "collapse-open" : ""
-          }`}
-        >
-          <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
-            onClick={() => handleToggle(1)}
-          >
-            What are the key principles of UX design?
-            {openIdx === 1 ? (
-              <IoIosArrowUp className="w-10" />
-            ) : (
-              <IoIosArrowDown className="w-10" />
-            )}
-          </div>
-          <div
-            className={`collapse-content transition-max-height duration-300 ease-in-out ${
-              openIdx === 1 ? "max-h-40" : "max-h-0"
-            }`}
-          >
-            <p>
-              The key principles of UX design are user-centric design,
-              consistency, usability, accessibility, feedback, clarity, and
-              flexibility.
-            </p>
-          </div>
-        </div>
-
-        <div
-          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
-            openIdx === 2 ? "collapse-open" : ""
-          }`}
-        >
-          <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
-            onClick={() => handleToggle(2)}
-          >
-            What is the difference between UX and UI design?
-            {openIdx === 2 ? (
-              <IoIosArrowUp className="w-10" />
-            ) : (
-              <IoIosArrowDown className="w-10" />
-            )}
-          </div>
-          <div
-            className={`collapse-content transition-max-height duration-300 ease-in-out ${
-              openIdx === 2 ? "max-h-40" : "max-h-0"
-            }`}
-          >
-            <p>
-              UX design focuses on the overall experience of the user, while UI
-              design concentrates on the visual and interactive aspects of the
-              product's interface.
-            </p>
-          </div>
-        </div>
-
-        <div
-          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
-            openIdx === 3 ? "collapse-open" : ""
-          }`}
-        >
-          <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
-            onClick={() => handleToggle(3)}
-          >
-            What is a wireframe?
-            {openIdx === 3 ? (
-              <IoIosArrowUp className="w-10" />
-            ) : (
-              <IoIosArrowDown className="w-10" />
-            )}
-          </div>
-          <div
-            className={`collapse-content transition-max-height duration-300 ease-in-out ${
-              openIdx === 3 ? "max-h-40" : "max-h-0"
-            }`}
-          >
-            <p>
-              A wireframe is a simple visual guide that outlines the structure
-              and layout of a webpage or app, focusing on element placement
-              without detailed design.
-            </p>
-          </div>
-        </div>
-
-        <div
-          className={`collapse join-item bg-white overflow-hidden transition-all duration-300 ${
-            openIdx === 4 ? "collapse-open" : ""
-          }`}
-        >
-          <div
-            className="collapse-title text-xl flex justify-between items-center font-semibold lg:font-medium md:font-medium cursor-pointer"
-            onClick={() => handleToggle(4)}
-          >
-            What is user testing?
-            {openIdx === 4 ? (
-              <IoIosArrowUp className="w-10" />
-            ) : (
-              <IoIosArrowDown className="w-10" />
-            )}
-          </div>
-          <div
-            className={`collapse-content transition-max-height duration-300 ease-in-out ${
-              openIdx === 4 ? "max-h-40" : "max-h-0"
-            }`}
-          >
-            <p>
-              User testing is the process of evaluating a product by observing
-              real users as they interact with it to identify usability issues
-              and gather feedback for improvements.
-            </p>
-          </div>
-        </div>
-      </div>
+      ))}
+    </div>
     </div>
   );
 }
