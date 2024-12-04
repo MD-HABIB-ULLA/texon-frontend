@@ -57,7 +57,7 @@ export default function OurPreviousWork() {
   ];
 
   return (
-    <div className="bg-[#A8D0FE]" id="casestudies">
+    <div className="bg-[#A8D0FE] pb-1 mb-10" id="casestudies">
       <div className="max-w-screen-xl mx-auto py-14 my-14 px-2">
         {/* text section  */}
         <div className="text-center">
