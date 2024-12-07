@@ -7,10 +7,11 @@ export default function ServicesBanner() {
       <div className="px-2">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="space-y-5 md:space-y-7 lg:w-2/4 lg:pr-8 text-center lg:text-start">
+
+
             <h1 className="font-medium text-xl">Texon Servicess</h1>
-            <h3 className="text-4xl md:text-5xl lg:text-5xl font-semibold">
-              Web Design & <br />
-              Development
+            <h3 className="text-2xl md:text-3xl lg:text-[52px] font-semibold lg:font-bold leading-normal ">
+              Web Design & Development
             </h3>
             <p>
               Do you want to start your own online store without any hassle? Do

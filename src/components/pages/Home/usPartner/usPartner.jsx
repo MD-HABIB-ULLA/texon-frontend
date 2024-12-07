@@ -3,7 +3,7 @@ import productDevelopmentImage from "../../../../../public/images/product develo
 export default function UsPartner() {
   return (
     <div className="max-w-screen-xl mx-auto px-2 md:mt-5 mb-10 md:mb-20" id="contact">
-      <div className="w-full  md:flex lg:flex items-center justify-between bg-primry text-white rounded-lg">
+      <div className="w-full  md:flex lg:flex items-center justify-between bg-primry text-white rounded-[20px]">
         <div className="space-y-4 lg:ms-8 ms-0 p-5 text-center md:text-start">
           <h1 className="font-bold lg:text-4xl md:text-4xl text-2xl">
             Want to Join Us as a <br /> Partner?

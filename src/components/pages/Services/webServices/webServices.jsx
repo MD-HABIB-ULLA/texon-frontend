@@ -1,9 +1,10 @@
 import HeadingTitle from "@/components/common/title/headingTitle";
 import WebServicesAccordion from "./webServicesAccordion";
+import QuestionsAccordion from "../../Home/questions/questionsAccordion";
 
 export default function WebServices() {
   return (
-    <div className="bg-white py-14">
+    <div className=" py-14">
       <div className="max-w-screen-xl mx-auto">
         <div className="px-2">
           <div>
@@ -23,7 +24,8 @@ export default function WebServices() {
               }
             />
           </div>
-          <WebServicesAccordion />
+          {/* <WebServicesAccordion /> */}
+          <QuestionsAccordion/>
         </div>
       </div>
     </div>

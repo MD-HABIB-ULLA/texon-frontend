@@ -10,12 +10,12 @@ export default function DiscussForm() {
     setIsChecked(!isChecked);
   };
   return (
-    <div className="max-w-screen-xl mx-auto bg-primry my-20 rounded-md">
+    <div className="max-w-screen-xl mx-auto bg-primry my-20 rounded-[20px]">
       <div className="px-2 md:px-8 flex flex-col md:flex-row">
         {/* Text Section */}
         <div className="text-white p-2 md:p-5 md:w-1/2">
           <p className="text-lg mb-2 font-medium">Got a project in mind?</p>
-          <h1 className="text-3xl md:text-4xl mb-4 font-semibold">
+          <h1 className="text-2xl md:text-3xl lg:text-[52px] font-semibold lg:font-bold leading-normal pb-4">
             Let’s Discuss in Detail
           </h1>
           <Image
@@ -36,7 +36,7 @@ export default function DiscussForm() {
               type="text"
               id="name"
               name="name"
-              className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
+              className="w-full px-3 py-2 border  border-gray rounded-[10px] focus:outline-none focus:ring-1 focus:border-yellow"
               placeholder="Your name here"
             />
           </div>
@@ -51,7 +51,7 @@ export default function DiscussForm() {
                 type="text"
                 id="company"
                 name="company"
-                className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
+                className="w-full px-3 py-2 border border-gray rounded-[10px] focus:outline-none focus:ring-1 focus:border-yellow"
                 placeholder="Ex. Texon ltd"
               />
             </div>
@@ -63,7 +63,7 @@ export default function DiscussForm() {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow"
+                className="w-full px-3 py-2 border border-gray rounded-[10px] focus:outline-none focus:ring-1 focus:border-yellow"
                 placeholder="you@example.com"
               />
             </div>
@@ -73,7 +73,7 @@ export default function DiscussForm() {
           <div className="flex flex-col md:flex-row gap-4 mb-6">
             <div className="form-control flex-1">
               <label className="block mb-2 text-white">Service Required*</label>
-              <select className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow">
+              <select className="w-full px-3 py-2 border border-gray rounded-[10px] focus:outline-none focus:ring-1 focus:border-yellow">
                 <option value="" disabled selected>
                   Select Your Service
                 </option>
@@ -86,7 +86,7 @@ export default function DiscussForm() {
 
             <div className="form-control flex-1">
               <label className="block mb-2 text-white">Project Budget*</label>
-              <select className="w-full px-3 py-2 border border-gray rounded focus:outline-none focus:ring-1 focus:border-yellow">
+              <select className="w-full px-3 py-2 border border-gray rounded-[10px] focus:outline-none focus:ring-1 focus:border-yellow">
                 <option value="" disabled selected>
                   Select Your Range
                 </option>
@@ -106,7 +106,7 @@ export default function DiscussForm() {
             <textarea
               id="message"
               name="message"
-              className="w-full px-3 py-2 border border-gray rounded h-24 focus:outline-none focus:ring-1 focus:border-yellow"
+              className="w-full px-3 py-2 border border-gray rounded-[10px] h-24 focus:outline-none focus:ring-1 focus:border-yellow"
               placeholder="Tell us more about your idea"
             />
           </div>

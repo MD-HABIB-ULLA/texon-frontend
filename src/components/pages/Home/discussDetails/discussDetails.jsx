@@ -6,9 +6,9 @@ import logos from "../../../../../public/svgs/logos_whatsapp-icon.svg";
 export default function DiscussDetails() {
   return (
     <div className="max-w-screen-xl mx-auto py-7 md:py-12 lg:pt-16 lg:pb-10 px-2">
-      <div className="flex flex-col lg:flex-row gap-5">
+      <div className="grid md:grid-cols-3 grid-cols-1  gap-5">
         {/* Section 1 - 75% Width on Large Screens */}
-        <div className="w-full lg:w-3/4 flex items-center justify-between bg-charleston text-white rounded-lg">
+        <div className="w-full col-span-2 rounded-[20px] flex items-center justify-between bg-charleston text-white ">
           <div className="space-y-4 lg:ms-8 ms-0 p-5">
             <h1 className="font-bold text-xl md:pb-5 lg:pb-5">
               Got a project in mind?
@@ -31,8 +31,8 @@ export default function DiscussDetails() {
         </div>
 
         {/* Section 2 */}
-        <div className="w-full lg:flex-1 bg-primry text-white px-5 rounded-lg flex flex-col justify-center space-y-5 pb-5 md:pb-0 lg:pb-0">
-          <div className="mt-5 md:mt-5 lg:mt-0">
+        <div className="w-full  rounded-[20px] bg-primry text-white px-5 flex flex-col justify-center space-y-5 pb-5 md:pb-0 lg:pb-0">
+          <div className="mt-5 md:mt-5 lg:mt-0 w-full">
             <Image className="rounded-full" src={gestImage} alt="Gest" />
           </div>
           <h1 className="text-xl mb-4">

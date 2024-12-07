@@ -16,7 +16,7 @@ const CloudComputingServices = () => {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row items-center md:justify-between">
-        <div className="flex-shrink-0 mb-8 md:mb-0 md:w-1/2 bg-white rounded">
+        <div className="flex-shrink-0 mb-8 md:mb-0 md:w-1/2 bg-white rounded-[30px]">
           <Image
             src={aws_services}
             alt="aws_services"

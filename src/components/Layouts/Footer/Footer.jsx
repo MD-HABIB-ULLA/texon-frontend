@@ -43,8 +43,8 @@ const Footer = () => {
 
       <footer className="bg-white mt-5 text-charleston">
         <div className="py-10 px-2 max-w-screen-xl mx-auto">
-          <div className="md:grid md:grid-cols-2 lg:grid-cols-5 gap-5">
-            <div className="mb-6 lg:mb-0">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
+            <div className="mb-6 lg:mb-0 lg:col-span-1 col-span-2">
               <Image src={logo} className="w-36" alt="logo" />
               <p className="mt-4">
                 Texon Limited is a software development company that empowers

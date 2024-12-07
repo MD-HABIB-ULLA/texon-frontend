@@ -1,5 +1,6 @@
 import HeadingTitle from "@/components/common/title/headingTitle";
 import "./servicesInclude.css";
+import Image from "next/image";
 export default function ServicesInclude() {
   return (
     <div className="max-w-screen-xl mx-auto">
@@ -19,7 +20,7 @@ export default function ServicesInclude() {
 
         {/*  */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 pt-5 lg:pt-0">
-          <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
+          <div className="flex items-center bg-white px-6 py-5 rounded-[20px] shadow-md">
             <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               1
             </p>
@@ -27,7 +28,7 @@ export default function ServicesInclude() {
               Multivendor Ecommerce eco systems Development
             </p>
           </div>
-          <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
+          <div className="flex items-center bg-white px-6 py-5 rounded-[20px] shadow-md">
             <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               2
             </p>
@@ -35,7 +36,7 @@ export default function ServicesInclude() {
               Single Vendor Ecommerce Development
             </p>
           </div>
-          <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
+          <div className="flex items-center bg-white px-6 py-5 rounded-[20px] shadow-md">
             <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               3
             </p>
@@ -43,7 +44,7 @@ export default function ServicesInclude() {
               B2C or B2B Website Development
             </p>
           </div>
-          <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
+          <div className="flex items-center bg-white px-6 py-5 rounded-[20px] shadow-md">
             <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               4
             </p>
@@ -51,7 +52,7 @@ export default function ServicesInclude() {
               Business Management Software
             </p>
           </div>
-          <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
+          <div className="flex items-center bg-white px-6 py-5 rounded-[20px] shadow-md">
             <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               5
             </p>
@@ -59,7 +60,7 @@ export default function ServicesInclude() {
               Cloud service
             </p>
           </div>
-          <div className="flex items-center bg-white px-6 py-4 rounded-md shadow-md">
+          <div className="flex items-center bg-white px-6 py-5 rounded-[20px] shadow-md">
             <p className="bg-black font-medium px-4 py-1 text-2xl rounded-full text-white inline-block">
               6
             </p>
@@ -70,15 +71,25 @@ export default function ServicesInclude() {
         </div>
       </div>
 
-      <div className="flex justify-center py-5 md:py-10 lg:py-20">
-        <div className="texonBg">
-          <HeadingTitle
-            subHeading={
-              <div className="text-white md:text-2xl lg:text-2xl font-semibold pt-4">
-                Everybody wants to be Texon. <br /> But no one can’t be!{" "}
-              </div>
-            }
-          ></HeadingTitle>
+      <div className="relative flex justify-center  w-full lg:my-32 md:my-20 ">
+        <div className=" w-full h-[300px]">
+          {" "}
+          {/* Set height dynamically */}
+          <Image
+            src="/services/Group 27352.png"
+            alt="Services Banner"
+            fill
+            className="object-contain"
+          />
+        </div>
+
+        <div className="absolute h-full w-full flex items-center justify-center text-white ">
+     
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+            Everybody wants to be Texon.
+            <br />
+            But no one can't be!
+          </h2>
         </div>
       </div>
     </div>

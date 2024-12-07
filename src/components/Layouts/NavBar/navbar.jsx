@@ -15,12 +15,13 @@ import quick_stock from "../../../../public/icon/QUICK STOCK icon-01 1.svg";
 import software_development from "../../../../public/icon/software_development.svg";
 import web from "../../../../public/icon/web.svg";
 import logo from "../../../../public/logo/Texon Logo 55-01 1.svg";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const modalRef = useRef(null);
-
+  const pathName = usePathname();
   const handleOpenModal = (content) => {
     setModalContent(content);
     setIsModalOpen(true);
@@ -39,7 +40,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 800) {
+      if (window.scrollY >= -100) {
         setIsModalOpen(false);
       }
     };
@@ -630,9 +631,15 @@ const Navbar = () => {
           <div className="flex px-1 items-center space-x-6 h-full">
             <div
               onMouseEnter={() => handleOpenModal("Services")}
-              className="flex items-center cursor-pointer"
+              className={`flex items-center cursor-pointer ${
+                ["services", "webdevelopment"].some((segment) =>
+                  pathName.includes(segment)
+                )
+                  ? "text-black font-bold"
+                  : ""
+              }`}
             >
-              <span>Services</span>
+              <span className={``}>Services</span>
               <IoIosArrowDown className="h-4 w-4 ml-2" />
             </div>
             <div

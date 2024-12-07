@@ -1,9 +1,7 @@
+'use client'
+
 import { useState } from "react";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import {
-  IoArrowDownCircleOutline,
-  IoArrowUpCircleOutline,
-} from "react-icons/io5";
+
 
 export default function QuestionsAccordion() {
   const [openIndex, setOpenIndex] = useState(0)

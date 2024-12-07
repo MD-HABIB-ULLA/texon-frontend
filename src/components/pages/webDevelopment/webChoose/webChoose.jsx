@@ -1,5 +1,6 @@
 import HeadingTitle from "@/components/common/title/headingTitle";
 import ChooseAccordion from "./chooseAccordion";
+import QuestionsAccordion from "../../Home/questions/questionsAccordion";
 
 const WebChoose = () => {
   return (
@@ -27,19 +28,58 @@ const WebChoose = () => {
       </div>
 
       <div className="max-w-screen-xl mx-auto pt-5 pb-14">
-        <ChooseAccordion />
-      </div>
+        {/* <ChooseAccordion /> */}
 
-      <div className="max-w-screen-xl mx-auto pt-5 pb-16">
-        <div className="bg-primry rounded text-white p-6 md:p-10 flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
-          <h1 className="text-2xl md:text-3xl font-semibold text-center md:text-left">
-            Let's discuss more for transforming your Idea into business!
-          </h1>
-          <button className="border border-white px-6 py-3 rounded transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-blue hover:text-white mx-auto md:mx-0">
-            Contact Us
-          </button>
+        <div className="max-w-3xl mx-auto">
+          <QuestionsAccordion />
         </div>
       </div>
+
+      <section className="py-10  sm:py-16 lg:py-24">
+        <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
+            {/* Image Section */}
+            <div className="pr-12 sm:pr-0 mx-auto ">
+              <div className="relative max-w-xs mb-12">
+                <img
+                  className="object-bottom rounded-md"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
+                  alt=""
+                />
+                <img
+                  className="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12"
+                  src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            {/* Text Section */}
+            <div>
+              <HeadingTitle
+                heading={
+                  <h2 className="md:text-left">
+                    Grow business with Celebration.
+                  </h2>
+                }
+                subHeading={
+                  <p className="md:text-left">
+                    Let's discuss more for transforming your Idea into business!
+                    Empower your vision with expert solutions tailored for
+                    growth! Together, we build strategies that turn dreams into
+                    reality.
+                  </p>
+                }
+              />
+              <div className="flex justify-center md:justify-start">
+                <button className="border  border-white px-6 py-3 rounded transition-transform duration-500 ease-in-out transform hover:scale-105 bg-blue text-white mx-auto md:mx-0  ">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
