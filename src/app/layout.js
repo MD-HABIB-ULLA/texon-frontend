@@ -39,12 +39,12 @@ export default function RootLayout({ children }) {
         <div className="relative overflow-hidden">
           {/* Background color layer */}
           <div className="absolute inset-0 bg-[#F5F8FF] -z-20 w-full h-full"></div>
-
+  
           {/* Background image layer */}
-          <div className="absolute inset-0 heroBg -z-10 w-full h-[200vh]"></div>
-
+          <div className="absolute inset-0 heroBg -z-10 h-[200vh]"></div>
+  
           {/* Content layer */}
-          <div className="relative z-10 overflow-hidden">
+          <div className="relative z-10">
             <div>
               <Navbar />
             </div>
@@ -55,6 +55,7 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
+  
 }
 
 

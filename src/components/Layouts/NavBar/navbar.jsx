@@ -658,26 +658,49 @@ const Navbar = () => {
             </div>
             <div
               onMouseEnter={() => handleOpenModal("Products")}
-              className="flex items-center cursor-pointer"
+              className={`flex items-center cursor-pointer ${
+                ['product'].some((segment) =>
+                  pathName.includes(segment)
+                )
+                  ? "text-black font-bold"
+                  : ""
+              }`}
             >
               <span>Products</span>
               <IoIosArrowDown className="h-4 w-4 ml-2" />
             </div>
             <div
-              onMouseEnter={() => handleOpenModal("About")}
-              className="flex items-center cursor-pointer"
+              onMouseEnter={() => handleOpenModal("About")}className={`flex items-center cursor-pointer ${
+                ["about"].some((segment) =>
+                  pathName.includes(segment)
+                )
+                  ? "text-black font-bold"
+                  : ""
+              }`}
             >
               <span>About</span>
               <IoIosArrowDown className="h-4 w-4 ml-2" />
             </div>
             <div className="cursor-pointer">
-              <Link href="/casestudies" className="cursor-pointer">
+              <Link href="/casestudies" className={`flex items-center cursor-pointer ${
+                ['casestudies'].some((segment) =>
+                  pathName.includes(segment)
+                )
+                  ? "text-black font-bold"
+                  : ""
+              }`}>
                 <span>Case Studies</span>
               </Link>
               {/* No modal functionality for Case Studies */}
             </div>
             <div>
-              <Link href="/contact" className="cursor-pointer">
+              <Link href="/contact" className={`flex items-center cursor-pointer ${
+                ["contact"].some((segment) =>
+                  pathName.includes(segment)
+                )
+                  ? "text-black font-bold"
+                  : ""
+              }`}>
                 Contact
               </Link>
             </div>

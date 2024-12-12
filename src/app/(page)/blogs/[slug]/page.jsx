@@ -30,7 +30,7 @@ function Page() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen ">
       {/* Hero Section */}
       <div className="relative h-96">
         <img
@@ -132,8 +132,7 @@ function Page() {
 
                 {/* WhatsApp Share */}
                 <button className="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 text-green-600 hover:bg-green-200 transition-colors">
-                  <FaWhatsapp
-                   className="w-5 h-5" />
+                  <FaWhatsapp className="w-5 h-5" />
                 </button>
               </div>
 
