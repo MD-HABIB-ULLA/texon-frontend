@@ -635,9 +635,9 @@ const Navbar = () => {
 
           {/* Logo for larger screens */}
           <div className="hidden lg:flex">
-            <a href={"/"}>
+            <Link href={"/"}>
               <Image src={logo} className="object-contain w-auto" alt="logo" />
-            </a>
+            </Link>
           </div>
         </div>
 
