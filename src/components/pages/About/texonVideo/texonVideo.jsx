@@ -14,7 +14,7 @@ export default function TexonVideo() {
   return (
     <div className="my-10 lg:my-20">
       {" "}
-      <div className="max-w-screen-xl mx-auto bg-primry rounded shadow-lg">
+      <div className="max-w-screen-xl mx-auto bg-primry rounded-[30px] shadow-lg">
         <div className="px-2 py-2">
           <div className="flex justify-center">
             {isPlaying ? (

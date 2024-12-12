@@ -47,11 +47,13 @@ export default function PlanCard() {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="w-full p-4 rounded-lg bg-[#F2F2F3] flex flex-col"
+            className="w-full p-5 shadow rounded-[30px] bg-[#F2F2F3] flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-primry/5 duration-300"
           >
-            <h1 className="text-xl font-bold mb-4 text-primry">{plan.title}</h1>
-            <p className="mb-4">{plan.description}</p>
-            <ul className="mb-4 flex-grow">
+            <h1 className="text-[40px] font-bold mb-4 text-primry">
+              {plan.title}
+            </h1>
+            <p className="mb-4 text-[20px]">{plan.description}</p>
+            <ul className="mb-4 flex-grow text-[20px] font-semibold">
               {plan.features.map((feature, i) => (
                 <li key={i} className="mb-2 flex items-center">
                   <GoDotFill className="text-xs flex-shrink-0" />
@@ -59,7 +61,7 @@ export default function PlanCard() {
                 </li>
               ))}
             </ul>
-            <button className="bg-primry hover:bg-blue mt-auto w-full font-medium text-white py-2 px-4 rounded">
+            <button className="bg-primry hover:bg-blue mt-auto w-full font-medium text-white py-4 px-4 rounded-[20px] transition-colors duration-300">
               {plan.buttonText}
             </button>
           </div>

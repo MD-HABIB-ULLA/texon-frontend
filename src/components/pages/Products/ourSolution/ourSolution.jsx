@@ -2,8 +2,8 @@ import Image from "next/image";
 import shukhi_mart from "../../../../../public/products/shukhi-mart.svg";
 export default function OurSolution() {
   return (
-    <div className="max-w-screen-xl mx-auto">
-      <div className="py-4 px-4">
+    <div className="max-w-screen-xl mx-auto relative">
+      <div className="py-4 px-4 md:pb-56 ">
         <div className="text-center space-y-7">
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold">
             Here are some of the benefits <br /> of choosing our solution
@@ -22,7 +22,7 @@ export default function OurSolution() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center pb-12 mx-auto">
+      <div className="flex justify-center pb-12 mx-auto absolute  w-full  -bottom-72">
         <Image src={shukhi_mart} alt="shukhi_mart" />
       </div>
     </div>

@@ -3,10 +3,11 @@ import Image from "next/image";
 import humayun_ahmed from "../../../../public/advisor/Humayun ahmed.jpg";
 import mehedi_shamim from "../../../../public/advisor/Mehedi Shamim.jpg";
 import tosar_chandra_das from "../../../../public/advisor/TosarChandraDas.jpg";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Page = () => {
   return (
-    <div className="max-w-screen-xl mx-auto px-2">
+    <div className="max-w-screen-xl mx-auto px-2 min-h-screen">
       <div className="py-10">
         <HeadingTitle
           heading={<>Fueling Success Together!</>}
@@ -15,62 +16,67 @@ const Page = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pb-10 md:pb-20">
-        {/* Mehedi Shamim */}
-        <div className="relative group">
-          <Image
-            src={mehedi_shamim}
-            className="w-full h-auto object-cover"
-            alt="Mehedi Shamim"
-          />
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-            <div className="text-center text-white">
-              <h3 className="text-xl font-semibold md:text-2xl">
-                Mehedi Shamim
-              </h3>
-              <p className="text-sm md:text-base">
-                Business Strategies and Marketing Advisor
-              </p>
+        {/* Team Member Card */}
+        {[
+          {
+            name: "Mehedi Shamim",
+            role: "Business Strategies and Marketing Advisor",
+            img: mehedi_shamim,
+          },
+          {
+            name: "Humayun Ahmed",
+            role: "Corporate Sales and Business Advisor",
+            img: humayun_ahmed,
+          },
+          {
+            name: "Tosar Chandra Das",
+            role: "Business Development Consultant",
+            img: tosar_chandra_das,
+          },
+        ].map((member, index) => (
+          <div
+            className="relative group overflow-hidden rounded-[30px]"
+            key={index}
+          >
+            <Image
+              src={member.img}
+              className="w-full h-auto object-cover"
+              alt={member.name}
+            />
+            <div className="absolute inset-0 flex flex-col items-center justify-end bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+              <div className="text-center text-white mb-4">
+                <h3 className="text-xl font-semibold md:text-2xl">
+                  {member.name}
+                </h3>
+                <p className="text-sm md:text-base">{member.role}</p>
+              </div>
+              <div className="flex space-x-4">
+                {/* Social Icons */}
+                <a
+                  href="#"
+                  className="text-[#0077b5] hover:text-[#005582] transition"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin size={24} />
+                </a>
+                <a
+                  href="#"
+                  className="text-[#1DA1F2] hover:text-[#0d8ae5] transition"
+                  aria-label="Twitter"
+                >
+                  <FaTwitter size={24} />
+                </a>
+                <a
+                  href="#"
+                  className="text-[#fff] hover:text-[#ffffffa2] transition"
+                  aria-label="GitHub"
+                >
+                  <FaGithub size={24} />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Humayun Ahmed */}
-        <div className="relative group">
-          <Image
-            src={humayun_ahmed}
-            className="w-full h-auto object-cover"
-            alt="Humayun Ahmed"
-          />
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-            <div className="text-center text-white">
-              <h3 className="text-xl font-semibold md:text-2xl">
-                Humayun Ahmed
-              </h3>
-              <p className="text-sm md:text-base">
-                Corporate Sales and Business Advisor
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Tosar Chandra Das */}
-        <div className="relative group">
-          <Image
-            src={tosar_chandra_das}
-            className="w-full h-auto object-cover"
-            alt="Tosar Chandra Das"
-          />
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-            <div className="text-center text-white">
-              <h3 className="text-xl font-semibold md:text-2xl">
-                Tosar Chandra Das
-              </h3>
-              <p className="text-sm md:text-base">
-                Business Development Consultant
-              </p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

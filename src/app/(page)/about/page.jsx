@@ -1,4 +1,5 @@
 import AboutAgency from "@/components/pages/About/aboutAgency/aboutAgency";
+import AboutBannar from "@/components/pages/About/aboutBannar/aboutBannar";
 import AboutService from "@/components/pages/About/aboutService/aboutService";
 import DevelopmentTeam from "@/components/pages/About/developmentTeam/developmentTeam";
 import ExecutiveTeam from "@/components/pages/About/executiveTeam/executiveTeam";
@@ -10,6 +11,7 @@ import ProjectCount from "@/components/pages/Services/projectCount/projectCount"
 export default function About() {
   return (
     <div className="text-charleston">
+      <AboutBannar />
       <AboutService />
       <AboutAgency />
       <Mission />

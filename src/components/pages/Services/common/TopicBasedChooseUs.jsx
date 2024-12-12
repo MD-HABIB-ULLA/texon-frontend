@@ -1,15 +1,15 @@
 import HeadingTitle from "@/components/common/title/headingTitle";
-import ChooseAccordion from "./chooseAccordion";
+import ChooseAccordion from "../../webDevelopment/webChoose/chooseAccordion";
 import QuestionsAccordion from "../../Home/questions/questionsAccordion";
 
-const WebChoose = () => {
+const TopicBasedChooseUs = ({ faqData, topic }) => {
   return (
     <>
-      <div className="px-2">
+      <div className="px-2 ">
         <HeadingTitle
           heading={
             <h1 className="text-3xl font-bold">
-              Why Choose Our Website Development Services?
+              {`Why Choose Our ${topic} Services?`}
             </h1>
           }
           subHeading={
@@ -31,12 +31,12 @@ const WebChoose = () => {
         {/* <ChooseAccordion /> */}
 
         <div className="max-w-3xl mx-auto">
-          <QuestionsAccordion />
+          <QuestionsAccordion faqData={faqData} />
         </div>
       </div>
 
       <section className="py-10  sm:py-16 lg:py-24">
-        <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="max-w-screen-lg px-4 mx-auto sm:px-6 lg:px-8">
           <div className="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
             {/* Image Section */}
             <div className="pr-12 sm:pr-0 mx-auto ">
@@ -84,4 +84,4 @@ const WebChoose = () => {
   );
 };
 
-export default WebChoose;
+export default TopicBasedChooseUs;

@@ -1,75 +1,20 @@
 "use client";
 
 import React from "react";
-import { MdQrCode2 } from "react-icons/md";
-import { FaShoppingCart, FaPalette, FaChevronRight } from "react-icons/fa";
-import { TbLayoutDashboard } from "react-icons/tb";
-import { PiPipeWrenchFill } from "react-icons/pi";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import HeadingTitle from "@/components/common/title/headingTitle";
 
 import web_services from "../../../../../public/services/web_dev 1.svg";
+import web_banner from "../../../../../public/services/Group 27352.png";
 import Image from "next/image";
+import { FaChevronRight } from "react-icons/fa";
 
-const WebServices = () => {
-  const services = [
-    "Multivendor Ecommerce eco systems Development",
-    "Single Vendor Ecommerce Development",
-    "B2C or B2B Website Development",
-    "Business Management Software",
-    "Cloud service",
-    "UI/UX Design",
-    "API Integrations & Web consultancy",
-  ];
-
-  const cards = [
-    {
-      title: "Custom Website Development",
-      description:
-        "We create custom websites that are designed to reflect your brand and appeal to your target audience.",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600",
-      icon: MdQrCode2,
-    },
-    {
-      title: "E-commerce Website Development",
-      description:
-        "We develop e-commerce websites that are easy to use, secure, and optimized for conversion.",
-      image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=600",
-      icon: FaShoppingCart,
-    },
-    {
-      title: "Content Management Systems",
-      description:
-        "We build websites that are powered by a CMS, making it easy for you to update your site and content.",
-      image:
-        "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&q=80&w=600",
-      icon: TbLayoutDashboard,
-    },
-    {
-      title: "UI/UX Design",
-      description:
-        "Our UI/UX design services include creating wireframes, prototypes, and visual designs for your website.",
-      image:
-        "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=600",
-      icon: FaPalette,
-    },
-    {
-      title: "Website Maintenance",
-      description:
-        "We offer ongoing website maintenance services to keep your site running smoothly and securely.",
-      image:
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600",
-      icon: PiPipeWrenchFill,
-    },
-  ];
-
+const TopicBasedServices = ({ services, topic, cards }) => {
   return (
     <div className="max-w-screen-xl mx-auto px-4 py-16 space-y-16">
       <section className="text-center">
         <HeadingTitle
-          heading={"Web Development Services"}
+          heading={`${topic} Services`}
           subHeading={
             " At Texon imited, we understand that a great website is essential for any business looking to succeed online. That's why we offer a wide range of website development services to help businesses of all sizes create the perfect online presence."
           }
@@ -78,13 +23,16 @@ const WebServices = () => {
         <p className="text-lg md:text-xl text-black max-w-3xl mx-auto"></p>
       </section>
 
-      <section className="flex flex-col md:flex-row items-center md:items-start gap-12">
-        <div className="md:w-1/2">
-          <div className=" rounded-3xl aspect-square flex items-center justify-start">
+      <section
+        className="flex flex-col md:flex-row items-center md:items-start gap-12  p-5
+      "
+      >
+        <div className="md:w-1/2 ">
+          <div className=" w-full   ">
             <Image
               src={web_services}
               alt="web_services"
-              className="w-full h-auto max-w-md mx-auto"
+              className="w-full aspect-square h-auto max-w-md mx-auto "
             />
           </div>
         </div>
@@ -107,12 +55,26 @@ const WebServices = () => {
         </div>
       </section>
 
-      <section className="bg-primry text-white py-12 rounded-2xl text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          Everybody wants to be <span className="font-extrabold">Texon.</span>
-        </h2>
-        <p className="text-xl md:text-2xl">But no one can't be!</p>
-      </section>
+      <div className="relative flex justify-center  w-full lg:my-32 md:my-20 ">
+        <div className=" w-full h-[300px]">
+          {" "}
+          {/* Set height dynamically */}
+          <Image
+            src={web_banner}
+            alt="Services Banner"
+            fill
+            className="object-contain"
+          />
+        </div>
+
+        <div className="absolute h-full w-full flex items-center justify-center text-white ">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+            Everybody wants to be Texon.
+            <br />
+            But no one can't be!
+          </h2>
+        </div>
+      </div>
 
       <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
@@ -122,7 +84,6 @@ const WebServices = () => {
               " We offer a comprehensive range of web development and design services to help your business succeed online."
             }
           />
-
         </div>
         <section className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -168,4 +129,4 @@ const WebServices = () => {
   );
 };
 
-export default WebServices;
+export default TopicBasedServices;

@@ -1,6 +1,6 @@
 import { GoDotFill } from "react-icons/go";
 
-const subscriptionplans = [
+const plans = [
   {
     title: "Subscription:",
     description:
@@ -18,24 +18,27 @@ const subscriptionplans = [
 export default function SubscriptionPlan() {
   return (
     <div>
-      {subscriptionplans.map((subscriptionplan, index) => (
-        <div key={index} className="p-4 rounded-lg bg-primry text-white flex flex-col">
-          <h1 className="text-xl font-bold mb-4">
-            {subscriptionplan.title}
-          </h1>
-          <p className="mb-4">{subscriptionplan.description}</p>
-          <ul className="mb-4 flex-grow">
-            {subscriptionplan.features.map((feature, i) => (
-              <li key={i} className="mb-2 flex items-center">
-                <GoDotFill className="text-xs flex-shrink-0" />
-                <span className="ml-3">{feature}</span>
-              </li>
-            ))}
-          </ul>
-          <button className="hover:bg-blue hover:text-white font-medium mt-auto w-full bg-white text-blue py-2 px-4 rounded">
-            {subscriptionplan.buttonText}
-          </button>
-        </div>
+      {plans.map((plan, index) => (
+        <div
+        key={index}
+        className="w-full p-5 shadow rounded-[30px] text-white bg-primry flex flex-col transition-transform transform hover:scale-105 hover:shadow-xl hover:bg-primry/95 duration-300"
+      >
+        <h1 className="text-[40px] font-bold mb-4 text-white">
+          {plan.title}
+        </h1>
+        <p className="mb-4 text-[20px]">{plan.description}</p>
+        <ul className="mb-4 flex-grow text-[20px] font-semibold">
+          {plan.features.map((feature, i) => (
+            <li key={i} className="mb-2 flex items-center">
+              <GoDotFill className="text-xs flex-shrink-0" />
+              <span className="ml-3">{feature}</span>
+            </li>
+          ))}
+        </ul>
+        <button className="bg-white  mt-auto w-full font-medium text-primry py-4 px-4 rounded-[20px] transition-colors duration-300">
+          {plan.buttonText}
+        </button>
+      </div>
       ))}
     </div>
   );

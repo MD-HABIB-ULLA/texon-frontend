@@ -12,13 +12,31 @@
 
 .heroBg {
   background-image: url(../../public/images/hero-bg.png);
-  background-size: contain;
+  background-size: contain ;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  background-position: top left;
+  background-position: top center;
+}
+.heroBgMain {
+  background-image: url(../../public/images/hero-bg.png);
+  background-size: contain ;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: top center;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+
+.group img {
+  transform: translateY(0%);
+  transition: transform 8s ease-in-out;
+}
+
+.group:hover img {
+  transform: translateY(-0%);
 }

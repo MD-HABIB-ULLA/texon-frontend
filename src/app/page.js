@@ -12,10 +12,12 @@ import OurCompany from "../components/pages/Home/ourCompany/ourCompany";
 import Questions from "../components/pages/Home/questions/questions";
 import SoftwareProducts from "../components/pages/Home/softwareProducts/softwareProducts";
 import TechKnowledge from "../components/pages/Home/techKnowledge/techKnowledge";
+import Bannar from "@/components/pages/Home/bannar/bannar";
 
 export default function Home() {
   return (
-    <main className="text-charleston">
+    <main className="text-charleston ">
+      <Bannar />
       <OurCompany />
       <TexonGlance />
       <OurPreviousWork />

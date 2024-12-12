@@ -1,8 +1,10 @@
+
 import Footer from "@/components/Layouts/Footer/Footer";
 import Bannar from "@/components/pages/Home/bannar/bannar";
 import { Inter, Raleway, Space_Grotesk } from "next/font/google";
 import Navbar from "../components/Layouts/NavBar/navbar";
 import "./globals.css";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +24,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
+
   return (
     <html
       lang="en"
@@ -31,13 +36,19 @@ export default function RootLayout({ children }) {
       <body
         className={`${spaceGrotesk.className} ${raleway.variable} ${inter.variable}`}
       >
-        <div>
-          <div className="bg-[#F5F8FF] heroBg">
-            <div className="">
+        <div className="relative overflow-hidden">
+          {/* Background color layer */}
+          <div className="absolute inset-0 bg-[#F5F8FF] -z-20 w-full h-full"></div>
+
+          {/* Background image layer */}
+          <div className="absolute inset-0 heroBg -z-10 w-full h-[200vh]"></div>
+
+          {/* Content layer */}
+          <div className="relative z-10 overflow-hidden">
+            <div>
               <Navbar />
-              <Bannar />
             </div>
-            {children}
+            <div>{children}</div>
             <Footer />
           </div>
         </div>

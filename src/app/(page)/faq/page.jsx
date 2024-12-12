@@ -19,8 +19,8 @@ export default function page() {
       <div className="max-w-screen-xl mx-auto px-2 -mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Global Service */}
-          <div className="flex items-center bg-white rounded-lg shadow-lg p-6 border-b-2 border-transparent hover:border-primry transition-all duration-300">
-            <AiOutlineGlobal className="text-8xl" />
+          <div className="flex items-center bg-indigo-100 rounded-[20px] shadow-lg p-6 border-b-2 border-transparent hover:border-indigo-500 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl animate-slide-in">
+            <AiOutlineGlobal className="text-8xl text-indigo-500 hover:text-blue-700 transition-all duration-300" />
             <div className="ml-4">
               <h1 className="font-semibold">Global Service</h1>
               <p className="text-base">
@@ -31,8 +31,8 @@ export default function page() {
           </div>
 
           {/* Customized Solutions */}
-          <div className="flex items-center bg-white rounded-lg shadow-lg p-6 border-b-2 border-transparent hover:border-primry transition-all duration-300">
-            <TbApps className="text-8xl" />
+          <div className="flex items-center bg-green-100 rounded-[20px] shadow-lg p-6 border-b-2 border-transparent hover:border-green-500 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl animate-slide-in">
+            <TbApps className="text-8xl text-green-500 hover:text-green-700 transition-all duration-300" />
             <div className="ml-4">
               <h1 className="font-semibold">Customized Solutions</h1>
               <p className="text-base">
@@ -42,8 +42,8 @@ export default function page() {
           </div>
 
           {/* Customer Satisfaction */}
-          <div className="flex items-center bg-white rounded-lg shadow-lg p-6 border-b-2 border-transparent hover:border-primry transition-all duration-300">
-            <PiHandshake className="text-8xl" />
+          <div className="flex items-center bg-red-100 rounded-[20px] shadow-lg p-6 border-b-2 border-transparent hover:border-red-500 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl animate-slide-in">
+            <PiHandshake className="text-8xl text-red-500 hover:text-red-700 transition-all duration-300" />
             <div className="ml-4">
               <h1 className="font-semibold">Customer Satisfaction</h1>
               <p className="text-base">

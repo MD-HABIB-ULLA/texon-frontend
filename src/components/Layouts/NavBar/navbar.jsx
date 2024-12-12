@@ -54,6 +54,10 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+    setIsModalOpen(false);
+  }, [pathName]);
+
+  useEffect(() => {
     const modalNode = modalRef.current;
     if (isModalOpen && modalNode) {
       modalNode.addEventListener("mouseleave", handleMouseLeave);
@@ -71,7 +75,7 @@ const Navbar = () => {
     switch (modalContent) {
       case "Services":
         return (
-          <div className=" h-full ">
+          <div className=" h-full  ">
             <div className="grid grid-cols-3 h-full">
               <div
                 className="text-black h-full p-6"
@@ -90,45 +94,55 @@ const Navbar = () => {
                       width={20}
                       alt="software_development"
                     />
-                    <p className="ms-2">Software Development</p>
+                    <Link
+                      className="ms-2"
+                      href="/services/software-development"
+                    >
+                      Software Development
+                    </Link>
+                    {/* <p className="ms-2">Software Development</p> */}
                   </div>
                   <div className="flex items-center">
                     <Image src={web} width={20} alt="web" />
-                    <p className="ms-2">
-                      <Link href="/webdevelopment">Web Development</Link>
-                    </p>
+
+                    <Link className="ms-2" href="/services/web-development">
+                      Web Development
+                    </Link>
                   </div>
                   <div className="flex items-center">
                     <Image src={app} width={20} alt="app" />
-                    <p className="ms-2">
-                      <Link href="/mobileapplication">Mobile App Develop</Link>
-                    </p>
+
+                    <Link className="ms-2" href="/services/mobile-application">
+                      Mobile App Develop
+                    </Link>
                   </div>
                   <div className="flex items-center">
                     <Image src={management} width={20} alt="management" />
-                    <p className="ms-2">
-                      <Link href="/managementsoftware">
-                        Management Software
-                      </Link>
-                    </p>
+
+                    <Link className="ms-2" href="/services/management-software">
+                      Management Software
+                    </Link>
                   </div>
                   <div className="flex items-center">
                     <Image src={ai} width={18} alt="ai" />
-                    <p className="ms-2">
-                      <Link href="/aiandautomation">Ai & Automation</Link>
-                    </p>
+
+                    <Link className="ms-2" href="/services/ai-and-automation">
+                      Ai & Automation
+                    </Link>
                   </div>
                   <div className="flex items-center">
                     <Image src={aws} width={20} alt="aws" />
-                    <p className="ms-2">
-                      <Link href="/cloudcomputing">AWS Services</Link>
-                    </p>
+
+                    <Link className="ms-2" href="/services/cloud-computing">
+                      AWS Services
+                    </Link>
                   </div>
                   <div className="flex items-center">
                     <Image src={development} width={18} alt="development" />
-                    <p className="ms-2">
-                      <Link href="/itInfrastructure">IT Infrastructure</Link>
-                    </p>
+
+                    <Link className="ms-2" href="/services/itInfrastructure">
+                      IT Infrastructure
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -482,7 +496,7 @@ const Navbar = () => {
   const [isAboutsOpen, setIsAboutssOpen] = useState(false);
   return (
     <div>
-      <div className="navbar max-w-screen-xl mx-auto pt-2">
+      <div className="navbar max-w-screen-xl mx-auto pt-2 ">
         <div className="navbar-start">
           {/* Drawer for small screens */}
           <div className="drawer lg:hidden">
@@ -621,9 +635,9 @@ const Navbar = () => {
 
           {/* Logo for larger screens */}
           <div className="hidden lg:flex">
-            <Link href={"/"}>
+            <a href={"/"}>
               <Image src={logo} className="object-contain w-auto" alt="logo" />
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -657,7 +671,9 @@ const Navbar = () => {
               <IoIosArrowDown className="h-4 w-4 ml-2" />
             </div>
             <div className="cursor-pointer">
-              <span>Case Studies</span>
+              <Link href="/casestudies" className="cursor-pointer">
+                <span>Case Studies</span>
+              </Link>
               {/* No modal functionality for Case Studies */}
             </div>
             <div>

@@ -11,7 +11,7 @@ export default function ExecutiveTeam() {
       <HeadingTitle heading={"Meet the Executive Team"} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10 lg:mb-20">
-        <div className="lg:flex lg:place-items-end">
+        <div className="flex items-center gap-3 lg:place-items-end">
           <Image
             src={Team1}
             alt="Team1"
@@ -28,7 +28,7 @@ export default function ExecutiveTeam() {
             </p>
           </div>
         </div>
-        <div className="lg:flex lg:place-items-end">
+        <div className="flex items-center gap-3 lg:place-items-end">
           <Image
             src={Team2}
             alt="Team2"
@@ -45,7 +45,7 @@ export default function ExecutiveTeam() {
             </p>
           </div>
         </div>
-        <div className="lg:flex lg:place-items-end mt-0 md:mt-10 lg:mt-10">
+        <div className="flex items-center gap-3 lg:place-items-end mt-0 md:mt-10 lg:mt-10">
           <Image
             src={Team4}
             alt="Team4"
@@ -62,7 +62,7 @@ export default function ExecutiveTeam() {
             </p>
           </div>
         </div>
-        <div className="lg:flex lg:place-items-end mt-0 md:mt-10 lg:mt-10">
+        <div className="flex items-center gap-3 lg:place-items-end mt-0 md:mt-10 lg:mt-10">
           <Image
             src={Team3}
             alt="Team5"
